@@ -1,2 +1,1 @@
-# Juego Rana
- 
+# Juego Negra Lesbiana
