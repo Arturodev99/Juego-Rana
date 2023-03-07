@@ -11,3 +11,6 @@ h1{
     font-family: 'Minecraft';
     color: aliceblue;
 }
+.imagenesInicio{
+    position: absolute;
+}
