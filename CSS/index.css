@@ -1,0 +1,13 @@
+body{
+    background-image: url(../Media/Images/Fondos/fondoin2.gif);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+@font-face {
+    font-family: 'Minecraft';
+    src: url(../Media/fuentes/Minecraft.ttf) format('truetype');
+}
+h1{
+    font-family: 'Minecraft';
+    color: aliceblue;
+}
