@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var PosicionOriginal=3;
+        var PosicionNueva
+        function Comienzo(){
+            document.getElementById('3').style.backgroundColor='red';
+            document.onkeydown=Teclado
+        }
+        function Teclado(tecla){
+            if(tecla.keyCode == 65){
+                if((PosicionOriginal-1)%5 == 0){
+                    console.log('no')
+                }
+                else{
+                    PosicionNueva=PosicionOriginal-1
+                    document.getElementById(PosicionNueva).style.backgroundColor='red';
+                    document.getElementById(PosicionOriginal).style.backgroundColor='white';
+                    PosicionOriginal=PosicionNueva
+                }
+            }
+            else if(tecla.keyCode == 68){
+                if((PosicionOriginal)%5 == 0){
+                    console.log('no')
+                }
+                else{
+                    PosicionNueva=PosicionOriginal+1
+                    document.getElementById(PosicionNueva).style.backgroundColor='red';
+                    document.getElementById(PosicionOriginal).style.backgroundColor='white';
+                    PosicionOriginal=PosicionNueva
+                }
+                
+            }
+            else if(tecla.keyCode == 32){
+                PosicionNueva=PosicionOriginal+5
+                document.getElementById(PosicionNueva).style.backgroundColor='red';
+                document.getElementById(PosicionOriginal).style.backgroundColor='white';
+                PosicionOriginal=PosicionNueva
+            }
+            else if(tecla.keyCode == 83){
+                PosicionNueva=PosicionOriginal+5
+                document.getElementById(PosicionNueva).style.backgroundColor='red';
+                document.getElementById(PosicionOriginal).style.backgroundColor='white';
+                PosicionOriginal=PosicionNueva
+            }
+            else if(tecla.keyCode == 87){
+                PosicionNueva=PosicionOriginal-5
+                document.getElementById(PosicionNueva).style.backgroundColor='red';
+                document.getElementById(PosicionOriginal).style.backgroundColor='white';
+                PosicionOriginal=PosicionNueva
+            }
+        }
+    </script>
+    <style>
+        .Pantalla{
+            width:100%;
+            height:100vh;
+            border:solid 2px;
+            display:grid;
+            grid-template-areas:
+            'a b c d e'
+            'a b c d e'
+            'a b c d e'
+            'a b c d e'
+            'a b c d e';
+        }
+        .casilla{
+            border:solid 2px
+        }
+    </style>
+</head>
+<body onload="Comienzo()">
+    <div class="Pantalla">
+        <div class="casilla" id="1"></div>
+        <div class="casilla" id="2"></div>
+        <div class="casilla" id="3"></div>
+        <div class="casilla" id="4"></div>
+        <div class="casilla" id="5"></div>
+        <div class="casilla" id="6"></div>
+        <div class="casilla" id="7"></div>
+        <div class="casilla" id="8"></div>
+        <div class="casilla" id="9"></div>
+        <div class="casilla" id="10"></div>
+        <div class="casilla" id="11"></div>
+        <div class="casilla" id="12"></div>
+        <div class="casilla" id="13"></div>
+        <div class="casilla" id="14"></div>
+        <div class="casilla" id="15"></div>
+        <div class="casilla" id="16"></div>
+        <div class="casilla" id="17"></div>
+        <div class="casilla" id="18"></div>
+        <div class="casilla" id="19"></div>
+        <div class="casilla" id="20"></div>
+        <div class="casilla" id="21"></div>
+        <div class="casilla" id="22"></div>
+        <div class="casilla" id="23"></div>
+        <div class="casilla" id="24"></div>
+        <div class="casilla" id="25"></div>
+    </div>
+</body>
+</html>
