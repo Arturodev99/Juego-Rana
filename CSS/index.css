@@ -2,7 +2,7 @@ body{
     background-image: url(../Media/Images/fondo/fondoin2.gif);
     background-size: 100% 100%;
     background-attachment: fixed;
-    cursor: url(../Media/Images/cursor2.png),auto;
+    cursor: url(../Media/Images/cursor1.png),auto;
 }
 @font-face {
     font-family: 'PixelatedPusab';
@@ -22,8 +22,8 @@ h1{
 #nenufar{
     filter: drop-shadow(0 2px 10px rgb(0, 0, 0));
     margin-top: -40px;
-    cursor: url(../Media/Images/cursor1.png),auto;
+    cursor: url(../Media/Images/cursor2.png),auto;
 }
 #rana{
-    cursor: url(../Media/Images/cursor1.png),auto;
+    cursor: url(../Media/Images/cursor2.png),auto;
 }
