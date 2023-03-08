@@ -2,7 +2,7 @@ body{
     background-image: url(../Media/Images/fondo/fondoin2.gif);
     background-size: 100% 100%;
     background-attachment: fixed;
-    cursor: url(../Media/Images/CursorNP.png),auto;
+    cursor: url(../Media/Images/cursor1.png),auto;
 }
 @font-face {
     font-family: 'PixelatedPusab';
