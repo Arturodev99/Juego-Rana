@@ -1,19 +1,21 @@
-function Rana() {
+function Personaje() {
     this.url = "direccionRana";
     this.vida = 3;
-
 }
 
 function Fondo() {
     this.urlFondo = "direccionImagenFondo";
-    this.numeroEnemigos = 
+    this.numeroEnemigos = 0;
 }
 
 function Nivel() {
     this.Fondo = new Fondo;
-    Rana = new Rana();
+    personaje = new Personaje();
 }
 
 function Enemigo() {
-    this.urlFondo = "direccionImagenFondo";
+    this.urlEnemigo = "direccionEnemigoParametrizada";
+    this.posicionX = "1px"
+    this.posicionY = 
+    this.velocidad = 
 }
