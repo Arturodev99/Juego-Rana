@@ -18,3 +18,6 @@ grid-template-areas:
 'a b c d e' 
 'a b c d e' ;
 }
+.casilla{
+    border: solid 1px black;
+}
