@@ -1,8 +1,13 @@
 var PosicionOriginal=3;
         var PosicionNueva
         function Comienzo(){
+            for(var i = 1; i<97;i++){
+                console.log(i)
+
+            }
             document.getElementById('3').style.backgroundColor='red';
             document.onkeyup=Teclado
+
         }
         function Teclado(tecla){
             if(tecla.keyCode == 65){
