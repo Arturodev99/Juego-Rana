@@ -12,11 +12,11 @@ body{
 border: solid 1px black;
 display: grid;
 grid-template-areas:
-'a b c d e' 
-'a b c d e' 
-'a b c d e' 
-'a b c d e' 
-'a b c d e' ;
+'a b c d e f g h' 
+'a b c d e f g h' 
+'a b c d e f g h' 
+'a b c d e f g h' 
+'a b c d e f g h' ;
 }
 .casilla{
     border: solid 1px black;
