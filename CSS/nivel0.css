@@ -33,4 +33,10 @@ grid-template-areas:
 }
 .nivel{
     height: 20px;
+    font-family: 'Super Mario';
+    font-size: xx-large;
+}
+@font-face {
+    font-family: 'Super Mario';
+    src: url(../Media/fuente/SuperMario256.ttf) format('truetype');
 }
