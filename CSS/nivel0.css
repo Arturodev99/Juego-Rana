@@ -1,23 +1,30 @@
 body{
-    background-image: url(../Media/Images/fondo/fondoin2.gif);
-    background-size: 100% 100%;
+   
     background-attachment: fixed;
     cursor: url(../Media/Images/cursor1.png),auto;
     margin: 0px;
     
 }
 .pantalla{
-    width: 800px ;
-    height: 1200px;
+    background-image: url(../Media/Images/NivelesTerminados/NivelVolcanico.jpg);
+    background-size: 100% 100%;
+    width: 1200px ;
+    height: 800px;
 border: solid 1px black;
 display: grid;
+gap: 0px;
 grid-template-areas:
-'a b c d e f g ' 
-'a b c d e f g ' 
-'a b c d e f g ' 
-'a b c d e f g ' 
-'a b c d e f g ' ;
+'a b c d e f g h i j k l' 
+'a b c d e f g h i j k l' 
+'a b c d e f g h i j k l' 
+'a b c d e f g h i j k l' 
+'a b c d e f g h i j k l'
+'a b c d e f g h i j k l'
+'a b c d e f g h i j k l'
+'a b c d e f g h i j k l' ;
 }
 .casilla{
-    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+    
 }
