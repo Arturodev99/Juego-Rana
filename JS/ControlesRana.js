@@ -49,7 +49,6 @@ var PosicionOriginal=6;
                 document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
-                document.getElementById(PosicionOriginal).style.backgroundImage='';
                 PosicionOriginal=PosicionNueva
             }
             else if(tecla.keyCode == 87){
