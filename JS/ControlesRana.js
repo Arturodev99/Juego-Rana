@@ -5,13 +5,13 @@ var PosicionOriginal=3;
                 document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla"></div>'
 
             }
-            document.getElementById('3').style.backgroundColor='red';
+            document.getElementById('4').style.backgroundColor='red';
             document.onkeyup=Teclado
 
         }
         function Teclado(tecla){
             if(tecla.keyCode == 65){
-                if((PosicionOriginal-1)%5 == 0){
+                if((PosicionOriginal-1)%7 == 0){
                     console.log('no')
                 }
                 else{
