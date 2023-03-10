@@ -2,6 +2,7 @@ body{
    
     background-attachment: fixed;
     cursor: url(../Media/Images/cursor1.png),auto;
+    background-image: url(../Media/Images/fondo/nivel0.jpg);
     margin: 0px;
     
 }
