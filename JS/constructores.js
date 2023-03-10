@@ -1,18 +1,20 @@
-function Personaje() {
+//Terminado constructor personaje
+function Personaje(eleccion) {
     this.vida = 3;
     this.x = window.innerWidth / 2 - 100;
-    this.y = 20;
+    this.y = 5;
     this.contenedor = document.createElement("div");
+    this.contenedor.style.position = "absolute";
     this.contenedor.style.left = "50%";
-    this.contenedor.style.left = this.x + "px";
+    this.contenedor.style.transform = "translate(-50%, 0)";
     this.contenedor.style.top = this.y + "px";
     this.img = document.createElement("img");
-    this.img.src = "../Media/Images/Personajes/Rana.png";
-    this.img.style.width = "100px"
+    this.img.src = "../Media/Images/Personajes/" + eleccion;
+    this.img.style.width = "80px";
     this.contenedor.appendChild(this.img);
-    document.getElementById("contenedor-personajes").appendChild(this.contenedor);
-}
-
+    document.querySelector("body").appendChild(this.contenedor);
+  }
+  
 
 
 
