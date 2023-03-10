@@ -1,5 +1,5 @@
 function Personaje() {
-    this.url = "direccionRana";
+    this.url = "direcMedia/Images/Personajes/Rana.png";
     this.vida = 3;
 }
 
@@ -16,6 +16,6 @@ function Nivel() {
 function Enemigo() {
     this.urlEnemigo = "direccionEnemigoParametrizada";
     this.posicionX = "1px"
-    this.posicionY = 
-    this.velocidad = 
+    this.posicionY = 0
+    this.velocidad = 0
 }
