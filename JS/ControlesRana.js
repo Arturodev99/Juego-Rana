@@ -52,4 +52,5 @@ var PosicionOriginal=6;
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 PosicionOriginal=PosicionNueva
             }
+            
         }
