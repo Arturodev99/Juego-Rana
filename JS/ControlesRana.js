@@ -1,11 +1,11 @@
-var PosicionOriginal=3;
+var PosicionOriginal=6;
         var PosicionNueva
         function Comienzo(){
             for(var i = 1; i<97;i++){
                 document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla"></div>'
 
             }
-            document.getElementById('4').style.backgroundColor='red';
+            document.getElementById('6').style.backgroundColor='red';
             document.onkeyup=Teclado
 
         }
