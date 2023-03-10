@@ -2,7 +2,7 @@ var PosicionOriginal=3;
         var PosicionNueva
         function Comienzo(){
             for(var i = 1; i<97;i++){
-                console.log(i)
+                document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla"></div>'
 
             }
             document.getElementById('3').style.backgroundColor='red';
