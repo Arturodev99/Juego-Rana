@@ -5,7 +5,7 @@ var PosicionOriginal=6;
                 document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla"></div>'
 
             }
-            document.getElementById('6').style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
+            document.getElementById('6').style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
             document.onkeyup=Teclado
 
         }
@@ -30,6 +30,8 @@ var PosicionOriginal=6;
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
                     document.getElementById(PosicionNueva).style.zIndex='1'
+                    document.getElementById(PosicionNueva).style.backgroundSize='cover';
+                    document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                     PosicionOriginal=PosicionNueva
                 }
                 
@@ -38,11 +40,15 @@ var PosicionOriginal=6;
                 PosicionNueva=PosicionOriginal+12
                 document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
+                document.getElementById(PosicionNueva).style.backgroundSize='cover';
+                document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                 PosicionOriginal=PosicionNueva
             }
             else if(tecla.keyCode == 83){
                 PosicionNueva=PosicionOriginal+12
                 document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
+                document.getElementById(PosicionOriginal).style.backgroundImage='';
+                document.getElementById(PosicionNueva).style.backgroundSize='cover';
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 PosicionOriginal=PosicionNueva
             }
@@ -50,6 +56,9 @@ var PosicionOriginal=6;
                 PosicionNueva=PosicionOriginal-12
                 document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
+                document.getElementById(PosicionNueva).style.backgroundSize='cover';
+                document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                 PosicionOriginal=PosicionNueva
             }
+            
         }
