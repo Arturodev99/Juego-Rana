@@ -11,18 +11,19 @@ body{
     background-size: 100% 100%;
     width: 1200px ;
     height: 800px;
-border: solid 5px black;
-display: grid;
-gap: 0px;
-grid-template-areas:
-'a b c d e f g h i j k l' 
-'a b c d e f g h i j k l' 
-'a b c d e f g h i j k l' 
-'a b c d e f g h i j k l' 
-'a b c d e f g h i j k l'
-'a b c d e f g h i j k l'
-'a b c d e f g h i j k l'
-'a b c d e f g h i j k l' ;
+    border: solid 5px black;
+    display: grid;
+    cursor: none;
+    gap: 0px;
+    grid-template-areas:
+    'a b c d e f g h i j k l' 
+    'a b c d e f g h i j k l' 
+    'a b c d e f g h i j k l' 
+    'a b c d e f g h i j k l' 
+    'a b c d e f g h i j k l'
+    'a b c d e f g h i j k l'
+    'a b c d e f g h i j k l'
+    'a b c d e f g h i j k l' ;
 }
 .casilla{
     background-size: cover;
