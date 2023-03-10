@@ -1,10 +1,9 @@
-body{
-   
+body{ 
     background-attachment: fixed;
     cursor: url(../Media/Images/cursor1.png),auto;
     margin: 0px;
-    
 }
+
 .pantalla{
     z-index: 0;
     background-image: url(../Media/Images/NivelesTerminados/NivelVolcanico.jpg);
@@ -23,8 +22,9 @@ body{
     'a b c d e f g h i j k l'
     'a b c d e f g h i j k l'
     'a b c d e f g h i j k l'
-    'a b c d e f g h i j k l' ;
+    'a b c d e f g h i j k l';
 }
+
 .casilla{
     background-size: cover;
     z-index: 1;
@@ -32,11 +32,13 @@ body{
     height: 100px;
     
 }
+
 .nivel{
     height: 20px;
     font-family: 'Super Mario';
     font-size: xx-large;
 }
+
 @font-face {
     font-family: 'Super Mario';
     src: url(../Media/fuente/SuperMario256.ttf) format('truetype');
