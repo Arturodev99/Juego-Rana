@@ -5,7 +5,7 @@ var PosicionOriginal=6;
                 document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla"></div>'
 
             }
-            document.getElementById('6').style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento;
+            document.getElementById('6').style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
             document.onkeyup=Teclado
 
         }
@@ -49,7 +49,7 @@ var PosicionOriginal=6;
                 document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
-                document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
+                document.getElementById(PosicionOriginal).style.backgroundImage='';
                 PosicionOriginal=PosicionNueva
             }
             else if(tecla.keyCode == 87){
