@@ -36,7 +36,7 @@ var PosicionOriginal=6;
                     document.getElementById(PosicionNueva).style.backgroundSize='cover';
                     document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                     PosicionOriginal=PosicionNueva
-                    document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
+                   
                 }
                 
             }
