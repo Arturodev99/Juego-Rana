@@ -20,6 +20,7 @@ var j=0;
                 else{
                     PosicionNueva=PosicionOriginal-1
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
+                    document.getElementById(PosicionNueva).style.transform="rotate(90deg)"
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
                     PosicionOriginal=PosicionNueva
                     if (PosicionOriginal >= 85){
@@ -40,6 +41,7 @@ var j=0;
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
                     document.getElementById(PosicionNueva).style.zIndex='1'
+                    document.getElementById(PosicionNueva).style.transform="rotate(270deg)"
                     document.getElementById(PosicionNueva).style.backgroundSize='cover';
                     document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                     PosicionOriginal=PosicionNueva
@@ -58,6 +60,7 @@ var j=0;
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
                 document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
+                document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
                 PosicionOriginal=PosicionNueva
                 if (PosicionOriginal >= 85){
                     j++
@@ -71,6 +74,7 @@ var j=0;
                 document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
+                document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
                 PosicionOriginal=PosicionNueva
                 if (PosicionOriginal >= 85){
                     j++
@@ -85,6 +89,7 @@ var j=0;
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
                 document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
+                document.getElementById(PosicionNueva).style.transform="rotate(180deg)"
                 PosicionOriginal=PosicionNueva
                 if (PosicionOriginal >= 85){
                     j++
