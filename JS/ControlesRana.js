@@ -1,4 +1,5 @@
 var PosicionOriginal=6;
+var j=0;
         var PosicionNueva
         function Comienzo(){
             for(var i = 1; i<97;i++){
@@ -10,6 +11,7 @@ var PosicionOriginal=6;
 
         }
         function Teclado(tecla){
+            
            
             if(tecla.keyCode == 65){
                 if((PosicionOriginal-1)%12 == 0){
@@ -21,6 +23,11 @@ var PosicionOriginal=6;
                     document.getElementById(PosicionNueva).style.transform="rotate(90deg)"
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
                     PosicionOriginal=PosicionNueva
+                    if (PosicionOriginal >= 85){
+                        j++
+                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[0].imagen+')';
+                        
+                    }
                     //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
                 }
             }
@@ -38,6 +45,11 @@ var PosicionOriginal=6;
                     document.getElementById(PosicionNueva).style.backgroundSize='cover';
                     document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                     PosicionOriginal=PosicionNueva
+                    if (PosicionOriginal >= 85){
+                        j++
+                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[0].imagen+')';
+                        
+                    }
                    
                 }
                 
@@ -50,6 +62,11 @@ var PosicionOriginal=6;
                 document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                 document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
                 PosicionOriginal=PosicionNueva
+                if (PosicionOriginal >= 85){
+                    j++
+                    document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[0].imagen+')';
+                    
+                }
                 //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
             }
             else if(tecla.keyCode == 83){
@@ -59,6 +76,11 @@ var PosicionOriginal=6;
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
                 document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
                 PosicionOriginal=PosicionNueva
+                if (PosicionOriginal >= 85){
+                    j++
+                    document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[0].imagen+')';
+                    
+                }
                 //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
             }
             else if(tecla.keyCode == 87){
@@ -69,13 +91,16 @@ var PosicionOriginal=6;
                 document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                 document.getElementById(PosicionNueva).style.transform="rotate(180deg)"
                 PosicionOriginal=PosicionNueva
+                if (PosicionOriginal >= 85){
+                    j++
+                    document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[0].imagen+')';
+                    
+                }
                 //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
             }
             
         }
 
         function final(){
-            if (PosicionOriginal >= 85){
-                
-            }
+            
         }
