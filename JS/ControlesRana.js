@@ -18,6 +18,7 @@ var PosicionOriginal=6;
                 else{
                     PosicionNueva=PosicionOriginal-1
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
+                    document.getElementById(PosicionOriginal).style.backgroundImage='';
                     PosicionOriginal=PosicionNueva
                     //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
                 }
