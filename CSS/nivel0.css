@@ -1,4 +1,4 @@
-body{ 
+body{ z-index: -1;
     background-attachment: fixed;
     cursor: url(../Media/Images/cursor1.png),auto;
     margin: 0px;

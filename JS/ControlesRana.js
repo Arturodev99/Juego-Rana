@@ -5,11 +5,12 @@ var PosicionOriginal=6;
                 document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla"></div>'
 
             }
-            document.getElementById('6').style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
+            document.getElementById('6').style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
             document.onkeyup=Teclado
 
         }
         function Teclado(tecla){
+           
             if(tecla.keyCode == 65){
                 if((PosicionOriginal-1)%12 == 0){
                     console.log('no')
@@ -17,8 +18,8 @@ var PosicionOriginal=6;
                 else{
                     PosicionNueva=PosicionOriginal-1
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
-                    document.getElementById(PosicionOriginal).style.backgroundImage='';
-                    PosicionOriginal=PosicionNueva
+                    //PosicionOriginal=PosicionNueva
+                    //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
                 }
             }
             else if(tecla.keyCode == 68){
@@ -32,7 +33,8 @@ var PosicionOriginal=6;
                     document.getElementById(PosicionNueva).style.zIndex='1'
                     document.getElementById(PosicionNueva).style.backgroundSize='cover';
                     document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
-                    PosicionOriginal=PosicionNueva
+                    //PosicionOriginal=PosicionNueva
+                    document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
                 }
                 
             }
@@ -42,14 +44,16 @@ var PosicionOriginal=6;
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
                 document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
-                PosicionOriginal=PosicionNueva
+                //PosicionOriginal=PosicionNueva
+                //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
             }
             else if(tecla.keyCode == 83){
                 PosicionNueva=PosicionOriginal+12
                 document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
-                PosicionOriginal=PosicionNueva
+                //PosicionOriginal=PosicionNueva
+                //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
             }
             else if(tecla.keyCode == 87){
                 PosicionNueva=PosicionOriginal-12
@@ -57,7 +61,8 @@ var PosicionOriginal=6;
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
                 document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
-                PosicionOriginal=PosicionNueva
+                //PosicionOriginal=PosicionNueva
+                //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
             }
             
         }
