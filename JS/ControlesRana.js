@@ -27,6 +27,7 @@ var PosicionOriginal=6;
                     console.log('no')
                 }
                 else{
+                    console.log(PosicionOriginal)
                     PosicionNueva=PosicionOriginal+1
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
