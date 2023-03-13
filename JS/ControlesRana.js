@@ -66,3 +66,9 @@ var PosicionOriginal=6;
             }
             
         }
+
+        function final(){
+            if (PosicionOriginal >= 85){
+                
+            }
+        }
