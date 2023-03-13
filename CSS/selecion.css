@@ -23,10 +23,15 @@ h1{
 }
 
 .contenedores{
-    border: solid black 1px;
     width: 270px;
     float: left;
     margin: 10px;
+    background-image: url(../Media/Images/marco_personaje.png);
+    background-size: cover;
+}
+.contenedores:hover{
+    background-image: url(../Media/Images/marco_personaje_hover.png);
+    background-size: cover;
 }
 
 img{
