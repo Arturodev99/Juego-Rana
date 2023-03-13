@@ -18,7 +18,6 @@ var PosicionOriginal=6;
                 else{
                     PosicionNueva=PosicionOriginal-1
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
-                    document.getElementById(PosicionOriginal).style.backgroundImage='inherit';
                     //PosicionOriginal=PosicionNueva
                     //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
                 }
@@ -33,7 +32,7 @@ var PosicionOriginal=6;
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
                     document.getElementById(PosicionNueva).style.zIndex='1'
                     document.getElementById(PosicionNueva).style.backgroundSize='cover';
-                    document.getElementById(PosicionOriginal).style.backgroundImage='inherit';
+                    document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                     //PosicionOriginal=PosicionNueva
                     document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
                 }
@@ -44,7 +43,7 @@ var PosicionOriginal=6;
                 document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
-                document.getElementById(PosicionOriginal).style.backgroundImage='inherit';
+                document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                 //PosicionOriginal=PosicionNueva
                 //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
             }
@@ -53,7 +52,6 @@ var PosicionOriginal=6;
                 document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
-                document.getElementById(PosicionOriginal).style.backgroundImage='inherit';
                 //PosicionOriginal=PosicionNueva
                 //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
             }
@@ -62,7 +60,7 @@ var PosicionOriginal=6;
                 document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.Personajes[2].imagenMovimiento+')';
                 document.getElementById(PosicionOriginal).style.backgroundImage='';
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
-                document.getElementById(PosicionOriginal).style.backgroundImage='inherit';
+                document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                 //PosicionOriginal=PosicionNueva
                 //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
             }
