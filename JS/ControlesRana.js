@@ -1,5 +1,6 @@
 var PosicionOriginal=6;
 var j=0;
+var temporizador
         var PosicionNueva
         function Comienzo(){
             for(var i = 1; i<97;i++){
@@ -23,6 +24,7 @@ var j=0;
                     document.getElementById(PosicionNueva).style.transform="rotate(90deg)"
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
                     PosicionOriginal=PosicionNueva
+                    temporizador= setTimeout(parada,500);
                     
                     if (PosicionOriginal >= 85){
                         j++
@@ -52,6 +54,7 @@ var j=0;
                     document.getElementById(PosicionNueva).style.backgroundSize='cover';
                     document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                     PosicionOriginal=PosicionNueva
+                    temporizador= setTimeout(parada,500);
                     if (PosicionOriginal >= 85){
                         j++
                         if (j > 2){
@@ -75,6 +78,7 @@ var j=0;
                 document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                 document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
                 PosicionOriginal=PosicionNueva
+                temporizador= setTimeout(parada,500);
                 if (PosicionOriginal >= 85){
                     j++
                     if (j > 2){
@@ -95,6 +99,7 @@ var j=0;
                 document.getElementById(PosicionNueva).style.backgroundSize='cover';
                 document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
                 PosicionOriginal=PosicionNueva
+                temporizador= setTimeout(parada,500);
                 if (PosicionOriginal >= 85){
                     j++
                     if (j > 2){
@@ -116,6 +121,7 @@ var j=0;
                 document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                 document.getElementById(PosicionNueva).style.transform="rotate(180deg)"
                 PosicionOriginal=PosicionNueva
+                temporizador= setTimeout(parada,500);
                 if (PosicionOriginal >= 85){
                     j++
                     if (j > 2){
@@ -132,6 +138,8 @@ var j=0;
             
         }
 
-        function final(){
+        function parada(){
+            document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
+            clearTimeout(temporizador);
             
         }
