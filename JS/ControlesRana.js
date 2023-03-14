@@ -3,7 +3,7 @@ var j=0;
 var temporizador
         var PosicionNueva
         function Comienzo(){
-            for(var i = 1; i<97;i++){
+            for(var i = 1; i<109;i++){
                 document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla"></div>'
 
             }
@@ -26,13 +26,15 @@ var temporizador
                     PosicionOriginal=PosicionNueva
                     temporizador= setTimeout(parada,500);
                     
-                    if (PosicionOriginal >= 85){
+                    if (PosicionOriginal >= 97){
                         j++
                         if (j > 2){
                             j = 0 
                         }
+                        let n= j+1
                         document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
+                        document.getElementById('nivel').innerHTML= 'nivel '+ n;
                         Comienzo();
                         PosicionOriginal=6;
                         
@@ -55,13 +57,15 @@ var temporizador
                     document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
                     PosicionOriginal=PosicionNueva
                     temporizador= setTimeout(parada,500);
-                    if (PosicionOriginal >= 85){
+                    if (PosicionOriginal >= 97){
                         j++
                         if (j > 2){
                             j = 0 
                         }
+                        let n= j+1
                         document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')'
-                        document.getElementById(PosicionOriginal).style.backgroundImage='';;
+                        document.getElementById(PosicionOriginal).style.backgroundImage='';
+                        document.getElementById('nivel').innerHTML= 'nivel '+ n;
                         Comienzo();
                         PosicionOriginal=6;
                         
@@ -79,13 +83,15 @@ var temporizador
                 document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
                 PosicionOriginal=PosicionNueva
                 temporizador= setTimeout(parada,500);
-                if (PosicionOriginal >= 85){
+                if (PosicionOriginal >= 97){
                     j++
                     if (j > 2){
                         j = 0 
                     }
+                    let n= j+1
                     document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
+                    document.getElementById('nivel').innerHTML= 'nivel '+ n;
                     Comienzo();
                     PosicionOriginal=6;
                     
@@ -100,13 +106,15 @@ var temporizador
                 document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
                 PosicionOriginal=PosicionNueva
                 temporizador= setTimeout(parada,500);
-                if (PosicionOriginal >= 85){
+                if (PosicionOriginal >= 97){
                     j++
                     if (j > 2){
                         j = 0 
                     }
+                    let n= j+1
                     document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
+                    document.getElementById('nivel').innerHTML= 'nivel '+ n;
                     Comienzo();
                     PosicionOriginal=6;
                     
@@ -122,13 +130,15 @@ var temporizador
                 document.getElementById(PosicionNueva).style.transform="rotate(180deg)"
                 PosicionOriginal=PosicionNueva
                 temporizador= setTimeout(parada,500);
-                if (PosicionOriginal >= 85){
+                if (PosicionOriginal >= 97){
                     j++
                     if (j > 2){
                         j = 0 
                     }
+                    let n= j+1
                     document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
+                    document.getElementById('nivel').innerHTML= 'nivel '+ n;
                     Comienzo();
                     PosicionOriginal=6;
                     
