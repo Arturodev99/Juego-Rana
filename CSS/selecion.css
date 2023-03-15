@@ -23,10 +23,9 @@ h1{
 }
 
 #contenedor{
-    padding-left: 21%;
+    left: 21%;
     position: absolute;
     margin: auto;
-    width: 100%;
     flex-wrap: wrap;
     display: flex;
     align-content: center;
@@ -35,6 +34,8 @@ h1{
 
 .contenedores{
     width: 270px;
+    height: 270px;
+    height: autos;
     float: left;
     margin: 10px;
     background-image: url(../Media/Images/marco_personaje.png);
@@ -45,10 +46,20 @@ h1{
     background-size: cover;
 }
 
-img{
-    height: 250px;
-    margin: 10px;
-}
 #personajeRana{
-    width: 250px;
+    width: 200px;
+    height: 164px;
+    margin-top: 50px;
+}
+
+#personajeJuanma{
+    height: 200px;
+    width: 89px;
+    margin-top: 35px;
+}
+
+#personajeJesus{
+    height: 200px;
+    width: 89px;
+    margin-top: 35px;
 }
