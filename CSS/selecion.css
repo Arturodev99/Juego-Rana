@@ -26,6 +26,7 @@ h1{
     left: 21%;
     width: 900px;
     position: absolute;
+    padding-bottom: 60px;
     margin: auto;
     flex-wrap: wrap;
     display: flex;
