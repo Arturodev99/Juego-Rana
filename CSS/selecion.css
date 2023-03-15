@@ -24,6 +24,7 @@ h1{
 
 #contenedor{
     left: 21%;
+    width: 900px;
     position: absolute;
     margin: auto;
     flex-wrap: wrap;
