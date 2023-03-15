@@ -8,6 +8,7 @@ var temporizador
 
             }
             document.getElementById('6').style.backgroundImage='url('+niveles.Personajes[2].imagenParada+')';
+            document.getElementById('6').style.transform="rotate(360deg)"
             document.onkeyup=Teclado
 
         }
