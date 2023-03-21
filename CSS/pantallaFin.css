@@ -1,9 +1,17 @@
 #padre{
+    z-index: 0;
+    width: 1000px ;
+    height: 750;
+    border: solid 5px black;
+    
+}
+/* #padre2{
     display : flex; 
     align-items: center;
     justify-content: center;
-    padding-top : 275px;
-}
+    padding-top : 200px;
+    
+} */
 @font-face {
     font-family : 'PIXEL-LI';
     src: url(../Media/fuente/PIXEL-LI.TTF) format('truetype')
@@ -11,8 +19,11 @@
 }
 h1{
     font-family: 'PIXEL-LI';
-    color : aliceblue ; 
-    -webkit-text-stroke: 1px rgb(0,0,0);
+    background: #ffffff; 
+    padding-top: 250px;
+    background: linear-gradient(to right, #ff0000, #000000); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-size: 80px;
-    margin-top: 80px; 
 }
