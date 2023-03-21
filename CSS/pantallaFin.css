@@ -1,17 +1,12 @@
 #padre{
-    z-index: 0;
     width: 1000px ;
-    height: 750;
+    height: 720px;
     border: solid 5px black;
-    
+    background-image: url(../Media/Images/fondo/fondogameover.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-/* #padre2{
-    display : flex; 
-    align-items: center;
-    justify-content: center;
-    padding-top : 200px;
-    
-} */
 @font-face {
     font-family : 'PIXEL-LI';
     src: url(../Media/fuente/PIXEL-LI.TTF) format('truetype')
@@ -19,11 +14,25 @@
 }
 h1{
     font-family: 'PIXEL-LI';
-    background: #ffffff; 
-    padding-top: 250px;
-    background: linear-gradient(to right, #ff0000, #000000); 
+    background: linear-gradient(to right, #000000, #ff0000); 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: 80px;
+    font-size: 150px;
+    /* margin : 0px */
+}
+
+@font-face{
+    font-family: 'SuperMario256';
+    src : url(../Media/fuente/SuperMario256.ttf)
+}
+#boton{
+    font-family: 'SuperMario256';
+    width: 200px;
+    height: 100px; 
+}
+#boton2{
+    font-family: 'SuperMario256';
+    width: 200px;
+    height: 100px; 
 }
