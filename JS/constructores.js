@@ -54,3 +54,4 @@ function Enemigo() {
     this.velocidad = 0
 }
 
+
