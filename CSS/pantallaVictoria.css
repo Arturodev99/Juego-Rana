@@ -1,25 +1,23 @@
 body{
     background-color: rgb(255, 255, 255);
+    cursor: url(../Media/Images/corazonRoto.png),auto;
 }
 
-h1{
-    color: white;
-    font-family: 'GameOver';
-    background: #ffffff; 
-    background: linear-gradient(to right,  #ff9900, #f5ed80); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 180px;
-    margin-top: 210px;
+#título{
+    margin-top: 240px;
     margin-bottom: 20px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
 @font-face {
     font-family: 'GameOver';
     src: url(../Media/fuente/PixelatedPusab.ttf) format('truetype');
 }
+
+@font-face {
+    font-family: 'boton';
+    src: url(../Media/fuente/Minecraft.ttf) format('truetype');
+}
+
 
 
 .pantalla{
@@ -36,8 +34,8 @@ h1{
     height: 70px;
     margin-bottom: 20px;
     border: solid 2px black;
-    font-family: 'GameOver';
+    font-family: 'boton';
     cursor: pointer;
-    font-size: 40px;
+    font-size: 30px;
     padding-top: 5px;
 }
