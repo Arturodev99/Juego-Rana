@@ -4,9 +4,10 @@ body{
 
 h1{
     color: white;
-    font-family: 'gameover';
+    font-family: 'GameOver';
 }
 
 @font-face {
-    font-family: 'gameover';
+    font-family: 'GameOver';
+    src: url(../Media/fuente/game_over.ttf) format('truetype');
 }
