@@ -10,14 +10,16 @@ h1{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: 120px;
+    font-size: 180px;
     margin-top: 70px;
     margin-bottom: 20px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+
 }
 
 @font-face {
     font-family: 'GameOver';
-    src: url(../Media/fuente/Pixeled.ttf) format('truetype');
+    src: url(../Media/fuente/PixelatedPusab.ttf) format('truetype');
 }
 
 .pantalla{
@@ -25,7 +27,7 @@ h1{
     width: 1200px ;
     height: 800px;
     border: solid 5px black;
-    background-image: url(../Media/Images/fondo/fondovictoria1.jpeg);
+    /*background-image: url(../Media/Images/fondo/estanque.jpeg);*/
     background-size: 100% 100%;
 }
 
