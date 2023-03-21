@@ -2,7 +2,7 @@
     width: 1000px ;
     height: 720px;
     border: solid 5px black;
-    background-image: url(../Media/Images/fondo/fondogameover.png);
+    background-image: url(../Media/Images/fondo/fondorojo.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -14,7 +14,7 @@
 }
 h1{
     font-family: 'PIXEL-LI';
-    background: linear-gradient(to right, #000000, #ff0000); 
+    background: linear-gradient(to right, #6c6060, #ffffff); 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -30,9 +30,11 @@ h1{
     font-family: 'SuperMario256';
     width: 200px;
     height: 100px; 
+
 }
 #boton2{
     font-family: 'SuperMario256';
     width: 200px;
     height: 100px; 
+    
 }
