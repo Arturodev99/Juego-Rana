@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    font-family: 'GameOver';
+}
+
+@font-face {
+    font-family: 'GameOver';
+    src: url(../Media/fuente/Pixeled.ttf) format('truetype');
+}
