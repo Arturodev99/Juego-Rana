@@ -25,6 +25,8 @@ h1{
     width: 1200px ;
     height: 800px;
     border: solid 5px black;
+    background-image: url(../Media/Images/fondo/fondoin2.gif);
+    background-size: 100% 100%;
 }
 
 .botones{
