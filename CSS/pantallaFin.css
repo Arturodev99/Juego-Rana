@@ -1,0 +1,18 @@
+#padre{
+    display : flex; 
+    align-items: center;
+    justify-content: center;
+    padding-top : 275px;
+}
+@font-face {
+    font-family : 'PIXEL-LI';
+    src: url(../Media/fuente/PIXEL-LI.TTF) format('truetype')
+
+}
+h1{
+    font-family: 'PIXEL-LI';
+    color : aliceblue ; 
+    -webkit-text-stroke: 1px rgb(0,0,0);
+    font-size: 80px;
+    margin-top: 80px; 
+}
