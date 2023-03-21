@@ -1,13 +1,37 @@
 body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 h1{
     color: white;
     font-family: 'GameOver';
+    background: #ffffff; 
+    background: linear-gradient(to right,  #ff9900, #f5ed80); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 120px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 @font-face {
     font-family: 'GameOver';
     src: url(../Media/fuente/Pixeled.ttf) format('truetype');
+}
+
+.pantalla{
+    z-index: 0;
+    width: 1200px ;
+    height: 800px;
+    border: solid 5px black;
+}
+
+.botones{
+    width: 300px;
+    height: 75px;
+    margin-bottom: 20px;
+    border: solid 2px black;
+    font-family: 'GameOver';
+    cursor: pointer;
 }
