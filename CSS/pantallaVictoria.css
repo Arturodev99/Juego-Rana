@@ -29,9 +29,11 @@ h1{
 
 .botones{
     width: 300px;
-    height: 75px;
+    height: 70px;
     margin-bottom: 20px;
     border: solid 2px black;
     font-family: 'GameOver';
     cursor: pointer;
+    font-size: large;
+    padding: 5px;
 }
