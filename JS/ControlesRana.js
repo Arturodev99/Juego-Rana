@@ -1,6 +1,7 @@
 var PosicionOriginal=6;
 var j=0;
 var l = 0;
+var vida = 3;
 var temporizador
         var PosicionNueva
         function Comienzo(){
@@ -10,7 +11,7 @@ var temporizador
 
             }
             
-           
+            document.getElementById('texto').innerHTML=vida;
             document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
             document.getElementById('6').style.transform="rotate(360deg)"
             document.onkeyup=Teclado
@@ -35,24 +36,39 @@ var temporizador
                 }
                 else{
                     PosicionNueva=PosicionOriginal-1
-                    document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
-                    document.getElementById(PosicionNueva).style.transform="rotate(90deg)"
-                    document.getElementById(PosicionOriginal).style.backgroundImage='';
-                    PosicionOriginal=PosicionNueva
-                    temporizador= setTimeout(parada,500);
-                    
-                    if (PosicionOriginal >= 97){
-                        j++
-                        
-                        let n= j+1
-                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
-                        document.getElementById(PosicionOriginal).style.backgroundImage='';
-                        document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
+                    if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
+                        vida--
+                        l--
+                        PosicionOriginal=7;
+                        PosicionNueva=7;
                         Comienzo();
-                        PosicionOriginal=6;
-                        
+                        console.log(vida)
                     }
-                    //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
+                    if (vida == 0){
+                        vida = 3;
+                        PosicionOriginal=6;
+                        Comienzo();
+                    }
+                    else{
+                        PosicionNueva=PosicionOriginal-1
+                        document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
+                        document.getElementById(PosicionNueva).style.transform="rotate(90deg)"
+                        document.getElementById(PosicionOriginal).style.backgroundImage='';
+                        PosicionOriginal=PosicionNueva
+                        temporizador= setTimeout(parada,500);
+                        
+                        if (PosicionOriginal >= 97){
+                            j++
+
+                            
+                            document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                            document.getElementById(PosicionOriginal).style.backgroundImage='';
+                            document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
+                            Comienzo();
+                            PosicionOriginal=6;
+
+                        }
+                    }
                 }
             }
             else if(tecla.keyCode == 68){
@@ -62,91 +78,114 @@ var temporizador
                 else{
                     console.log(PosicionOriginal)
                     PosicionNueva=PosicionOriginal+1
-                    document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
-                    document.getElementById(PosicionOriginal).style.backgroundImage='';
-                    document.getElementById(PosicionNueva).style.zIndex='1'
-                    document.getElementById(PosicionNueva).style.transform="rotate(270deg)"
-                    document.getElementById(PosicionNueva).style.backgroundSize='cover';
-                    document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
-                    PosicionOriginal=PosicionNueva
-                    temporizador= setTimeout(parada,500);
-                    if (PosicionOriginal >= 97){
-                        j++
-                        
-                        let n= j+1
-                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')'
-                        document.getElementById(PosicionOriginal).style.backgroundImage='';
-                        document.getElementById('nivel').innerHTML= 'nivel '+ n;
+                    if(document.getElementById(PosicionNueva).className == 'limite'){
+                        l--
                         Comienzo();
-                        PosicionOriginal=6;
-                        
                     }
-                   
+                    else{
+                        document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
+                        document.getElementById(PosicionOriginal).style.backgroundImage='';
+                        document.getElementById(PosicionNueva).style.zIndex='1'
+                        document.getElementById(PosicionNueva).style.transform="rotate(270deg)"
+                        document.getElementById(PosicionNueva).style.backgroundSize='cover';
+                        document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
+                        PosicionOriginal=PosicionNueva
+                        temporizador= setTimeout(parada,500);
+                        if (PosicionOriginal >= 97){
+                            j++
+
+                            let n= j+1
+                            document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')'
+                            document.getElementById(PosicionOriginal).style.backgroundImage='';
+                            document.getElementById('nivel').innerHTML= 'nivel '+ n;
+                            Comienzo();
+                            PosicionOriginal=6;
+
+                        }
+                    }
                 }
                 
             }
             else if(tecla.keyCode == 32){
                 PosicionNueva=PosicionOriginal+12
-                document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
-                document.getElementById(PosicionOriginal).style.backgroundImage='';
-                document.getElementById(PosicionNueva).style.backgroundSize='cover';
-                document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
-                document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
-                PosicionOriginal=PosicionNueva
-                temporizador= setTimeout(parada,500);
-                if (PosicionOriginal >= 97){
-                    j++
-                    
-                    let n= j+1
-                    document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
-                    document.getElementById(PosicionOriginal).style.backgroundImage='';
-                    document.getElementById('nivel').innerHTML= 'nivel '+ n;
-                    Comienzo();
-                    PosicionOriginal=6;
-                    
+                if(document.getElementById(PosicionNueva).className == 'limite'){
+                    l--
+                        Comienzo();
                 }
-                //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
+                else{
+                    document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
+                    document.getElementById(PosicionOriginal).style.backgroundImage='';
+                    document.getElementById(PosicionNueva).style.backgroundSize='cover';
+                    document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
+                    document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
+                    PosicionOriginal=PosicionNueva
+                    temporizador= setTimeout(parada,500);
+                    if (PosicionOriginal >= 97){
+                        j++
+
+                        let n= j+1
+                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                        document.getElementById(PosicionOriginal).style.backgroundImage='';
+                        document.getElementById('nivel').innerHTML= 'nivel '+ n;
+                        Comienzo();
+                        PosicionOriginal=6;
+
+                    }
+                }
+                
             }
             else if(tecla.keyCode == 83){
                 PosicionNueva=PosicionOriginal+12
-                document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
-                document.getElementById(PosicionOriginal).style.backgroundImage='';
-                document.getElementById(PosicionNueva).style.backgroundSize='cover';
-                document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
-                PosicionOriginal=PosicionNueva
-                temporizador= setTimeout(parada,500);
-                if (PosicionOriginal >= 97){
-                    j++
-                  
-                    let n= j+1
-                    document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                if(document.getElementById(PosicionNueva).className == 'limite'){
+                    l--
+                        Comienzo();
+                }
+                else{
+                    document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
-                    document.getElementById('nivel').innerHTML= 'nivel '+ n;
-                    Comienzo();
-                    PosicionOriginal=6;
+                    document.getElementById(PosicionNueva).style.backgroundSize='cover';
+                    document.getElementById(PosicionNueva).style.transform="rotate(360deg)"
+                    PosicionOriginal=PosicionNueva
+                    temporizador= setTimeout(parada,500);
+                    if (PosicionOriginal >= 97){
+                        j++
                     
+                        let n= j+1
+                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                        document.getElementById(PosicionOriginal).style.backgroundImage='';
+                        document.getElementById('nivel').innerHTML= 'nivel '+ n;
+                        Comienzo();
+                        PosicionOriginal=6;
+
+                    }
                 }
                 //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
             }
             else if(tecla.keyCode == 87){
                 PosicionNueva=PosicionOriginal-12
-                document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
-                document.getElementById(PosicionOriginal).style.backgroundImage='';
-                document.getElementById(PosicionNueva).style.backgroundSize='cover';
-                document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
-                document.getElementById(PosicionNueva).style.transform="rotate(180deg)"
-                PosicionOriginal=PosicionNueva
-                temporizador= setTimeout(parada,500);
-                if (PosicionOriginal >= 97){
-                    j++
-                    
-                    let n= j+1
-                    document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                if(document.getElementById(PosicionNueva).className == 'limite'){
+                    l--
+                        Comienzo();
+                }
+                else{
+                    document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
-                    document.getElementById('nivel').innerHTML= 'nivel '+ n;
-                    Comienzo();
-                    PosicionOriginal=6;
-                    
+                    document.getElementById(PosicionNueva).style.backgroundSize='cover';
+                    document.getElementById(PosicionOriginal).style.backgroundColor='inherit';
+                    document.getElementById(PosicionNueva).style.transform="rotate(180deg)"
+                    PosicionOriginal=PosicionNueva
+                    temporizador= setTimeout(parada,500);
+                    if (PosicionOriginal >= 97){
+                        j++
+
+                        let n= j+1
+                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                        document.getElementById(PosicionOriginal).style.backgroundImage='';
+                        document.getElementById('nivel').innerHTML= 'nivel '+ n;
+                        Comienzo();
+                        PosicionOriginal=6;
+
+                    }
                 }
                 //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
             }
