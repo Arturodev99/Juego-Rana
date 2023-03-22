@@ -1,4 +1,4 @@
-var texto;
+var texto='';
 function vectorizar(parametro){
    
     texto +="'"+parametro+"',"

@@ -10,18 +10,20 @@ var temporizador
 
             }
             
+           
+            document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
+            document.getElementById('6').style.transform="rotate(360deg)"
+            document.onkeyup=Teclado
+
             for (var m = 1; m <= niveles.escenarios[l].limite.length ; m++) {
                 
-                //if(document.getElementById(niveles.escenarios[l].limite[m-1]).id == niveles.escenarios[l].limite[m-1] ){
+               
                 document.getElementById(niveles.escenarios[l].limite[m-1]).className = "limite";
                 
                 }
                 console.log(niveles.escenarios[l])
             
             l++
-            document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
-            document.getElementById('6').style.transform="rotate(360deg)"
-            document.onkeyup=Teclado
 
         }
         function Teclado(tecla){
@@ -45,7 +47,7 @@ var temporizador
                         let n= j+1
                         document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
-                        document.getElementById('nivel').innerHTML= 'nivel '+ n;
+                        document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                         Comienzo();
                         PosicionOriginal=6;
                         
