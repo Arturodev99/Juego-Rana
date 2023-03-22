@@ -6,7 +6,7 @@ var temporizador
         function Comienzo(){
             document.getElementById('pantalla').innerHTML='';
             for(var i = 1; i<109;i++){
-                document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla"></div>'
+                document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla" onclick="vectorizar('+i+')"></div>'
 
             }
             
