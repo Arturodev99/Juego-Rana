@@ -36,19 +36,15 @@ var temporizador
                 }
                 else{
                     PosicionNueva=PosicionOriginal-1
-                    if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
+                    if(document.getElementById(PosicionNueva).className == 'limite'){
                         vida--
                         l--
-                        PosicionOriginal=7;
-                        PosicionNueva=7;
+                        PosicionOriginal=6;
+                       
                         Comienzo();
                         console.log(vida)
                     }
-                    if (vida == 0){
-                        vida = 3;
-                        PosicionOriginal=6;
-                        Comienzo();
-                    }
+                   
                     else{
                         PosicionNueva=PosicionOriginal-1
                         document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
