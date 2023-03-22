@@ -1,6 +1,6 @@
 body{
     background-color: rgb(255, 255, 255);
-    cursor: url(../Media/Images/corazonRoto.png),auto;
+    cursor: url(../Media/Images/cursorCorazonDorado2.png),auto;
 }
 
 #título{
@@ -38,4 +38,5 @@ body{
     cursor: pointer;
     font-size: 30px;
     padding-top: 5px;
+    cursor: url(../Media/Images/cursorCorazonDorado2.png),auto;
 }
