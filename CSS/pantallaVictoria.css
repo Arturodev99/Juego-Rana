@@ -29,14 +29,48 @@ body{
     background-size: 100% 100%;
 }
 
-.botones{
-    width: 300px;
+.boton:disabled{
+    color: #212529;
+    background-color: #dedede;
+    width: 120px;
+    height: 36px;
+}
+
+.boton:disabled:active{
+    background-color: #dedede;
+    color: #000;
+}
+
+.boton:disabled:hover{
+    background-color: #dedede;
+    cursor: inherit;
+}
+
+.boton {
+    min-width: 300px;
     height: 70px;
-    margin-bottom: 20px;
-    border: solid 2px black;
-    font-family: 'boton';
-    cursor: pointer;
-    font-size: 30px;
-    padding-top: 5px;
+    color: #fff;
+    font-weight: bold;
     cursor: url(../Media/Images/cursorCorazonDorado2.png),auto;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #212529;
+    background: #212529;
+    font-family: 'boton';
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding-top: 5px;    
+}
+
+.boton:hover {
+    background: #F3F2EF;
+    color: #212529;
+}
+
+.boton:active{
+    color : #F3F2EF;
+    background: #212529;
 }
