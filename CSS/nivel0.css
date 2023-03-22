@@ -45,3 +45,10 @@ body{ z-index: -1;
     font-family: 'Super Mario';
     src: url(../Media/fuente/SuperMario256.ttf) format('truetype');
 }
+.limite{
+    background-size: cover;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    
+}

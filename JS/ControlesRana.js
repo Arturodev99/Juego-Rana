@@ -1,5 +1,6 @@
 var PosicionOriginal=6;
 var j=0;
+var l = 0;
 var temporizador
         var PosicionNueva
         function Comienzo(){
@@ -7,6 +8,13 @@ var temporizador
                 document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla"></div>'
 
             }
+            for (m= 0; m <= 96; m++) {
+                if(i == niveles.escenarios[l].limite[m])
+                document.getElementById(m).className = "limite";
+                
+            }
+            l++
+        
             document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
             document.getElementById('6').style.transform="rotate(360deg)"
             document.onkeyup=Teclado
