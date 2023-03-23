@@ -1,0 +1,9 @@
+Orden de los niveles:
+
+	1.Jungla
+	2.Desierto
+	3.Cueva
+	4.Lava
+	5.Casino
+	6.Lava
+	7.Cielo
