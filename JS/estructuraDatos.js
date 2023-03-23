@@ -55,8 +55,15 @@ var niveles = {
     '13','14','15','16','17','20','21','22',
     '23','24','85','86','87','88','89','92',
     '93','94','95','96']},
-    //----------------------------------------------------------------MUNDO NUBES----------------------------------------------------------------------------
-    { nombre:'', nivel:'', imagen:'',limite:[]},],
+    //----------------------------------------------------------------MUNDO BOSQUE----------------------------------------------------------------------------
+    { nombre:'bosque1', nivel:'1', imagen:'../Media/Images/MundoBosque/mapabosque1.png',limite:['']},],
+    { nombre:'bosque2', nivel:'2', imagen:'../Media/Images/MundoBosque/mapabosque2.png',limite:['']},],
+    { nombre:'bosque3', nivel:'3', imagen:'../Media/Images/MundoBosque/mapabosque3.png',limite:['']},],
+    { nombre:'bosque4', nivel:'4', imagen:'../Media/Images/MundoBosque/mapabosque4.png',limite:['']},],
+    { nombre:'bosque5', nivel:'5', imagen:'../Media/Images/MundoBosque/mapabosque5.png',limite:['']},],
+
+    //{ nombre:'', nivel:'', imagen:'',limite:[]},],
+    
 
     'enemigos': [{ nombre: '', imagen: '', posicionX: '', posicionY: ''  },
     { nombre: '', imagen: '', posicionX: '', posicionY: '' },
