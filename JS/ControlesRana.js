@@ -56,7 +56,7 @@ var PosicionNueva
 
                         }
                     }
-                    if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
+                    if(document.getElementById(PosicionNueva).className == 'limite' && vida > 1){
                         vida--
                         l--
                         PosicionNueva=6
@@ -65,7 +65,7 @@ var PosicionNueva
                         Comienzo();
                         console.log(vida)
                     }
-                    if(document.getElementById(PosicionNueva).className == 'limite' && vida == 0){
+                    if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1){
                         location.href = '../HTML/index.html'
                     }
                    
@@ -100,7 +100,7 @@ var PosicionNueva
 
                         }
                     }
-                    if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
+                    if(document.getElementById(PosicionNueva).className == 'limite' && vida > 1){
                         vida--
                         l--
                         PosicionNueva=6
@@ -109,7 +109,7 @@ var PosicionNueva
                         Comienzo();
                         console.log(vida)
                     }
-                    if(document.getElementById(PosicionNueva).className == 'limite' && vida == 0){
+                    if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1){
                         location.href = '../HTML/index.html'
                     }
                
@@ -138,7 +138,7 @@ var PosicionNueva
 
                     }
                 }
-                if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
+                if(document.getElementById(PosicionNueva).className == 'limite' && vida > 1){
                     vida--
                     l--
                     PosicionNueva=6
@@ -147,7 +147,7 @@ var PosicionNueva
                     Comienzo();
                     console.log(vida)
                 }
-                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 0){
+                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1){
                     location.href = '../HTML/index.html'
                 }
                 
@@ -174,7 +174,7 @@ var PosicionNueva
 
                     }
                 }
-                if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
+                if(document.getElementById(PosicionNueva).className == 'limite' && vida > 1){
                     vida--
                     l--
                     PosicionNueva=6
@@ -183,7 +183,7 @@ var PosicionNueva
                     Comienzo();
                     console.log(vida)
                 }
-                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 0){
+                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 ){
                     location.href = '../HTML/index.html'
                 }
             }
@@ -209,7 +209,7 @@ var PosicionNueva
 
                     }
                 }
-                if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
+                if(document.getElementById(PosicionNueva).className == 'limite' && vida > 1){
                     vida--
                     l--
                     PosicionNueva=6
@@ -218,7 +218,7 @@ var PosicionNueva
                     Comienzo();
                     console.log(vida)
                 }
-                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 0){
+                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1){
                     location.href = '../HTML/index.html'
                 }
                 
