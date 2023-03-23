@@ -61,6 +61,13 @@ var niveles = {
     { nombre:'bosque3', nivel:'3', imagen:'../Media/Images/MundoBosque/mapabosque3.png',limite:['']},
     { nombre:'bosque4', nivel:'4', imagen:'../Media/Images/MundoBosque/mapabosque4.png',limite:['']},
     { nombre:'bosque5', nivel:'5', imagen:'../Media/Images/MundoBosque/mapabosque5.png',limite:['']},
+    //----------------------------------------------------------------MUNDO CIELO----------------------------------------------------------------------------
+    { nombre:'cielo1', nivel:'1', imagen:'../Media/Images/MundoCielo/mapacielo1.png',limite:[]},
+    { nombre:'cielo2', nivel:'2', imagen:'../Media/Images/MundoCielo/mapacielo2.png',limite:[]},
+    { nombre:'cielo3', nivel:'3', imagen:'../Media/Images/MundoCielo/mapacielo3.png',limite:[]},
+    { nombre:'cielo4', nivel:'4', imagen:'../Media/Images/MundoCielo/mapacielo4.png',limite:[]},
+    { nombre:'cielo5', nivel:'5', imagen:'../Media/Images/MundoCielo/mapacielo5.png',limite:[]},
+    
     { nombre:'', nivel:'', imagen:'',limite:[]},
     ],
 
