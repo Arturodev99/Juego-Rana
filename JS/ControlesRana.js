@@ -93,7 +93,7 @@ var temporizador
                             let n= j+1
                             document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')'
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
-                            document.getElementById('nivel').innerHTML= 'nivel '+ n;
+                            document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                             Comienzo();
                             PosicionOriginal=6;
 
@@ -122,7 +122,7 @@ var temporizador
                         let n= j+1
                         document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
-                        document.getElementById('nivel').innerHTML= 'nivel '+ n;
+                        document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                         Comienzo();
                         PosicionOriginal=6;
 
@@ -149,7 +149,7 @@ var temporizador
                         let n= j+1
                         document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
-                        document.getElementById('nivel').innerHTML= 'nivel '+ n;
+                        document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                         Comienzo();
                         PosicionOriginal=6;
 
@@ -177,7 +177,7 @@ var temporizador
                         let n= j+1
                         document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
-                        document.getElementById('nivel').innerHTML= 'nivel '+ n;
+                        document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                         Comienzo();
                         PosicionOriginal=6;
 
