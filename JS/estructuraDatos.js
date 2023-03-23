@@ -80,6 +80,14 @@ var niveles = {
     limite:['1','2','3','4','5','8','9','10','11','12','13','14','15','16','17',
     '20','21','22','23','24','61','62','63','64','65','68','69','70','71','72',
     '73','74','75','76','77','80','81','82','83','84',]},
+    
+    //----------------------------------------------------------------MUNDO CIELO----------------------------------------------------------------------------
+    { nombre:'cielo1', nivel:'1', imagen:'../Media/Images/MundoCielo/mapacielo1.png',limite:[]},
+    { nombre:'cielo2', nivel:'2', imagen:'../Media/Images/MundoCielo/mapacielo2.png',limite:[]},
+    { nombre:'cielo3', nivel:'3', imagen:'../Media/Images/MundoCielo/mapacielo3.png',limite:[]},
+    { nombre:'cielo4', nivel:'4', imagen:'../Media/Images/MundoCielo/mapacielo4.png',limite:[]},
+    { nombre:'cielo5', nivel:'5', imagen:'../Media/Images/MundoCielo/mapacielo5.png',limite:[]},
+    
     { nombre:'', nivel:'', imagen:'',limite:[]},
     ],
 
