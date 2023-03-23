@@ -39,6 +39,7 @@ var PosicionNueva
                     if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
                         vida--
                         l--
+                        PosicionNueva=6
                         PosicionOriginal=6;
                        
                         Comienzo();
@@ -80,6 +81,7 @@ var PosicionNueva
                     if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
                         vida--
                         l--
+                        PosicionNueva=6
                         PosicionOriginal=6;
                        
                         Comienzo();
@@ -117,6 +119,7 @@ var PosicionNueva
                 if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
                     vida--
                     l--
+                    PosicionNueva=6
                     PosicionOriginal=6;
                    
                     Comienzo();
@@ -152,6 +155,7 @@ var PosicionNueva
                 if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
                     vida--
                     l--
+                    PosicionNueva=6
                     PosicionOriginal=6;
                    
                     Comienzo();
@@ -186,6 +190,7 @@ var PosicionNueva
                 if(document.getElementById(PosicionNueva).className == 'limite' && vida > 0){
                     vida--
                     l--
+                    PosicionNueva=6
                     PosicionOriginal=6;
                    
                     Comienzo();
