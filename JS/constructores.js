@@ -34,6 +34,12 @@ function Personaje(eleccion) {
     }
 }
 
+function Nivel() {
+    this.Fondo = new Fondo;
+    personaje = new Personaje();
+}
+
+
 
 
 
@@ -42,10 +48,7 @@ function Fondo() {
     this.numeroEnemigos = 0;
 }
 
-function Nivel() {
-    this.Fondo = new Fondo;
-    personaje = new Personaje();
-}
+
 
 function Enemigo() {
     this.urlEnemigo = "direccionEnemigoParametrizada";
