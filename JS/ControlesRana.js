@@ -75,8 +75,12 @@ var temporizador
                     console.log(PosicionOriginal)
                     PosicionNueva=PosicionOriginal+1
                     if(document.getElementById(PosicionNueva).className == 'limite'){
+                        vida--
                         l--
+                        PosicionOriginal=6;
+                       
                         Comienzo();
+                        console.log(vida)
                     }
                     else{
                         document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
@@ -105,8 +109,12 @@ var temporizador
             else if(tecla.keyCode == 32){
                 PosicionNueva=PosicionOriginal+12
                 if(document.getElementById(PosicionNueva).className == 'limite'){
+                    vida--
                     l--
-                        Comienzo();
+                    PosicionOriginal=6;
+                   
+                    Comienzo();
+                    console.log(vida)
                 }
                 else{
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
@@ -133,8 +141,12 @@ var temporizador
             else if(tecla.keyCode == 83){
                 PosicionNueva=PosicionOriginal+12
                 if(document.getElementById(PosicionNueva).className == 'limite'){
+                    vida--
                     l--
-                        Comienzo();
+                    PosicionOriginal=6;
+                   
+                    Comienzo();
+                    console.log(vida)
                 }
                 else{
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
@@ -160,8 +172,12 @@ var temporizador
             else if(tecla.keyCode == 87){
                 PosicionNueva=PosicionOriginal-12
                 if(document.getElementById(PosicionNueva).className == 'limite'){
+                    vida--
                     l--
-                        Comienzo();
+                    PosicionOriginal=6;
+                   
+                    Comienzo();
+                    console.log(vida)
                 }
                 else{
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[2].imagenMovimiento+')';
