@@ -37,19 +37,6 @@ function Nivel(primerNivel) {
 
 
 
-
-
-
-
-
-
-function Fondo() {
-    this.urlFondo = "direccionImagenFondo";
-    this.numeroEnemigos = 0;
-}
-
-
-
 function Enemigo() {
     this.urlEnemigo = "direccionEnemigoParametrizada";
     this.posicionX = "1px"
