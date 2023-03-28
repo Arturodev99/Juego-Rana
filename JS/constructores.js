@@ -22,10 +22,24 @@ function Personaje(eleccion) {
     }
 }
 
-function Nivel() {
-    this.Fondo = new Fondo;
-    personaje = new Personaje();
+
+// Constructor niveles
+function Nivel(primerNivel) {
+    var nNivel = primerNivel
+
+    Personaje(eleccion)
+
+    this.fondo = niveles.escenarios[nNivel].imagen
+    document.getElementById("pantalla").style.backgroundImage = this.fondo
+
+    nNivel++
+
 }
+
+
+
+
+
 
 
 
