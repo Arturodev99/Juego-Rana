@@ -10,7 +10,7 @@ var PosicionNueva
                 document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla" onclick="vectorizar('+i+')"></div>'
 
             }
-            
+            document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
             document.getElementById('texto').innerHTML=vida;
             document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
             document.getElementById('6').style.transform="rotate(360deg)"
