@@ -47,8 +47,8 @@ var PosicionNueva
                         if (PosicionOriginal >= 97){
                             j++
 
-                          
-                            document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                            Nivel(j);
+                            //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
                             document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                             Comienzo();
@@ -92,7 +92,8 @@ var PosicionNueva
                             j++
 
                             let n= j+1
-                            document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')'
+                            Nivel(j);
+                            //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')'
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
                             document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                             Comienzo();
@@ -129,8 +130,8 @@ var PosicionNueva
                     if (PosicionOriginal >= 97){
                         j++
 
-                        let n= j+1
-                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                        Nivel(j);
+                        //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
                         document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                         Comienzo();
@@ -165,8 +166,8 @@ var PosicionNueva
                     if (PosicionOriginal >= 97){
                         j++
                     
-                        let n= j+1
-                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                        Nivel(j);
+                        //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
                         document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                         Comienzo();
@@ -200,8 +201,8 @@ var PosicionNueva
                     if (PosicionOriginal >= 97){
                         j++
 
-                        let n= j+1
-                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                        Nivel(j);
+                        //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
                         document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                         Comienzo();
