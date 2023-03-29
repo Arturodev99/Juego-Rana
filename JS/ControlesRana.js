@@ -4,13 +4,15 @@ var l = 0;
 var vida = 3;
 var temporizador
 var PosicionNueva
+var mundo = 0
         function Comienzo(){
             document.getElementById('pantalla').innerHTML='';
             for(var i = 1; i<109;i++){
                 document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla" onclick="vectorizar('+i+')"></div>'
 
             }
-            document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+            Nivel(j)
+            //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
             document.getElementById('texto').innerHTML=vida;
             document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
             document.getElementById('6').style.transform="rotate(360deg)"
@@ -22,7 +24,7 @@ var PosicionNueva
                 document.getElementById(niveles.escenarios[l].limite[m-1]).className = "limite";
                 
                 }
-                console.log(niveles.escenarios[l])
+                console.log(niveles.escenarios[j])
             
             l++
 
@@ -45,10 +47,14 @@ var PosicionNueva
                         temporizador= setTimeout(parada,500);
                         
                         if (PosicionOriginal >= 97){
-                            j++
+                            j++ 
+                            mundo++ 
+                            if(mundo > 4){
+                                location.href = '../HTML/pantallaVictoria.html'
+                            }
 
-                          
-                            document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                            Nivel(j);
+                            //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
                             document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                             Comienzo();
@@ -90,9 +96,14 @@ var PosicionNueva
                         temporizador= setTimeout(parada,500);
                         if (PosicionOriginal >= 97){
                             j++
+                            mundo++ 
+                            if(mundo > 4){
+                                location.href = '../HTML/pantallaVictoria.html'
+                            }
 
                             let n= j+1
-                            document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')'
+                            Nivel(j);
+                            //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')'
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
                             document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                             Comienzo();
@@ -128,9 +139,13 @@ var PosicionNueva
                     temporizador= setTimeout(parada,500);
                     if (PosicionOriginal >= 97){
                         j++
+                        mundo++ 
+                        if(mundo > 4){
+                            location.href = '../HTML/seleccion.html'
+                        }
 
-                        let n= j+1
-                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                        Nivel(j);
+                        //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
                         document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                         Comienzo();
@@ -164,9 +179,13 @@ var PosicionNueva
                     temporizador= setTimeout(parada,500);
                     if (PosicionOriginal >= 97){
                         j++
+                        mundo++ 
+                        if(mundo > 4){
+                            location.href = '../HTML/pantallaVictoria.html'
+                        }
                     
-                        let n= j+1
-                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                        Nivel(j);
+                        //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
                         document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                         Comienzo();
@@ -199,9 +218,13 @@ var PosicionNueva
                     temporizador= setTimeout(parada,500);
                     if (PosicionOriginal >= 97){
                         j++
+                        mundo++ 
+                        if(mundo > 4){
+                            location.href = '../HTML/pantallaVictoria.html'
+                        }
 
-                        let n= j+1
-                        document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
+                        Nivel(j);
+                        //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
                         document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                         Comienzo();

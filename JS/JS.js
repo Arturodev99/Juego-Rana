@@ -10,3 +10,7 @@ function cambioClase(){
     }
     l++
 }
+
+function irMundo(){
+    location.href = '../HTML/Principal(NOMODIFICAR).html'
+}

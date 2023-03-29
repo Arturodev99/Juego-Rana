@@ -26,10 +26,10 @@ function Personaje() {
 // Constructor niveles
 function Nivel(primerNivel) {
     
-    Personaje()
+    //Personaje(eleccion)
 
     this.fondo = niveles.escenarios[primerNivel].imagen
-    document.getElementById("pantalla").style.backgroundImage = this.fondo
+    document.getElementById("pantalla").style.backgroundImage =  this.fondp
 
 
 }
