@@ -49,7 +49,7 @@ var mundo = 0
                             j++ 
                             mundo++ 
                             if(mundo > 4){
-                                location.href = '../HTML/Principal(NOMODIFICAR).html'
+                                location.href = '../HTML/pantallaVictoria.html'
                             }
 
                             Nivel(j);
@@ -97,7 +97,7 @@ var mundo = 0
                             j++
                             mundo++ 
                             if(mundo > 4){
-                                location.href = '../HTML/Principal(NOMODIFICAR).html'
+                                location.href = '../HTML/pantallaVictoria.html'
                             }
 
                             let n= j+1
@@ -180,7 +180,7 @@ var mundo = 0
                         j++
                         mundo++ 
                         if(mundo > 4){
-                            location.href = '../HTML/Principal(NOMODIFICAR).html'
+                            location.href = '../HTML/pantallaVictoria.html'
                         }
                     
                         Nivel(j);
@@ -219,7 +219,7 @@ var mundo = 0
                         j++
                         mundo++ 
                         if(mundo > 4){
-                            location.href = '../HTML/Principal(NOMODIFICAR).html'
+                            location.href = '../HTML/pantallaVictoria.html'
                         }
 
                         Nivel(j);
