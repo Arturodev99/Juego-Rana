@@ -29,8 +29,7 @@ function Nivel(primerNivel) {
     Personaje()
 
     this.fondo = niveles.escenarios[primerNivel].imagen
-    document.getElementById("pantalla").style.backgroundImage = this.fondo
-
+    document.getElementById("pantalla").style.backgroundImage = 'url('+this.fondo+')'
 
 }
 
