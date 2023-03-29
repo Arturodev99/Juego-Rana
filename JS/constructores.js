@@ -4,10 +4,9 @@ function Personaje() {
     this.x = window.innerWidth / 2 - 100;
     this.y = 5;
     
-    this.img.src = localStorage.getItem('personajeActual');
-    this.img.style.width = "80px";
-    this.contenedor.appendChild(this.img);
-    document.querySelector("body").appendChild(this.contenedor);
+    this.img = localStorage.getItem('personajeActual');
+    
+    document.getElementById(PosicionOriginal).style.backgroundImage = 'url('+this.img+')';
     if ( localStorage.getItem('personajeActual') == "Rana.png") {
         this.img.style.width = "80px";
     }
