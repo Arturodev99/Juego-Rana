@@ -1,5 +1,11 @@
-var personajeElegidoActual
 function personajeElegido(urlPersonaje){
+    var personajeElegidoActual
     personajeElegidoActual = "../Media/Images/Personajes/" + urlPersonaje
-    return personajeElegidoActual
+    localStorage.setItem('personajeActual', personajeElegidoActual)
+}
+
+function mundoElegido(urlMundo){
+    var mundoElegidoActual
+    mundoElegidoActual = ""
+    localStorage.setItem('mundoActual', mundoElegidoActual)
 }

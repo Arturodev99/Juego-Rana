@@ -1,5 +1,5 @@
 //Terminado constructor personaje
-function Personaje(eleccion) {
+function Personaje() {
     this.vida = 3;
     this.x = window.innerWidth / 2 - 100;
     this.y = 5;
@@ -9,7 +9,7 @@ function Personaje(eleccion) {
     this.contenedor.style.transform = "translate(-50%, 0)";
     this.contenedor.style.top = this.y + "px";
     this.img = document.createElement("img");
-    this.img.src = "../Media/Images/Personajes/" + eleccion;
+    this.img.src = localStorage.getItem('personajeActual');
     this.img.style.width = "80px";
     this.contenedor.appendChild(this.img);
     document.querySelector("body").appendChild(this.contenedor);
@@ -26,7 +26,7 @@ function Personaje(eleccion) {
 // Constructor niveles
 function Nivel(primerNivel) {
     
-    Personaje(eleccion)
+    Personaje()
 
     this.fondo = niveles.escenarios[primerNivel].imagen
     document.getElementById("pantalla").style.backgroundImage = this.fondo
