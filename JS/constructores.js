@@ -1,6 +1,6 @@
 //Terminado constructor personaje
 function Personaje() {
-    this.vida = 3;
+    //this.vida = 3;
     
     this.nombre = 'personaje'
     this.img = niveles.personajes[localStorage.getItem('personajeActual')].imagenParada
@@ -22,12 +22,13 @@ function Personaje() {
 
 
 // Constructor niveles
-function Nivel(primerNivel) {
-    
+function Nivel() {
+    var nivel = parseInt(localStorage.getItem('nivelActual'));
     Personaje()
+    
 
-    this.fondo = niveles.escenarios[primerNivel].imagen
-    document.getElementById("pantalla").style.backgroundImage = 'url('+this.fondo+')'
+    this.fondo = niveles.escenarios[nivel].imagen;
+    document.getElementById("pantalla").style.backgroundImage = 'url('+niveles.escenarios[nivel].imagen+')'
 
 }
 

@@ -11,3 +11,15 @@ function mundoElegido(urlMundo){
     mundoElegidoActual = ""
     localStorage.setItem('mundoActual', mundoElegidoActual)
 }
+var nivelActual
+function nivelactual(){
+    
+    
+    if(j!=0 || localStorage.getItem('nivelActual')!="undefined"){
+    nivelActual=localStorage.getItem('nivelActual');
+    }
+    
+    if(localStorage.getItem('nivelActual') == "0" ||localStorage.getItem('nivelActual') == "null"){
+        localStorage.removeItem('nivelActual')
+        localStorage.setItem('nivelActual','0')
+    }}

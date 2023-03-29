@@ -29,11 +29,13 @@ body{ z-index: -1;
 }
 
 .casilla{
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat; 
     z-index: 1;
     width: 100px;
     height: 100px;
     border: solid 1px;
+   
    
     
 }
