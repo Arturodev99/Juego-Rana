@@ -1,6 +1,6 @@
 var niveles = {
-    'personajes': [{ nombre: 'Jesus', imagenParada: '../Media/Images/Personajes/jesus.png', imagenMovimiento: '', posicionX: '', posicionY: '' },
-    { nombre: 'Juanma', imagenParada: '../Media/Images/Personajes/juanma.png', imagenMovimiento: '', posicionX: '', posicionY: '' },
+    'personajes': [{ nombre: 'Jesus', imagenParada: '../Media/Images/Personajes/jesus.png', imagenMovimiento: '../Media/Images/Personajes/JesusMovimiento.gif', posicionX: '', posicionY: '' },
+    { nombre: 'Juanma', imagenParada: '../Media/Images/Personajes/juanma.png', imagenMovimiento: '../Media/Images/Personajes/JuanmaMovimiento.gif', posicionX: '', posicionY: '' },
     { nombre: 'Rana', imagenParada: '../Media/Images/Personajes/Rana.png', imagenMovimiento: '../Media/Images/Personajes/RanaMovimineto.gif', posicionX: '', posicionY: '' }],
 
     'escenarios': [{ 
