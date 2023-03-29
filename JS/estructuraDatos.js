@@ -110,7 +110,7 @@ var niveles = {
     limite:['1','2','3','4','5','8','9','10','11','12',]},
     { nombre:'casino5', nivel:'5', imagen:'../Media/Images/MundoCasino/mapacasino5.png',
     limite:['85','86','87','88','89','92','93','94','95','96',]},
-    { nombre:'', nivel:'', imagen:'',limite:[]},
+    //{ nombre:'', nivel:'', imagen:'',limite:[]},
     ],
 
     'enemigos': [{ nombre: '', imagen: '', posicionX: '', posicionY: ''  },
