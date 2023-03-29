@@ -14,7 +14,7 @@ var mundo = 0
             Nivel(j)
             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
             document.getElementById('texto').innerHTML=vida;
-            document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
+            //document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
             document.getElementById('6').style.transform="rotate(360deg)"
             document.onkeyup=Teclado
 

@@ -13,10 +13,10 @@ function Personaje() {
     this.img.style.width = "80px";
     this.contenedor.appendChild(this.img);
     document.querySelector("body").appendChild(this.contenedor);
-    if (eleccion == "Rana.png") {
+    if ( localStorage.getItem('personajeActual') == "Rana.png") {
         this.img.style.width = "80px";
     }
-    if (eleccion == "Juanma.png" || eleccion == "Jesus.png") {
+    if ( localStorage.getItem('personajeActual') == "Juanma.png" ||  localStorage.getItem('personajeActual') == "Jesus.png") {
         this.img.style.width = "50px";
         this.img.style.height = "80px";
     }
@@ -26,7 +26,7 @@ function Personaje() {
 // Constructor niveles
 function Nivel(primerNivel) {
     
-    //Personaje(eleccion)
+    Personaje()
 
     this.fondo = niveles.escenarios[primerNivel].imagen
     document.getElementById("pantalla").style.backgroundImage = 'url('+this.fondo+')'
