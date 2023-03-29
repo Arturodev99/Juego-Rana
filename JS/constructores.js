@@ -3,7 +3,7 @@ function Personaje() {
     this.vida = 3;
     
     this.nombre = 'personaje'
-    this.img = localStorage.getItem('personajeActual');
+    this.img = niveles.personajes[localStorage.getItem('personajeActual')].imagenParada
 
     
     document.getElementById(PosicionOriginal).style.backgroundImage = 'url('+this.img+')';
