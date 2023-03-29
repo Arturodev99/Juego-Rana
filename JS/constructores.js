@@ -1,19 +1,23 @@
 //Terminado constructor personaje
 function Personaje() {
     this.vida = 3;
-    this.x = window.innerWidth / 2 - 100;
-    this.y = 5;
     
+    this.nombre = 'personaje'
     this.img = localStorage.getItem('personajeActual');
+
     
     document.getElementById(PosicionOriginal).style.backgroundImage = 'url('+this.img+')';
+    document.getElementById(PosicionNueva).style.backgroundImage = 'url('+this.img+')';
     if ( localStorage.getItem('personajeActual') == "Rana.png") {
         this.img.style.width = "80px";
     }
     if ( localStorage.getItem('personajeActual') == "Juanma.png" ||  localStorage.getItem('personajeActual') == "Jesus.png") {
-        this.img.style.width = "50px";
-        this.img.style.height = "80px";
+        document.getElementById(PosicionOriginal).style.backgroundSize = "50%";
+        document.getElementById(PosicionNueva).style.backgroundSize = "50%";
+       
+    
     }
+    
 }
 
 
