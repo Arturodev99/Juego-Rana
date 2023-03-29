@@ -4,6 +4,7 @@ var l = 0;
 var vida = 3;
 var temporizador
 var PosicionNueva
+var mundo = 0
         function Comienzo(){
             document.getElementById('pantalla').innerHTML='';
             for(var i = 1; i<109;i++){
@@ -45,7 +46,11 @@ var PosicionNueva
                         temporizador= setTimeout(parada,500);
                         
                         if (PosicionOriginal >= 97){
-                            j++
+                            j++ 
+                            mundo++ 
+                            if(mundo > 4){
+                                location.href = '../HTML/Principal(NOMODIFICAR).html'
+                            }
 
                             Nivel(j);
                             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
@@ -90,6 +95,10 @@ var PosicionNueva
                         temporizador= setTimeout(parada,500);
                         if (PosicionOriginal >= 97){
                             j++
+                            mundo++ 
+                            if(mundo > 4){
+                                location.href = '../HTML/Principal(NOMODIFICAR).html'
+                            }
 
                             let n= j+1
                             Nivel(j);
@@ -129,6 +138,10 @@ var PosicionNueva
                     temporizador= setTimeout(parada,500);
                     if (PosicionOriginal >= 97){
                         j++
+                        mundo++ 
+                        if(mundo > 4){
+                            location.href = '../HTML/seleccion.html'
+                        }
 
                         Nivel(j);
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
@@ -165,6 +178,10 @@ var PosicionNueva
                     temporizador= setTimeout(parada,500);
                     if (PosicionOriginal >= 97){
                         j++
+                        mundo++ 
+                        if(mundo > 4){
+                            location.href = '../HTML/Principal(NOMODIFICAR).html'
+                        }
                     
                         Nivel(j);
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
@@ -200,6 +217,10 @@ var PosicionNueva
                     temporizador= setTimeout(parada,500);
                     if (PosicionOriginal >= 97){
                         j++
+                        mundo++ 
+                        if(mundo > 4){
+                            location.href = '../HTML/Principal(NOMODIFICAR).html'
+                        }
 
                         Nivel(j);
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
