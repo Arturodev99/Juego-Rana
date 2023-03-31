@@ -9,3 +9,4 @@ function limpiarTexto(){
 texto = ""
 document.getElementById('texto').innerHTML = texto
 }
+//onclick="vectorizar('+i+')

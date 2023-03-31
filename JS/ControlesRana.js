@@ -29,7 +29,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
             //Nivel();
             document.getElementById('pantalla').innerHTML='';
             for(var i = 1; i<109;i++){
-                document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla" style=" background-size: contain; background-repeat: no-repeat; background-position: center;"  onclick="vectorizar('+i+')"></div>'
+                document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla" style=" background-size: contain; background-repeat: no-repeat; background-position: center;"></div>'
 
             }
             
