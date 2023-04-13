@@ -113,7 +113,7 @@ var niveles = {
     //{ nombre:'', nivel:'', imagen:'',limite:[]},
     ],
 
-    'enemigos': [{ nombre: '', imagen: '', posicionX: '', posicionY: ''  },
+    'enemigos': [{ nombre: 'enemigoLava', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionX: '35', posicionY: ''  },
     { nombre: '', imagen: '', posicionX: '', posicionY: '' },
     { nombre: '', imagen: '', posicionX: '', posicionY: ''  },]
 }

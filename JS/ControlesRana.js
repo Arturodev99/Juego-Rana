@@ -50,6 +50,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                 document.getElementById(niveles.escenarios[nivelActual].limite[m-1]).className = "limite";
                 
                 }
+                document.getElementById(niveles.enemigos[0].posicionX).style.backgroundImage= "url("+niveles.enemigos[0].imagen+")";
                 console.log(niveles.escenarios.length)
             
 
