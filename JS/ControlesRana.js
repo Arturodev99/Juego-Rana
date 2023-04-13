@@ -50,7 +50,10 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                 document.getElementById(niveles.escenarios[nivelActual].limite[m-1]).className = "limite";
                 
                 }
-                document.getElementById(niveles.enemigos[0].posicionX).style.backgroundImage= "url("+niveles.enemigos[0].imagen+")";
+                //------------------------------------------------------------EJEMPLO DE ENEMIGO EN PANTALLA-----------------------------------------------------------------------------------------------------------------------------
+                //***********************************************************************************************************************************************************************************************************************
+                document.getElementById(niveles.enemigos[0].posicionX).innerHTML="<img src='"+niveles.enemigos[0].imagen+"'width='110%' height='110%' >";
+                //***********************************************************************************************************************************************************************************************************************
                 console.log(niveles.escenarios.length)
             
 
