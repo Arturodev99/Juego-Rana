@@ -5,5 +5,4 @@ Orden de los niveles:
 	3.Cueva
 	4.Lava
 	5.Casino
-	6.Lava
-	7.Cielo
+	6.Cielo
