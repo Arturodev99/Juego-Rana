@@ -3,7 +3,7 @@ function personajeElegido(urlPersonaje){
     personajeElegidoActual =  urlPersonaje
     localStorage.removeItem('personajeActual')
     localStorage.setItem('personajeActual', personajeElegidoActual)
-    location.href = '../HTML/nivel0.html'
+    location.href = '../HTML/Mapa.html'
 }
 
 function mundoElegido(urlMundo){
