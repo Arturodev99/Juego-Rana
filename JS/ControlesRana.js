@@ -6,7 +6,7 @@ var temporizador
 var PosicionNueva = 6;
 var mundo
 var nivel
-var mundoNuevoContador 
+
 
 if (localStorage.getItem('nivelActual') === null ||localStorage.getItem('nivelActual') === 'NaN'){
     localStorage.setItem('nivelActual',j)
@@ -90,7 +90,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 location.href = '../HTML/pantallaVictoria.html'
                                 localStorage.setItem('mundo','0')
                                 mundo=0;
-                                mundoNuevoContador++;
+                                mundoNuevoContador+1;
                                 desbloquearMapa(mundoNuevoContador)
                             }
 
@@ -151,7 +151,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 location.href = '../HTML/pantallaVictoria.html'
                                 localStorage.setItem('mundo','0')
                                 mundo=0;
-                                mundoNuevoContador++;
+                                mundoNuevoContador+1;
                                 desbloquearMapa(mundoNuevoContador)
                             }
 
@@ -256,7 +256,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             location.href = '../HTML/pantallaVictoria.html'
                             localStorage.setItem('mundo','0')
                             mundo=0;
-                            mundoNuevoContador++;
+                            mundoNuevoContador+1;
                                 desbloquearMapa(mundoNuevoContador)
                         }
                     
@@ -306,7 +306,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             location.href = '../HTML/pantallaVictoria.html'
                             localStorage.setItem('mundo','0')
                             mundo=0;
-                            mundoNuevoContador++;
+                            mundoNuevoContador+1;
                                 desbloquearMapa(mundoNuevoContador)
                            
                         }
