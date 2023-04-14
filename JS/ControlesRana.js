@@ -14,7 +14,7 @@ if (localStorage.getItem('nivelActual') === null ||localStorage.getItem('nivelAc
     localStorage.setItem('nivelActual',j)
     localStorage.setItem('vida',vida)
 }
-if(localStorage.getItem('nivelActual') === "25"){
+if(localStorage.getItem('nivelActual') === "30"){
     localStorage.setItem('nivelActual','0')
     localStorage.setItem('mundo','0')
 }
@@ -32,7 +32,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
             //Nivel();
             document.getElementById('pantalla').innerHTML='';
             for(var i = 1; i<109;i++){
-                document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla" onclick="vectorizar('+i+') style=" background-size: contain; background-repeat: no-repeat; background-position: center;"></div>'
+                document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla" onclick="vectorizar('+i+')" style=" background-size: contain; background-repeat: no-repeat; background-position: center;"></div>'
 
             }
             
@@ -53,7 +53,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                 document.getElementById(niveles.escenarios[nivelActual].limite[m-1]).className = "limite";
                 
                 }
-                document.getElementById(niveles.enemigos[0].posicionX).style.backgroundImage= "url("+niveles.enemigos[0].imagen+")";
+                //document.getElementById(niveles.enemigos[0].posicionX).style.backgroundImage= "url("+niveles.enemigos[0].imagen+")";
                 console.log(niveles.escenarios.length)
             
 
