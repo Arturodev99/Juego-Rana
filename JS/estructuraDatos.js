@@ -41,6 +41,18 @@ var niveles = {
      '13','14','15','16','17','20','21','22',
      '23','24','85','86','87','88','89','92',
      '93','94','95','96']},
+
+        //----------------------------------------------------------------MUNDO CUEVA----------------------------------------------------------------------------
+        { nombre:'Cueva1', nivel:'1', nivelProgresion: '10', imagen:'../Media/Images/MundoCueva/mapacueva1.png',
+        limite:['1']},
+        { nombre:'Cueva2', nivel:'2', imagen:'../Media/Images/MundoCueva/mapacueva2.png',
+        limite:['1']},
+        { nombre:'Cueva3', nivel:'3', imagen:'../Media/Images/MundoCueva/mapacueva3.png',
+        limite:['1']},
+        { nombre:'Cueva4', nivel:'4', imagen:'../Media/Images/MundoCueva/mapacueva4.png',
+        limite:['1']},
+        { nombre:'Cueva5', nivel:'5', imagen:'../Media/Images/MundoCueva/mapacueva5.png',
+        limite:['1']},
     //-------------------------------------------------------------------MUNDO LAVA------------------------------------------------------------------------------
     {nombre: 'lava1', nivel: '1', nivelProgresion: '0', imagen: '../Media/Images/MundoLava/mapalava1.png', 
     limite: ['1','2','3','4','5','8','9','10','11','12','13','14','15','16','17',
