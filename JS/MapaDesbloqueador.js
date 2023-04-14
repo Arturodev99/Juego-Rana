@@ -27,28 +27,28 @@ function desbloquearMapa(mundoNuevo) {
     // 7. Actualiza el valor almacenado en Local Storage.
     localStorage.setItem('mapas', mapasJSONUpdated);
 
-    if (mapasJSON.valores[0] == true) {
-        document.getElementById("contenedorMapas").innerHTML += "<a href='nivel0.html'><div id='isla2'></div></a>"
-        document.getElementById("contenedorMapas").style.backgroundImage = "url('Media/Images/ImgSeleccionMundo/MapaRanita1+2.png')"
+    if (mapasObj.valores[0] == true) {
+        document.getElementById("contenedorMapa").innerHTML += "<a href='nivel0.html'><div id='isla2'></div></a>"
+        document.getElementById("contenedorMapa").style.backgroundImage = "url('Media/Images/ImgSeleccionMundo/MapaRanita1+2.png')"
     }
 
     if (mapasObj.valores[1] == true) {
-        document.getElementById("contenedorMapas").innerHTML += "<a href='nivel0.html'><div id='isla3'></div></a>"
-        document.getElementById("contenedorMapas").style.backgroundImage = "url('Media/Images/ImgSeleccionMundo/MapaRanita1+2+3.png')"
+        document.getElementById("contenedorMapa").innerHTML += "<a href='nivel0.html'><div id='isla3'></div></a>"
+        document.getElementById("contenedorMapa").style.backgroundImage = "url('Media/Images/ImgSeleccionMundo/MapaRanita1+2+3.png')"
     }
 
     if (mapasObj.valores[2] == true) {
-        document.getElementById("contenedorMapas").innerHTML += "<a href='nivel0.html'><div id='isla4'></div></a>"
-        document.getElementById("contenedorMapas").style.backgroundImage = "url('Media/Images/ImgSeleccionMundo/MapaRanita1+2+3+4.png')"
+        document.getElementById("contenedorMapa").innerHTML += "<a href='nivel0.html'><div id='isla4'></div></a>"
+        document.getElementById("contenedorMapa").style.backgroundImage = "url('Media/Images/ImgSeleccionMundo/MapaRanita1+2+3+4.png')"
     }
 
     if (mapasObj.valores[3] == true) {
-        document.getElementById("contenedorMapas").innerHTML += "<a href='nivel0.html'><div id='isla5'></div></a>"
-        document.getElementById("contenedorMapas").style.backgroundImage = "url('Media/Images/ImgSeleccionMundo/MapaRanita1+2+3+4+5.png')"
+        document.getElementById("contenedorMapa").innerHTML += "<a href='nivel0.html'><div id='isla5'></div></a>"
+        document.getElementById("contenedorMapa").style.backgroundImage = "url('Media/Images/ImgSeleccionMundo/MapaRanita1+2+3+4+5.png')"
     }
 
     if (mapasObj.valores[4] == true) {
-        document.getElementById("contenedorMapas").innerHTML += "<a href='nivel0.html'><div id='isla6'></div></a>"
-        document.getElementById("contenedorMapas").style.backgroundImage = "url('Media/Images/ImgSeleccionMundo/MapaRanitaCompletado.png')"
+        document.getElementById("contenedorMapa").innerHTML += "<a href='nivel0.html'><div id='isla6'></div></a>"
+        document.getElementById("contenedorMapa").style.backgroundImage = "url('Media/Images/ImgSeleccionMundo/MapaRanitaCompletado.png')"
     }
 }
