@@ -1,0 +1,6 @@
+function desbloquearMapa(){
+
+    if(d){
+
+    }
+}
