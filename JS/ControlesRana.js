@@ -6,10 +6,7 @@ var temporizador
 var PosicionNueva = 6;
 var mundo
 var nivel
-if (localStorage.getItem('mundoActual') === null ||localStorage.getItem('mundoActual') === 'NaN'){
-    localStorage.setItem('mundoActual',mapas)
-    
-}
+
 if (localStorage.getItem('nivelActual') === null ||localStorage.getItem('nivelActual') === 'NaN'){
     localStorage.setItem('nivelActual',j)
     localStorage.setItem('vida',vida)
