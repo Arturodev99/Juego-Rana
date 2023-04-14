@@ -27,7 +27,7 @@ mundo= parseInt(localStorage.getItem('mundo'))
 nivelActual=parseInt(localStorage.getItem('nivelActual'));
 
         function Comienzo(){
-            mundoNuevoContador = 1
+            
             //Nivel();
             document.getElementById('pantalla').innerHTML='';
             for(var i = 1; i<109;i++){
@@ -113,7 +113,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         console.log(vida)
                     }
                     if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1){
-                        location.href = '../HTML/index.html'
+                        location.href = '../HTML/pantallaFin.html'
                     }
                    
                     
@@ -175,7 +175,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         console.log(vida)
                     }
                     if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1){
-                        location.href = '../HTML/index.html'
+                        location.href = '../HTML/pantallaFin.html'
                     }
                
                 }
@@ -228,7 +228,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     console.log(vida)
                 }
                 if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1){
-                    location.href = '../HTML/index.html'
+                    location.href = '../HTML/pantallaFin.html'
                 }
                 
                 
@@ -279,7 +279,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     console.log(vida)
                 }
                 if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 ){
-                    location.href = '../HTML/index.html'
+                    location.href = '../HTML/pantallaFin.html'
                 }
             }
             else if(tecla.keyCode == 87){
@@ -331,7 +331,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     console.log(vida)
                 }
                 if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1){
-                    location.href = '../HTML/index.html'
+                    location.href = '../HTML/pantallaFin.html'
                 }
                 
             
