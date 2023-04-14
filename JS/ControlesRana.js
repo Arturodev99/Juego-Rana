@@ -6,6 +6,7 @@ var temporizador
 var PosicionNueva = 6;
 var mundo
 var nivel
+var mundoNuevoContador 
 
 if (localStorage.getItem('nivelActual') === null ||localStorage.getItem('nivelActual') === 'NaN'){
     localStorage.setItem('nivelActual',j)
@@ -26,6 +27,7 @@ mundo= parseInt(localStorage.getItem('mundo'))
 nivelActual=parseInt(localStorage.getItem('nivelActual'));
 
         function Comienzo(){
+            mundoNuevoContador = 1
             //Nivel();
             document.getElementById('pantalla').innerHTML='';
             for(var i = 1; i<109;i++){
@@ -88,6 +90,8 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 location.href = '../HTML/pantallaVictoria.html'
                                 localStorage.setItem('mundo','0')
                                 mundo=0;
+                                mundoNuevoContador++;
+                                desbloquearMapa(mundoNuevoContador)
                             }
 
                             Nivel();
@@ -147,6 +151,8 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 location.href = '../HTML/pantallaVictoria.html'
                                 localStorage.setItem('mundo','0')
                                 mundo=0;
+                                mundoNuevoContador++;
+                                desbloquearMapa(mundoNuevoContador)
                             }
 
                             let n= j+1
@@ -250,6 +256,8 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             location.href = '../HTML/pantallaVictoria.html'
                             localStorage.setItem('mundo','0')
                             mundo=0;
+                            mundoNuevoContador++;
+                                desbloquearMapa(mundoNuevoContador)
                         }
                     
                         Nivel();
@@ -298,6 +306,8 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             location.href = '../HTML/pantallaVictoria.html'
                             localStorage.setItem('mundo','0')
                             mundo=0;
+                            mundoNuevoContador++;
+                                desbloquearMapa(mundoNuevoContador)
                            
                         }
                         

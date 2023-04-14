@@ -144,4 +144,4 @@ var niveles = {
     { nombre: '', imagen: '', posicionX: '', posicionY: '' },
     { nombre: '', imagen: '', posicionX: '', posicionY: ''  },]
 }
- var mapas = ['false','false','false','false','false'];
+
