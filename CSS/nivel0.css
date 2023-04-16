@@ -94,8 +94,8 @@ body{ z-index: -1;
 }
 .vidas{
     right: 0px;
-    background-color: #792424 ;
-    border: solid 6px #f41a1a;
+    /*background-color: #792424 ;
+    border: solid 6px #f41a1a;*/
     width:15.7%;
     height:10.3vh;
     position: fixed;
