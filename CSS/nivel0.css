@@ -110,3 +110,13 @@ body{ z-index: -1;
     margin-right: 1%;
     
 }
+
+.ControlSonido{
+    position: fixed;
+    bottom: 1px;
+    right: 0px;
+    background-color: blue ;
+    width: 40px;
+    height: 40px;
+
+}
