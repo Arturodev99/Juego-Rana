@@ -1,6 +1,7 @@
 body{
     background-color: rgb(255, 255, 255);
     cursor: url(../Media/Images/cursorCorazonDorado2.png),auto;
+    overflow: hidden;
 }
 
 #título{
@@ -23,7 +24,7 @@ body{
 .pantalla{
     z-index: 0;
     width: 1200px ;
-    height: 800px;
+    height: 750px;
     border: solid 5px black;
     background-image: url(../Media/Images/fondo/estanque.jpeg);
     background-size: 100% 100%;
