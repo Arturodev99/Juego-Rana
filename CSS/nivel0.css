@@ -113,7 +113,7 @@ body{ z-index: -1;
 
 .ControlSonido{
     position: fixed;
-    bottom: 1px;
+    top:96.2vh;
     right: 0px;
     background-color: blue ;
     width: 40px;
