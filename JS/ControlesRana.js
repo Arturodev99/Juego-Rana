@@ -24,7 +24,7 @@ if (localStorage.getItem('mundo') === null){
 
 
 mundo= parseInt(localStorage.getItem('mundo'))
-nivelActual=parseInt(localStorage.getItem('nivelActual'));
+var nivelActual=parseInt(localStorage.getItem('nivelActual'));
 
         function Comienzo(){
             
@@ -91,7 +91,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 localStorage.setItem('mundo','0')
                                 mundo=0;
                                 mundoNuevoContador+1;
-                                desbloquearMapa(mundoNuevoContador)
+                                desbloquearMapa(nivelActual)
                             }
 
                             Nivel();
@@ -152,7 +152,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 localStorage.setItem('mundo','0')
                                 mundo=0;
                                 mundoNuevoContador+1;
-                                desbloquearMapa(mundoNuevoContador)
+                                desbloquearMapa(nivelActual)
                             }
 
                             let n= j+1
@@ -257,7 +257,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             localStorage.setItem('mundo','0')
                             mundo=0;
                             mundoNuevoContador+1;
-                                desbloquearMapa(mundoNuevoContador)
+                                desbloquearMapa(nivelActual)
                         }
                     
                         Nivel();
@@ -307,7 +307,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             localStorage.setItem('mundo','0')
                             mundo=0;
                             mundoNuevoContador+1;
-                                desbloquearMapa(mundoNuevoContador)
+                                desbloquearMapa(nivelActual)
                            
                         }
                         

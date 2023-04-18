@@ -8,6 +8,7 @@
     <script src="../JS/estructuraDatos.js"></script>
     <title>Mapa</title>
     <script src="../JS/constructores.js"></script>
+    <script src="../JS/MapaDesbloqueador.js"></script>
     <style>
         #contenedorMapa{
             width: 1200px;
@@ -70,9 +71,9 @@
         }
     </style>
 </head>
-<body>
+<body onload="desbloquearMapa();">
     <div id="contenedorMapa">
-        <a href="nivel0.html"><div id="isla1"></div></a>
+        <a href="nivel0.html"><div id="isla1" onclick="repetir(0)"></div></a>
         <!-- <a href="#"><div id="isla3"></div></a>
         <a href="#"><div id="isla3"></div></a>
         <a href="#"><div id="isla4"></div></a>
