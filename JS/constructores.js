@@ -36,9 +36,9 @@ function Nivel() {
 
 
 function Enemigo() {
-    this.urlEnemigo = "direccionEnemigoParametrizada";
-    this.posicionX = "1px"
-    this.posicionY = 0
+    this.img = niveles.enemigos[localStorage.getItem('nivelActual')].imagen;
+    this.posicionX = niveles.enemigos[localStorage.getItem('nivelActual')].posicionX
+    this.posicionY = niveles.enemigos[localStorage.getItem('nivelActual')].posicionY
     this.velocidad = 0
 }
 
