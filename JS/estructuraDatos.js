@@ -140,8 +140,11 @@ var niveles = {
     //{ nombre:'', nivel:'', imagen:'',limite:[]},
     ],
 
-    'enemigos': [{ nombre: 'enemigoLava', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionX: '35', posicionY: ''  },
-    { nombre: '', imagen: '', posicionX: '', posicionY: '' },
-    { nombre: '', imagen: '', posicionX: '', posicionY: ''  },]
+    'enemigos': [{ nombre: 'enemigobosque1', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial:'37', avance: '+1', nivel:'0', velocidad:'600',},
+    { nombre: 'enemigobosque2', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '25', avance: '+1', nivel:'1', velocidad:'400',  },
+    { nombre: 'enemigobosque3', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '60', avance: '-1', nivel:'1', velocidad:'700',  },
+    { nombre: 'enemigobosque4', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '61', avance: '+1', nivel:'1', velocidad:'600', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },]
 }
 

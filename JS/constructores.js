@@ -1,4 +1,5 @@
 //Terminado constructor personaje
+var intervalo1;
 function Personaje() {
     //this.vida = 3;
     
@@ -25,7 +26,7 @@ function Personaje() {
 function Nivel() {
     var nivel = parseInt(localStorage.getItem('nivelActual'));
     Personaje()
-    
+    Enemigo()
 
     this.fondo = niveles.escenarios[nivel].imagen;
     document.getElementById("pantalla").style.backgroundImage = 'url('+niveles.escenarios[nivel].imagen+')'
@@ -36,10 +37,19 @@ function Nivel() {
 
 
 function Enemigo() {
-    this.img = niveles.enemigos[localStorage.getItem('nivelActual')].imagen;
-    this.posicionX = niveles.enemigos[localStorage.getItem('nivelActual')].posicionX
-    this.posicionY = niveles.enemigos[localStorage.getItem('nivelActual')].posicionY
-    this.velocidad = 0
+    this.img = niveles.enemigos[1].imagen;
+    this.posicion = niveles.enemigos[2].posicionInicial;
+    this.velocidad = niveles.enemigos[1].velocidad;
+    console.log(this.Enemigo)
+    if(niveles.enemigos[2].avance == '-1'){
+        document.getElementById(niveles.enemigos[2].posicionInicial).style.transform='rotateY(180deg)'
+    }
+    document.getElementById(niveles.enemigos[2].posicionInicial).style.backgroundImage= 'url('+niveles.enemigos[1].imagen+')'
+    document.getElementById(niveles.enemigos[2].posicionInicial).className='limite';
+
 }
 
 
+function movimiento(){
+    
+}
