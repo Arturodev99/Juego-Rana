@@ -123,3 +123,16 @@ body{ z-index: -1;
     border-radius: 5px;
 
 }
+
+.Salida{
+    position: fixed;
+    top:85.2vh;
+    left: 0px;
+    background-color: blue ;
+    width: 10%;
+    height: 12vh;
+    margin-left: 2.7%;
+    border:solid 5px red;
+    border-radius: 5px;
+
+}
