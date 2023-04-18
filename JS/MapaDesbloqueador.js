@@ -25,8 +25,8 @@ function desbloquearMapa() {
     }
 
     if (mapas >= 25) {
-        document.getElementById("contenedorMapas").innerHTML += "<a href='nivel0.html'><div id='isla6'onclick=repetir(25)></div></a>"
-        document.getElementById("contenedorMapas").style.backgroundImage = "url('../Media/Images/ImgSeleccionMundo/MapaRanitaCompleto.png')"
+        document.getElementById("contenedorMapa").innerHTML += "<a href='nivel0.html'><div id='isla6'onclick=repetir(25)></div></a>"
+        document.getElementById("contenedorMapa").style.backgroundImage = "url('../Media/Images/ImgSeleccionMundo/MapaRanitaCompleto.png')"
     }
 }
 function repetir(mapa){
