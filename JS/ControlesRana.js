@@ -10,6 +10,7 @@ var nivel
 
 if (localStorage.getItem('nivelActual') === null ||localStorage.getItem('nivelActual') === 'NaN'){
     localStorage.setItem('nivelActual',j)
+    localStorage.setItem('nivel',j)
     localStorage.setItem('vida',vida)
 }
 if(localStorage.getItem('nivelActual') === "30"){
@@ -84,6 +85,9 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             mundo++
                             nivelActual++
                             localStorage.setItem('nivelActual',nivelActual)
+                            if(nivelActual <= 29){
+                                localStorage.setItem('nivel',nivelActual)
+                            }
                             localStorage.setItem('mundo',mundo)
                            
                             if(localStorage.getItem('mundo') > 4){
@@ -144,6 +148,9 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             mundo++ 
                             nivelActual++
                             localStorage.setItem('nivelActual',nivelActual)
+                            if(nivelActual <= 29){
+                                localStorage.setItem('nivel',nivelActual)
+                            }
                             localStorage.setItem('mundo',mundo)
                             delete Nivel
                             
@@ -199,6 +206,9 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         mundo++ 
                         nivelActual++
                             localStorage.setItem('nivelActual',nivelActual)
+                            if(nivelActual <= 29){
+                                localStorage.setItem('nivel',nivelActual)
+                            }
                             localStorage.setItem('mundo',mundo)
                         delete Nivel
                         
@@ -250,6 +260,9 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         mundo++
                         nivelActual++
                             localStorage.setItem('nivelActual',nivelActual)
+                            if(nivelActual <= 29){
+                                localStorage.setItem('nivel',nivelActual)
+                            }
                             localStorage.setItem('mundo',mundo)
                         delete Nivel
                         if(localStorage.getItem('mundo') > 4){
@@ -300,6 +313,9 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         mundo++ 
                         nivelActual++
                             localStorage.setItem('nivelActual',nivelActual)
+                            if(nivelActual <= 29){
+                                localStorage.setItem('nivel',nivelActual)
+                            }
                             localStorage.setItem('mundo',mundo)
                         delete Nivel
                         if(localStorage.getItem('mundo') > 4){

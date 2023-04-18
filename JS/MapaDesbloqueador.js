@@ -1,7 +1,7 @@
 
 
 function desbloquearMapa() {
-   var mapas=localStorage.getItem('nivelActual');
+   var mapas=localStorage.getItem('nivel');
     
 
     if (mapas >= 5) {
