@@ -37,16 +37,25 @@ function Nivel() {
 
 
 function Enemigo() {
-    this.img = niveles.enemigos[1].imagen;
-    this.posicion = niveles.enemigos[2].posicionInicial;
-    this.velocidad = niveles.enemigos[1].velocidad;
-    console.log(this.Enemigo)
-    if(niveles.enemigos[2].avance == '-1'){
-        document.getElementById(niveles.enemigos[2].posicionInicial).style.transform='rotateY(180deg)'
-    }
-    document.getElementById(niveles.enemigos[2].posicionInicial).style.backgroundImage= 'url('+niveles.enemigos[1].imagen+')'
-    document.getElementById(niveles.enemigos[2].posicionInicial).className='limite';
+    console.log(niveles.enemigos.length)
+    for(i=0; i< niveles.enemigos.length; i++){
+        if(niveles.enemigos[i].nivel == localStorage.getItem('nivelActual')){
+            this.img = niveles.enemigos[i].imagen;
+            this.posicion = niveles.enemigos[i].posicionInicial;
+            this.velocidad = niveles.enemigos[i].velocidad;
+            document.getElementById(niveles.enemigos[i].posicionInicial).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
+            document.getElementById(niveles.enemigos[i].posicionInicial).className='limite';
+        
+        }
+        
+      
+        if(niveles.enemigos[i].avance == '-1'){
+            document.getElementById(niveles.enemigos[i].posicionInicial).style.transform='rotateY(180deg)'
+        }
 
+        
+    }
+    
 }
 
 

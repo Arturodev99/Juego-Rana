@@ -140,11 +140,43 @@ var niveles = {
     //{ nombre:'', nivel:'', imagen:'',limite:[]},
     ],
 
-    'enemigos': [{ nombre: 'enemigobosque1', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial:'37', avance: '+1', nivel:'0', velocidad:'600',},
+    'enemigos': [
+      //-------------------------------------------------------MUNDO BOSQUE----------------------------------------------------------------------------------------
+    { nombre: 'enemigobosque1', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial:'37', avance: '+1', nivel:'0', velocidad:'600',},
     { nombre: 'enemigobosque2', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '25', avance: '+1', nivel:'1', velocidad:'400',  },
     { nombre: 'enemigobosque3', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '60', avance: '-1', nivel:'1', velocidad:'700',  },
     { nombre: 'enemigobosque4', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '61', avance: '+1', nivel:'1', velocidad:'600', },
+    { nombre: 'enemigobosque6', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '13', avance: '+1', nivel:'2',velocidad:'', },
+    { nombre: 'enemigobosque7', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '37', avance: '+1', nivel:'2',velocidad:'', },
+    { nombre: 'enemigobosque8', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '84', avance: '-1', nivel:'2',velocidad:'', },
+    { nombre: 'enemigobosque9', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '25', avance: '+1', nivel:'3',velocidad:'', },
+    { nombre: 'enemigobosque10', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '37', avance: '+1', nivel:'3',velocidad:'', },
+    { nombre: 'enemigobosque11', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '84', avance: '-1', nivel:'3',velocidad:'', },
+    { nombre: 'enemigobosque12', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '96', avance: '-1', nivel:'3',velocidad:'', },
+    { nombre: 'enemigobosque13', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '25', avance: '+1', nivel:'4',velocidad:'', },
+    { nombre: 'enemigobosque14', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '48', avance: '-1', nivel:'4',velocidad:'', },
+    { nombre: 'enemigobosque15', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '49', avance: '+1', nivel:'4',velocidad:'', },
+    { nombre: 'enemigobosque16', imagen: '../Media/Images/Enemigos/enemigolava.gif', posicionInicial: '96', avance: '-1', nivel:'4',velocidad:'', },
+    //-----------------------------------------------------------------------------MUNDO DESIERTO----------------------------------------------------------------
+    { nombre: '', imagen: '../Media/Images/Enemigos/enemigodesierto.gif', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
     { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
-    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },]
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+    { nombre: '', imagen: '', posicionInicial: '', avance: '', nivel:'',velocidad:'', },
+
+  ]
 }
 
