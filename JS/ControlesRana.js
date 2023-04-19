@@ -85,7 +85,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             mundo++
                             nivelActual++
                             localStorage.setItem('nivelActual',nivelActual)
-                            if(nivelActual <= 29){
+                            if(localStorage.getItem('nivel') <= nivelActual){
                                 localStorage.setItem('nivel',nivelActual)
                             }
                             localStorage.setItem('mundo',mundo)
@@ -94,7 +94,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 location.href = '../HTML/pantallaVictoria.html'
                                 localStorage.setItem('mundo','0')
                                 mundo=0;
-                                mundoNuevoContador+1;
+                                
                                 desbloquearMapa(nivelActual)
                             }
 
@@ -148,7 +148,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             mundo++ 
                             nivelActual++
                             localStorage.setItem('nivelActual',nivelActual)
-                            if(nivelActual <= 29){
+                            if(localStorage.getItem('nivel') <= nivelActual){
                                 localStorage.setItem('nivel',nivelActual)
                             }
                             localStorage.setItem('mundo',mundo)
@@ -158,7 +158,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 location.href = '../HTML/pantallaVictoria.html'
                                 localStorage.setItem('mundo','0')
                                 mundo=0;
-                                mundoNuevoContador+1;
+                                
                                 desbloquearMapa(nivelActual)
                             }
 
@@ -206,7 +206,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         mundo++ 
                         nivelActual++
                             localStorage.setItem('nivelActual',nivelActual)
-                            if(nivelActual <= 29){
+                            if(localStorage.getItem('nivel') <= nivelActual){
                                 localStorage.setItem('nivel',nivelActual)
                             }
                             localStorage.setItem('mundo',mundo)
@@ -260,7 +260,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         mundo++
                         nivelActual++
                             localStorage.setItem('nivelActual',nivelActual)
-                            if(nivelActual <= 29){
+                            if(localStorage.getItem('nivel') <= nivelActual){
                                 localStorage.setItem('nivel',nivelActual)
                             }
                             localStorage.setItem('mundo',mundo)
@@ -269,7 +269,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             location.href = '../HTML/pantallaVictoria.html'
                             localStorage.setItem('mundo','0')
                             mundo=0;
-                            mundoNuevoContador+1;
+                            
                                 desbloquearMapa(nivelActual)
                         }
                     
@@ -313,7 +313,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         mundo++ 
                         nivelActual++
                             localStorage.setItem('nivelActual',nivelActual)
-                            if(nivelActual <= 29){
+                            if(localStorage.getItem('nivel') <= nivelActual){
                                 localStorage.setItem('nivel',nivelActual)
                             }
                             localStorage.setItem('mundo',mundo)
@@ -322,7 +322,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             location.href = '../HTML/pantallaVictoria.html'
                             localStorage.setItem('mundo','0')
                             mundo=0;
-                            mundoNuevoContador+1;
+                            
                                 desbloquearMapa(nivelActual)
                            
                         }

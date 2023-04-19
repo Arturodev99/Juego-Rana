@@ -37,7 +37,7 @@ function Nivel() {
 
 
 function Enemigo() {
-    console.log(niveles.enemigos.length)
+    
     for(i=0; i< niveles.enemigos.length; i++){
         if(niveles.enemigos[i].nivel == localStorage.getItem('nivelActual')){
             this.img = niveles.enemigos[i].imagen;
