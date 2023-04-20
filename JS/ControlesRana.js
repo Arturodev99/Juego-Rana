@@ -37,7 +37,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
             }
             
             
-            Nivel()
+            Nivel();
             document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[nivelActual].nivel;
             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
             document.getElementById('texto').innerHTML=vida;
@@ -54,11 +54,10 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                 
                 }
                 //document.getElementById(niveles.enemigos[0].posicionX).style.backgroundImage= "url("+niveles.enemigos[0].imagen+")";
-                console.log(niveles.escenarios.length)
-            
-
-
-        }
+                console.log(niveles.escenarios[nivelActual])
+              
+                }
+                
         function Teclado(tecla){
             
            
@@ -354,6 +353,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
             }
             
         }
+        
 
         function parada(){
             Nivel()
@@ -361,3 +361,6 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
             clearTimeout(temporizador);
             
         }
+        
+        
+       
