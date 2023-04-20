@@ -144,6 +144,8 @@ body{ z-index: -1;
     border:solid 10px #2a660c;
     padding: 5px;
     font-family: 'Super Mario';
+    user-select: none;
+    display: none;
 }
 .slider{
     -webkit-appearance: none;
@@ -152,14 +154,16 @@ body{ z-index: -1;
     background: #000;
     border:solid 2px #ddd;
     border-radius: 12px;
+    z-index: 8;
+    user-select: auto;
 }
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 50px;
     height: 50px;
-    background: url('../Media/Images/corazon1.png') no-repeat center center;
+    background: url('../Media/Images/cabeza.png') no-repeat center center;
     background-size: cover;
     cursor: pointer;
-    transition: 2s;
+    user-select: auto;
 }

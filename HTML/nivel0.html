@@ -26,7 +26,7 @@
         </center>
     </div>
 
-    <div class="ControlSonido">
+    <div class="ControlSonido" onclick="document.getElementById('VentanadeControlSonido').style.display='block'" >
         <img src="../Media/Images/SinSonido.png" width="160" height="160">
     </div>
     <a href="index.html">
@@ -48,15 +48,15 @@
         
     </center>
 
-    <div class="VentanaControlSonido">
+    <div class="VentanaControlSonido" id="VentanadeControlSonido">
         <center>
             <span style="font-size: 40px">Control de audio</span>
             <br><br><br><br>
             <span style="font-size: 30px;">Musica &nbsp; <img src="../Media/Images/marco_personaje_hover.png" width="40" height="40" style="cursor:pointer"> Si &nbsp;&nbsp; <img src="../Media/Images/marco_personaje_hover.png" width="40" height="40" style="cursor:pointer"> No </span>
             <br><br><br><br>
             <span style="font-size: 35px;">VOLUMEN
-                <br>
-                <input type="range" class="slider" min="0" max="100" value="50">
+                <br><br>
+                <input type="range" class="slider" min="0" max="100" value="50" >
             </span>
         </center>
     </div>
