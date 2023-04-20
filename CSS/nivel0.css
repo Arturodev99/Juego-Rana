@@ -35,7 +35,7 @@ body{ z-index: -1;
     height: 820px;
     border: solid 5px black;
     display: grid;
-    cursor: none;
+    /*cursor: none;*/
     gap: 0px;
     grid-template-areas:
     'a b c d e f g h i j k l' 
@@ -117,12 +117,9 @@ body{ z-index: -1;
     position: fixed;
     top:110vh;
     right: 0px;
-    background-color: blue ;
     width: 8%;
     height: 18vh;
     margin-right: 8%;
-    border:solid 5px red;
-    border-radius: 5px;
     cursor: pointer;
 
 }
@@ -131,12 +128,9 @@ body{ z-index: -1;
     position: fixed;
     top:110vh;
     left: 0px;
-    background-color: blue ;
     width: 8%;
     height: 18vh;
     margin-left: 8%;
-    border:solid 5px red;
-    border-radius: 5px;
 
 }
 
