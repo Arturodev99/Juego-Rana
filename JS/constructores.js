@@ -59,32 +59,49 @@ function Enemigo() {
    
 }
 
+var bicho= niveles.enemigos[l].posicionInicial;
 
 function movimiento(){
 
-    for(var l=0; l< niveles.enemigos.length; l++){
+    for( l=0; l< niveles.enemigos.length; l++){
         if(niveles.enemigos[l].nivel == localStorage.getItem('nivelActual')){
-            //alert('funciona el bucle '+i)
-            if(niveles.enemigos[l].posicionInicial==niveles.enemigos[l].posicionFinal){
+            if(niveles.enemigos[l].posicionInicial!=niveles.enemigos[l].posicionFinal){
                 //alert('funcional')
                 if(niveles.enemigos[l].avance == '+1'){
                    // alert('funcionav')
-                    document.getElementById(niveles.enemigos[l].posicionInicial).style.backgroundImage='url()';
-                    document.getElementById(niveles.enemigos[l].posicionInicial).className='casilla';
-                    var numero=parseInt(niveles.enemigos[l].posicionInicial)+1;
-                    var texto= "'"+numero+"'"
-                    niveles.enemigos[l].posicionInicial=texto;
-                    document.getElementById(niveles.enemigos[l].posicionInicial).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
-                    document.getElementById(niveles.enemigos[l].posicionInicial).className='limite';
+                    
+                    var numero=parseInt(bicho);
+                    var bicho2= numero++;
+                    var texto= "'"+bicho2+"'";
+                    //bicho.push(texto);
+                    //bicho.pop();
+                    console.log(bicho)
+                    
+                    //niveles.enemigos[l].posicionInicial=texto;
+                   // alert('posicion en el vector: '+bicho+' numero de enemigos: ' +niveles.enemigos[l].length)
+                    console.log(bicho)
+                    document.getElementById(bicho).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
+                    document.getElementById(bicho).className='limite';
+                    document.getElementById("'"+numero+"'").style.backgroundImage='';
+                    document.getElementById("'"+numero+"'").className='casilla';
                 }
                 if(niveles.enemigos[l].avance == '-1'){
-                    document.getElementById(niveles.enemigos[l].posicionInicial).style.backgroundImage= 'url()';
-                    document.getElementById(niveles.enemigos[l].posicionInicial).className='casilla';
-                    var numero=parseInt(niveles.enemigos[l].posicionInicial)-1;
-                    var texto= "'"+numero+"'"
-                    niveles.enemigos[l].posicionInicial=texto;
-                    document.getElementById(niveles.enemigos[l].posicionInicial).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
-                    document.getElementById(niveles.enemigos[l].posicionInicial).className='limite';
+                   // alert('funcionav')
+                    
+                   var numero=parseInt(bicho);
+                   var bicho2= numero--;
+                   var texto= "'"+bicho2+"'";
+                   //bicho.push(texto);
+                   //bicho.pop();
+                   console.log(bicho)
+                   
+                   //niveles.enemigos[l].posicionInicial=texto;
+                   //alert('posicion en el vector: '+bicho+' numero de enemigos: ' +niveles.enemigos[l].length)
+                   console.log(bicho)
+                   document.getElementById(bicho).style.backgroundImage= 'url('+niveles.enemigos[l].imagen+')';
+                   document.getElementById(bicho).className='limite';
+                   document.getElementById("'"+numero+"'").style.backgroundImage='';
+                   document.getElementById("'"+numero+"'").className='casilla';
                 }   
             
             }
@@ -92,7 +109,7 @@ function movimiento(){
         } 
     }
 
-   /* for(var j=0; j< niveles.enemigos.length; j++){
+    for(var j=0; j< niveles.enemigos.length; j++){
         console.log('funciona el bucl')
        if(niveles.enemigos[j].nivel == localStorage.getItem('nivelActual')){
             console.log('funcional')
@@ -101,7 +118,7 @@ function movimiento(){
                 var memoria =niveles.enemigos[j].posicionInicial;
                 niveles.enemigos[j].posicionInicial=niveles.enemigos[j].posicionFinal
                 niveles.enemigos[j].posicionFinal=memoria;
-            }
+           
                 if(niveles.enemigos[j].avance == '+1'){
                 console.log('funciona1')
                 niveles.enemigos[j].avance = '-1'
@@ -124,18 +141,17 @@ function movimiento(){
                 document.getElementById(niveles.enemigos[j].posicionInicial).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
                 document.getElementById(niveles.enemigos[j].posicionInicial).className='limite';
             }
-            
+        }     
         
         
     }
-    contador--; 
-}*/
+}
 }function enemigosMovimiento(){
-    for(k=0; k<=niveles.enemigos.length; k++){ 
-        /*if(localStorage.getItem('nivelActual') == niveles.enemigos[k].nivel)*/
-        console.log(niveles.enemigos[k].nivel)
-            /*var speed=parseInt(niveles.enemigos[k].velocidad);
-           identificadorCiclo.push(setInterval(movimiento,speed));*/
+    for(var k=0; k < niveles.enemigos.length; k++){ 
+        if(localStorage.getItem('nivelActual') == niveles.enemigos[k].nivel){
+        console.log(niveles.enemigos[k].nombre)
+            var speed=parseInt(niveles.enemigos[k].velocidad);
+           identificadorCiclo.push(setInterval(movimiento,speed));
     }
   }
-
+}
