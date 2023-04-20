@@ -147,6 +147,5 @@ body{ z-index: -1;
     background-color: #3ca109 ;
     width: 35%;
     height: 55vh;
-    border:solid 5px #2a660c;
-    border-radius: 5px;
+    border:solid 10px #2a660c;
 }
