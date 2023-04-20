@@ -114,12 +114,12 @@ body{ z-index: -1;
 
 .ControlSonido{
     position: fixed;
-    top:115vh;
+    top:110vh;
     right: 0px;
     background-color: blue ;
-    width: 10%;
-    height: 12vh;
-    margin-right: 2.7%;
+    width: 8%;
+    height: 18vh;
+    margin-right: 8%;
     border:solid 5px red;
     border-radius: 5px;
 
@@ -127,12 +127,12 @@ body{ z-index: -1;
 
 .Salida{
     position: fixed;
-    top:115vh;
+    top:110vh;
     left: 0px;
     background-color: blue ;
-    width: 10%;
-    height: 12vh;
-    margin-left: 2.7%;
+    width: 8%;
+    height: 18vh;
+    margin-left: 8%;
     border:solid 5px red;
     border-radius: 5px;
 
