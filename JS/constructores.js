@@ -59,28 +59,32 @@ function Enemigo() {
    
 }
 
-var bicho= niveles.enemigos[m].posicionInicial;
 
+var Posicion 
+var PosicionAntigua
 function movimiento(){
+    
 
     for( m=0; m< niveles.enemigos.length; m++){
+        ;
         if(niveles.enemigos[m].nivel == localStorage.getItem('nivelActual')){
-            if(niveles.enemigos[m].posicionInicial!=niveles.enemigos[m].posicionFinal){
+            if(Posicion!=niveles.enemigos[m].posicionFinal){
+                Posicion=niveles.enemigos[m].posicionInicial
                 //alert('funcional')
                 if(niveles.enemigos[m].avance == '+1'){
                    // alert('funcionav')
                     
-                    var numero=parseInt(bicho);
-                    var bicho2= numero+1;
-                    var bicho3="'"+numero+"'"
-                    var texto= "'"+bicho2+"'";
+                    var numero=parseInt(Posicion);
+                    var Posicion2= numero+1;
+                    var PosicionAntigua="'"+numero+"'"
+                    var texto= "'"+Posicion2+"'";
                     //bicho.push(texto);
                     //bicho.pop();
-                    console.log(bicho)
+                    console.log(PosicionAntigua)
                     
                     //niveles.enemigos[l].posicionInicial=texto;
                    // alert('posicion en el vector: '+bicho+' numero de enemigos: ' +niveles.enemigos[l].length)
-                    console.log(bicho)
+                    console.log(texto)
                     //document.getElementById(bicho).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
                     //document.getElementById(bicho).className='limite';
                    // document.getElementById("'"+numero+"'").style.backgroundImage='';
@@ -89,16 +93,17 @@ function movimiento(){
                 if(niveles.enemigos[m].avance == '-1'){
                    // alert('funcionav')
                     
-                   var numero=parseInt(bicho);
-                   var bicho2= numero--;
-                   var texto= "'"+bicho2+"'";
+                   var numero=parseInt(Posicion);
+                   var Posicion2= numero-1;
+                   var PosicionAntigua="'"+numero+"'";
+                   var texto= "'"+Posicion2+"'";
                    //bicho.push(texto);
                    //bicho.pop();
-                   console.log(bicho)
+                   console.log(PosicionAntigua)
                    
                    //niveles.enemigos[l].posicionInicial=texto;
                    //alert('posicion en el vector: '+bicho+' numero de enemigos: ' +niveles.enemigos[l].length)
-                   console.log(bicho)
+                   console.log(texto)
                    //document.getElementById(bicho).style.backgroundImage= 'url('+niveles.enemigos[l].imagen+')';
                    //document.getElementById(bicho).className='limite';
                    //document.getElementById("'"+numero+"'").style.backgroundImage='';
