@@ -66,7 +66,6 @@ function movimiento(){
     
 
     for( m=0; m< niveles.enemigos.length; m++){
-        ;
         if(niveles.enemigos[m].nivel == localStorage.getItem('nivelActual')){
             if(Posicion!=niveles.enemigos[m].posicionFinal){
                 Posicion=niveles.enemigos[m].posicionInicial
@@ -78,7 +77,7 @@ function movimiento(){
                     var Posicion2= numero+1;
                     var PosicionAntigua="'"+numero+"'"
                     var texto= "'"+Posicion2+"'";
-                    //bicho.push(texto);
+                    //Posicion.push(texto);
                     //bicho.pop();
                     console.log(PosicionAntigua)
                     
