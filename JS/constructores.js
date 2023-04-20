@@ -88,26 +88,25 @@ function movimiento(){
             }
             else{
             if(niveles.enemigos[f].avance == '+1' && avance == true){
-                PosicionAntigua=Posicion
                 PosicionNueva2= parseInt(Posicion);
                 PosicionNueva2++
                 console.log(PosicionNueva2)
-                document.getElementById(PosicionAntigua).style.backgroundImage="";
-                document.getElementById(PosicionAntigua).style.className="casilla";
+                document.getElementById(Posicion).style.backgroundImage="";
+                document.getElementById(Posicion).style.className="casilla";
                 document.getElementById(PosicionNueva2).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
                 document.getElementById(PosicionNueva2).style.className="limite";
+                document.getElementById(PosicionNueva2).style.transform='rotateY(0deg)'
                 Posicion=PosicionNueva2
                 if(Posicion == niveles.enemigos[f].posicionFinal){
                     avance = false;
                     
                 }
             }if(niveles.enemigos[f].avance == '-1' && avance1 == true){
-                PosicionAntigua=Posicion
                 PosicionNueva3= parseInt(Posicion);
                 PosicionNueva3--
                 console.log(PosicionNueva3)
-                document.getElementById(PosicionAntigua).style.backgroundImage="";
-                document.getElementById(PosicionAntigua).style.className="casilla";
+                document.getElementById(Posicion).style.backgroundImage="";
+                document.getElementById(Posicion).style.className="casilla";
                 document.getElementById(PosicionNueva3).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
                 document.getElementById(PosicionNueva3).style.className="limite";
                 PosicionR=PosicionNueva3
@@ -117,14 +116,13 @@ function movimiento(){
                 }
             }
             if(niveles.enemigos[f].avance == '+1' && avance == false){
-                PosicionAntigua=Posicion
                 PosicionNueva2= parseInt(Posicion);
                 PosicionNueva2--
-                console.log(PosicionNueva2)
-                document.getElementById(PosicionAntigua).style.backgroundImage="";
-                document.getElementById(PosicionAntigua).style.className="casilla";
+                document.getElementById(Posicion).style.backgroundImage="";
+                document.getElementById(Posicion).style.className="casilla";
                 document.getElementById(PosicionNueva2).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
                 document.getElementById(PosicionNueva2).style.className="limite";
+                document.getElementById(PosicionNueva2).style.transform='rotateY(180deg)'
                 Posicion=PosicionNueva2
                 if(Posicion == niveles.enemigos[f].posicionInicial){
                     avance = true;
@@ -135,11 +133,11 @@ function movimiento(){
             PosicionAntigua=Posicion
             PosicionNueva3= parseInt(Posicion);
             PosicionNueva3++
-            console.log(PosicionNueva3)
             document.getElementById(PosicionAntigua).style.backgroundImage="";
             document.getElementById(PosicionAntigua).style.className="casilla";
             document.getElementById(PosicionNueva3).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
             document.getElementById(PosicionNueva3).style.className="limite";
+            document.getElementById(PosicionNueva3).style.transform='rotateY(0deg)'
             PosicionR=PosicionNueva3
             if(PosicionR == niveles.enemigos[f].posicionFinal){
                 avance1 = true;
@@ -157,7 +155,6 @@ function movimiento(){
 function enemigosMovimiento(){
     for(var k=0; k < niveles.enemigos.length; k++){ 
         if(localStorage.getItem('nivelActual') == niveles.enemigos[k].nivel){
-        console.log(niveles.enemigos[k].nombre)
             var speed=parseInt(niveles.enemigos[k].velocidad);
            identificadorCiclo.push(setInterval(movimiento,speed));
     }
