@@ -1,7 +1,12 @@
 body{
-    background-color: rgb(255, 255, 255);
     cursor: url(../Media/Images/cursorCorazonDorado2.png),auto;
     overflow: hidden;
+    background-image: url(../Media/Images/MundoLava/mapalava1.png);
+    backdrop-filter: blur(10px);
+    margin: 0;
+    
+    width: 100%;
+    height:100vh;
 }
 
 #título{
