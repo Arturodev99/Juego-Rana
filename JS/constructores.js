@@ -1,5 +1,7 @@
 //Terminado constructor personaje
 f=0;
+var avance = true;
+var avance1 = true;
 var Posicion = niveles.enemigos[f].posicionInicial;
 var PosicionR = niveles.enemigos[f].posicionInicial;
 var PosicionAntigua;
@@ -85,7 +87,7 @@ function movimiento(){
                 }
             }
             else{
-            if(niveles.enemigos[f].avance == '+1'){
+            if(niveles.enemigos[f].avance == '+1' && avance == true){
                 PosicionAntigua=Posicion
                 PosicionNueva2= parseInt(Posicion);
                 PosicionNueva2++
@@ -95,7 +97,11 @@ function movimiento(){
                 document.getElementById(PosicionNueva2).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
                 document.getElementById(PosicionNueva2).style.className="limite";
                 Posicion=PosicionNueva2
-            }else{
+                if(Posicion == niveles.enemigos[f].posicionFinal){
+                    avance = false;
+                    
+                }
+            }if(niveles.enemigos[f].avance == '-1' && avance1 == true){
                 PosicionAntigua=Posicion
                 PosicionNueva3= parseInt(Posicion);
                 PosicionNueva3--
@@ -105,14 +111,49 @@ function movimiento(){
                 document.getElementById(PosicionNueva3).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
                 document.getElementById(PosicionNueva3).style.className="limite";
                 PosicionR=PosicionNueva3
+                if(PosicionR == niveles.enemigos[f].posicionFinal){
+                    avance1 = false;
+                    
+                }
             }
+            if(niveles.enemigos[f].avance == '+1' && avance == false){
+                PosicionAntigua=Posicion
+                PosicionNueva2= parseInt(Posicion);
+                PosicionNueva2--
+                console.log(PosicionNueva2)
+                document.getElementById(PosicionAntigua).style.backgroundImage="";
+                document.getElementById(PosicionAntigua).style.className="casilla";
+                document.getElementById(PosicionNueva2).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
+                document.getElementById(PosicionNueva2).style.className="limite";
+                Posicion=PosicionNueva2
+                if(Posicion == niveles.enemigos[f].posicionInicial){
+                    avance = true;
+                    
+                }
         }
-       console.log(Posicion) 
+            if(niveles.enemigos[f].avance == '-1' && avance1 == false){
+            PosicionAntigua=Posicion
+            PosicionNueva3= parseInt(Posicion);
+            PosicionNueva3++
+            console.log(PosicionNueva3)
+            document.getElementById(PosicionAntigua).style.backgroundImage="";
+            document.getElementById(PosicionAntigua).style.className="casilla";
+            document.getElementById(PosicionNueva3).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
+            document.getElementById(PosicionNueva3).style.className="limite";
+            PosicionR=PosicionNueva3
+            if(PosicionR == niveles.enemigos[f].posicionFinal){
+                avance1 = true;
+                
+            }
+       
+    }
+}
+        }
     }
 }
 
     
-}
+
 function enemigosMovimiento(){
     for(var k=0; k < niveles.enemigos.length; k++){ 
         if(localStorage.getItem('nivelActual') == niveles.enemigos[k].nivel){
