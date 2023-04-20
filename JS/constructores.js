@@ -48,9 +48,11 @@ function Enemigo() {
     
     for(i=0; i< niveles.enemigos.length; i++){
         if(niveles.enemigos[i].nivel == localStorage.getItem('nivelActual')){
+            this.Id=niveles.enemigos[i];
             this.img = niveles.enemigos[i].imagen;
             this.posicion = niveles.enemigos[i].posicionInicial;
             this.velocidad = niveles.enemigos[i].velocidad;
+            this.function=movimiento;
             document.getElementById(niveles.enemigos[i].posicionInicial).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
             document.getElementById(niveles.enemigos[i].posicionInicial).className='limite';
         
@@ -69,24 +71,28 @@ function Enemigo() {
 function movimiento(){
     for (let f = 0; f < niveles.enemigos.length; f++) {
         if(niveles.enemigos[f].nivel == nivelActual){
-            if(Posicion == niveles.enemigos[f].posicionInicial || PosicionR == niveles.enemigos[f].posicionInicial){
+            if(Posicion == niveles.enemigos[f].posicionInicial && niveles.enemigos[f].avance == '+1' || PosicionR == niveles.enemigos[f].posicionInicial && niveles.enemigos[f].avance == '-1'){
             document.getElementById(Posicion).style.backgroundImage="";
             document.getElementById(Posicion).style.className="casilla";
-            if(niveles.enemigos[f].avance == '-1'){
+            /*if(niveles.enemigos[f].avance == '-1'){
                 PosicionNueva3= parseInt(PosicionR);
                 PosicionNueva3--
+                document.getElementById(PosicionR).style.backgroundImage="";
+                document.getElementById(PosicionR).style.className="casilla";
                 document.getElementById(PosicionNueva3).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
                 document.getElementById(PosicionNueva3).style.className="limite";
                 PosicionR=PosicionNueva3
             }else{
                 PosicionNueva2=parseInt(Posicion)
                 PosicionNueva2++;
+                document.getElementById(Posicion).style.backgroundImage="";
+                document.getElementById(Posicion).style.className="casilla";
                 document.getElementById(PosicionNueva2).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
                 document.getElementById(PosicionNueva2).style.className="limite";
                 Posicion=PosicionNueva2
-                }
+                }*/
             }
-            else{
+            //else{
             if(niveles.enemigos[f].avance == '+1' && avance == true){
                 PosicionNueva2= parseInt(Posicion);
                 PosicionNueva2++
@@ -96,25 +102,28 @@ function movimiento(){
                 document.getElementById(PosicionNueva2).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
                 document.getElementById(PosicionNueva2).style.className="limite";
                 document.getElementById(PosicionNueva2).style.transform='rotateY(0deg)'
-                Posicion=PosicionNueva2
                 if(Posicion == niveles.enemigos[f].posicionFinal){
                     avance = false;
                     
-                }
-            }if(niveles.enemigos[f].avance == '-1' && avance1 == true){
-                PosicionNueva3= parseInt(Posicion);
+                }else {Posicion=PosicionNueva2}
+                
+            }
+            
+            if(niveles.enemigos[f].avance == '-1' && avance1 == true){
+                PosicionNueva3= parseInt(PosicionR);
                 PosicionNueva3--
                 console.log(PosicionNueva3)
-                document.getElementById(Posicion).style.backgroundImage="";
-                document.getElementById(Posicion).style.className="casilla";
+                document.getElementById(PosicionR).style.backgroundImage="";
+                document.getElementById(PosicionR).style.className="casilla";
                 document.getElementById(PosicionNueva3).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
                 document.getElementById(PosicionNueva3).style.className="limite";
-                PosicionR=PosicionNueva3
+                
                 if(PosicionR == niveles.enemigos[f].posicionFinal){
                     avance1 = false;
                     
-                }
+                }else{PosicionR=PosicionNueva3}
             }
+           
             if(niveles.enemigos[f].avance == '+1' && avance == false){
                 PosicionNueva2= parseInt(Posicion);
                 PosicionNueva2--
@@ -123,32 +132,32 @@ function movimiento(){
                 document.getElementById(PosicionNueva2).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
                 document.getElementById(PosicionNueva2).style.className="limite";
                 document.getElementById(PosicionNueva2).style.transform='rotateY(180deg)'
-                Posicion=PosicionNueva2
+               
                 if(Posicion == niveles.enemigos[f].posicionInicial){
                     avance = true;
                     
-                }
+                }else{ Posicion=PosicionNueva2}
         }
             if(niveles.enemigos[f].avance == '-1' && avance1 == false){
             PosicionAntigua=Posicion
-            PosicionNueva3= parseInt(Posicion);
+            PosicionNueva3= parseInt(PosicionR);
             PosicionNueva3++
-            document.getElementById(PosicionAntigua).style.backgroundImage="";
-            document.getElementById(PosicionAntigua).style.className="casilla";
+            document.getElementById(PosicionR).style.backgroundImage="";
+            document.getElementById(PosicionR).style.className="casilla";
             document.getElementById(PosicionNueva3).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
             document.getElementById(PosicionNueva3).style.className="limite";
             document.getElementById(PosicionNueva3).style.transform='rotateY(0deg)'
-            PosicionR=PosicionNueva3
+          
             if(PosicionR == niveles.enemigos[f].posicionFinal){
                 avance1 = true;
                 
-            }
+            }else{PosicionR=PosicionNueva3}
        
     }
 }
         }
     }
-}
+//}
 
     
 
