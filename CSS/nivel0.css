@@ -144,9 +144,9 @@ body{ z-index: -1;
     position: fixed;
     top:20%;
     left: 32.5%;
-    background-color: blue ;
+    background-color: #3ca109 ;
     width: 35%;
     height: 55vh;
-    border:solid 5px red;
+    border:solid 5px #2a660c;
     border-radius: 5px;
 }
