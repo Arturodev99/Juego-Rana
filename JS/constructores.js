@@ -74,25 +74,8 @@ function movimiento(){
             if(Posicion == niveles.enemigos[f].posicionInicial && niveles.enemigos[f].avance == '+1' || PosicionR == niveles.enemigos[f].posicionInicial && niveles.enemigos[f].avance == '-1'){
             document.getElementById(Posicion).style.backgroundImage="";
             document.getElementById(Posicion).style.className="casilla";
-            /*if(niveles.enemigos[f].avance == '-1'){
-                PosicionNueva3= parseInt(PosicionR);
-                PosicionNueva3--
-                document.getElementById(PosicionR).style.backgroundImage="";
-                document.getElementById(PosicionR).style.className="casilla";
-                document.getElementById(PosicionNueva3).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
-                document.getElementById(PosicionNueva3).style.className="limite";
-                PosicionR=PosicionNueva3
-            }else{
-                PosicionNueva2=parseInt(Posicion)
-                PosicionNueva2++;
-                document.getElementById(Posicion).style.backgroundImage="";
-                document.getElementById(Posicion).style.className="casilla";
-                document.getElementById(PosicionNueva2).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
-                document.getElementById(PosicionNueva2).style.className="limite";
-                Posicion=PosicionNueva2
-                }*/
+           
             }
-            //else{
             if(niveles.enemigos[f].avance == '+1' && avance == true){
                 PosicionNueva2= parseInt(Posicion);
                 PosicionNueva2++
@@ -152,12 +135,10 @@ function movimiento(){
                 avance1 = true;
                 
             }else{PosicionR=PosicionNueva3}
-       
-    }
-}
+            }
         }
     }
-//}
+}
 
     
 
