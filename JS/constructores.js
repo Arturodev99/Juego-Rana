@@ -59,19 +59,20 @@ function Enemigo() {
    
 }
 
-var bicho= niveles.enemigos[l].posicionInicial;
+var bicho= niveles.enemigos[m].posicionInicial;
 
 function movimiento(){
 
-    for( l=0; l< niveles.enemigos.length; l++){
-        if(niveles.enemigos[l].nivel == localStorage.getItem('nivelActual')){
-            if(niveles.enemigos[l].posicionInicial!=niveles.enemigos[l].posicionFinal){
+    for( m=0; m< niveles.enemigos.length; m++){
+        if(niveles.enemigos[m].nivel == localStorage.getItem('nivelActual')){
+            if(niveles.enemigos[m].posicionInicial!=niveles.enemigos[m].posicionFinal){
                 //alert('funcional')
-                if(niveles.enemigos[l].avance == '+1'){
+                if(niveles.enemigos[m].avance == '+1'){
                    // alert('funcionav')
                     
                     var numero=parseInt(bicho);
-                    var bicho2= numero++;
+                    var bicho2= numero+1;
+                    var bicho3="'"+numero+"'"
                     var texto= "'"+bicho2+"'";
                     //bicho.push(texto);
                     //bicho.pop();
@@ -80,12 +81,12 @@ function movimiento(){
                     //niveles.enemigos[l].posicionInicial=texto;
                    // alert('posicion en el vector: '+bicho+' numero de enemigos: ' +niveles.enemigos[l].length)
                     console.log(bicho)
-                    document.getElementById(bicho).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
-                    document.getElementById(bicho).className='limite';
-                    document.getElementById("'"+numero+"'").style.backgroundImage='';
-                    document.getElementById("'"+numero+"'").className='casilla';
+                    //document.getElementById(bicho).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
+                    //document.getElementById(bicho).className='limite';
+                   // document.getElementById("'"+numero+"'").style.backgroundImage='';
+                    //document.getElementById("'"+numero+"'").className='casilla';
                 }
-                if(niveles.enemigos[l].avance == '-1'){
+                if(niveles.enemigos[m].avance == '-1'){
                    // alert('funcionav')
                     
                    var numero=parseInt(bicho);
@@ -98,10 +99,10 @@ function movimiento(){
                    //niveles.enemigos[l].posicionInicial=texto;
                    //alert('posicion en el vector: '+bicho+' numero de enemigos: ' +niveles.enemigos[l].length)
                    console.log(bicho)
-                   document.getElementById(bicho).style.backgroundImage= 'url('+niveles.enemigos[l].imagen+')';
-                   document.getElementById(bicho).className='limite';
-                   document.getElementById("'"+numero+"'").style.backgroundImage='';
-                   document.getElementById("'"+numero+"'").className='casilla';
+                   //document.getElementById(bicho).style.backgroundImage= 'url('+niveles.enemigos[l].imagen+')';
+                   //document.getElementById(bicho).className='limite';
+                   //document.getElementById("'"+numero+"'").style.backgroundImage='';
+                   //document.getElementById("'"+numero+"'").className='casilla';
                 }   
             
             }
