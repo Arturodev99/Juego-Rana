@@ -308,6 +308,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     PosicionOriginal=PosicionNueva
                     temporizador= setTimeout(parada,500);
                     if (PosicionOriginal >= 97){
+                        
                         j++
                         mundo++ 
                         nivelActual++
@@ -317,6 +318,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             }
                             localStorage.setItem('mundo',mundo)
                         delete Nivel
+                       
                         if(localStorage.getItem('mundo') > 4){
                             location.href = '../HTML/pantallaVictoria.html'
                             localStorage.setItem('mundo','0')
@@ -326,14 +328,15 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                            
                         }
                         
-
+                        
                         Nivel();
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
+                        
                         document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[j].nivel;
                         Comienzo();
                         PosicionOriginal=6;
-
+                        intervalo
                     }
                 }
                 if(document.getElementById(PosicionNueva).className == 'limite' && vida > 1){

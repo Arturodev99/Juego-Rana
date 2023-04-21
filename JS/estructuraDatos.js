@@ -143,7 +143,7 @@ var niveles = {
       //-------------------------------------------------------MUNDO BOSQUE----------------------------------------------------------------------------------------
     { nombre: 'enemigobosque1', imagen: '../Media/Images/Enemigos/enemigobosque.gif', posicionInicial:'37',  posicionFinal:'45', avance: '+1', nivel:'0', velocidad:'600',},
     { nombre: 'enemigobosque2', imagen: '../Media/Images/Enemigos/enemigobosque.gif', posicionInicial: '25', posicionFinal:'33', avance: '+1', nivel:'1', velocidad:'400',},
-    { nombre: 'enemigobosque3', imagen: '../Media/Images/Enemigos/enemigobosque.gif', posicionInicial: '60', posicionFinal:'52', avance: '-1', nivel:'1', velocidad:'700',},
+    { nombre: 'enemigobosque3', imagen: '../Media/Images/Enemigos/enemigobosque.gif', posicionInicial: '49', posicionFinal:'52', avance: '-1', nivel:'1', velocidad:'700',},
     { nombre: 'enemigobosque4', imagen: '../Media/Images/Enemigos/enemigobosque.gif', posicionInicial: '61', posicionFinal:'69', avance: '+1', nivel:'1', velocidad:'600',},
     { nombre: 'enemigobosque6', imagen: '../Media/Images/Enemigos/enemigobosque.gif', posicionInicial: '13', posicionFinal:'21', avance: '+1', nivel:'2',velocidad:'700', },
     { nombre: 'enemigobosque7', imagen: '../Media/Images/Enemigos/enemigobosque.gif', posicionInicial: '37', posicionFinal:'45', avance: '+1', nivel:'2',velocidad:'500', },
