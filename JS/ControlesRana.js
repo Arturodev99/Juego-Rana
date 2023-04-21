@@ -38,6 +38,13 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
             document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[nivelActual].nivel;
             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
             document.getElementById('texto').innerHTML=vida;
+
+            if(vida == 2){
+                document.getElementById("Vida3").src="../Media/Images/corazon2.png";
+            }
+            if(vida == 1){
+                document.getElementById("Vida2").src="../Media/Images/corazon2.png";
+            }
             //document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
             document.getElementById('6').style.transform="rotate(360deg)"
             document.onkeyup=Teclado
@@ -319,6 +326,7 @@ nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     l--
                     PosicionNueva=6
                     PosicionOriginal=6;
+
                    
                     Comienzo();
                     console.log(vida)
