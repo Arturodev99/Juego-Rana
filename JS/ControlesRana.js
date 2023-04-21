@@ -40,6 +40,13 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
             document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[nivelActual].nivel;
             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
             document.getElementById('texto').innerHTML=vida;
+
+            if(vida == 2){
+                document.getElementById("Vida3").src="../Media/Images/corazon2.png";
+            }
+            if(vida == 1){
+                document.getElementById("Vida2").src="../Media/Images/corazon2.png";
+            }
             //document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
             document.getElementById('6').style.transform="rotate(360deg)"
             document.onkeyup=Teclado
@@ -52,11 +59,15 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                 document.getElementById(niveles.escenarios[nivelActual].limite[m-1]).className = "limite";
                 
                 }
-                //document.getElementById(niveles.enemigos[0].posicionX).style.backgroundImage= "url("+niveles.enemigos[0].imagen+")";
-                console.log(niveles.escenarios[nivelActual])
-              
-                }
-                
+               /* //------------------------------------------------------------EJEMPLO DE ENEMIGO EN PANTALLA-----------------------------------------------------------------------------------------------------------------------------
+                //***********************************************************************************************************************************************************************************************************************
+                document.getElementById(niveles.enemigos[0].posicionX).innerHTML="<img src='"+niveles.enemigos[0].imagen+"'width='110%' height='110%' >";
+                //***********************************************************************************************************************************************************************************************************************
+                console.log(niveles.escenarios.length)*/
+            
+
+
+        }
         function Teclado(tecla){
             
            
@@ -344,7 +355,8 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     l--
                     PosicionNueva=6
                     PosicionOriginal=6;
-                    clearInterval(intervalo)
+
+                   
                     Comienzo();
                     console.log(vida)
                 }

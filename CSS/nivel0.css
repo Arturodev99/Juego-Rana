@@ -1,8 +1,29 @@
 body{ z-index: -1;
     background-attachment: fixed;
+    background-image: url(../Media/Images/MundoLava/mapalava1.png);
+    backdrop-filter: blur(10px);
+    z-index: -1;
     /*cursor: url(../Media/Images/cursor1.png),auto;*/
     margin: 0px;
+    zoom:0.75;
+
+    /*animation-name: FondoColores;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;*/
 }
+
+/*@keyframes FondoColores {
+    from {
+        background-color:#64f268;
+    }to {
+
+        background-color:#09680b;
+    }		
+}*/
+
  #pantalla{
    
     background-size: 100% 100%;
@@ -42,9 +63,14 @@ body{ z-index: -1;
 }
 
 .nivel{
-    height: 20px;
+    width: 7%;
     font-family: 'Super Mario';
     font-size: xx-large;
+    background-color: #ffffb9;
+    border: solid 8px #ffff00;
+    padding: 1px;
+    border-radius: 10px;
+
 }
 
 @font-face {
@@ -68,4 +94,78 @@ body{ z-index: -1;
     word-wrap: break-word;
     height: 100px;
     font-size: 25px;
+}
+.vidas{
+    right: 0px;
+    /*background-color: #792424 ;
+    border: solid 6px #f41a1a;*/
+    width:15.7%;
+    height:10.3vh;
+    position: fixed;
+    display: grid;
+    gap: 0px;
+    grid-template-areas:
+    'a b c';
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding-top: 0.3%;
+    margin-top: 1%;
+    margin-right: 1%;
+    
+}
+
+.ControlSonido{
+    position: fixed;
+    top:110vh;
+    right: 0px;
+    width: 8%;
+    height: 18vh;
+    margin-right: 8%;
+    cursor: pointer;
+
+}
+
+.Salida{
+    position: fixed;
+    top:110vh;
+    left: 0px;
+    width: 8%;
+    height: 18vh;
+    margin-left: 8%;
+
+}
+
+.VentanaControlSonido{
+    position: fixed;
+    top:20%;
+    left: 32.5%;
+    background-color: #3ca109 ;
+    width: 35%;
+    height: 55vh;
+    border:solid 10px #2a660c;
+    padding: 5px;
+    font-family: 'Super Mario';
+    user-select: none;
+    display: none;
+    z-index: 2;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 50%;
+    height: 20px;
+    background: #000;
+    border:solid 2px #ddd;
+    border-radius: 12px;
+    z-index: 8;
+    user-select: auto;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    background: url('../Media/Images/cabeza.png') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+    user-select: auto;
 }

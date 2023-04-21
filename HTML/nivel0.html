@@ -1,29 +1,69 @@
 <!DOCTYPE html>
+<html lang="es" >
 <head>
     <meta lang="es">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../JS/estructuraDatos.js"></script>
-    <link rel="stylesheet" href="../CSS/nivel0.css">
+    <meta name="viewport" content="width=700, initial-scale=0.7">
     <script src="../JS/constructores.js"></script>
     <script src="../JS/JS.js"></script>
     <script src="../JS/vectorCasillas.js"></script>
     <script src="../JS/personajeElegido.js"></script>
     <script src="../JS/MapaDesbloqueador.js"></script>
     <script src="../JS/ControlesRana.js"></script>
+    <script src="../JS/ControlesAudio.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/nivel0.css">
     <title>Indice</title>
-
 </head>
-<body onload="Comienzo();">
+<body onload="Comienzo();" style="overflow:hidden">
+    <div class="vidas">
+        <center>
+            <img src="../Media/Images/corazon1.png" width="90" height="90" id="Vida1">
+        </center>
+        <center>
+            <img src="../Media/Images/corazon1.png" width="90" height="90" id="Vida2">
+        </center>
+        <center>
+            <img src="../Media/Images/corazon1.png" width="90" height="90" id="Vida3">
+        </center>
+    </div>
+
+    <div class="ControlSonido" onclick="ActivarPanelAudio()">
+        <img src="../Media/Images/SinSonido.png" width="160" height="160" id="Altavoz">
+    </div>
+    <a href="index.html">
+        <div class="Salida">
+            <img src="../Media/Images/Salir.png" width="160" height="160">
+        </div>
+    </a>
+
+    
+    
     <center>
         <br>
-        <div class="nivel" id="nivel">Nivel</div>
         <br>
+        <div class="nivel" id="nivel">Nivel</div>
+        <br><br>
         <div id="pantalla" class="pantalla"></div><br><br><br>
         <div id="texto"></div><br>
         <input type="button" value="borrar" onclick="limpiarTexto()">
+        
     </center>
+
+    <div class="VentanaControlSonido" id="VentanadeControlSonido">
+        
+        <center>
+            <span style="font-size: 40px">Control de audio</span>
+            <br><br><br><br>
+            <span style="font-size: 30px;">Musica &nbsp; <span onclick="ActivarMusica('si')"><img src="../Media/Images/marco_personaje_hover.png" width="40" height="40" style="cursor:pointer" id="MusicaSi"> Si </span> &nbsp;&nbsp; <span onclick="ActivarMusica('no')"><img src="../Media/Images/marco_musica.png" width="40" height="40" style="cursor:pointer" id="MusicaNo"> No </span>
+            <br><br><br><br>
+            <span style="font-size: 35px;">VOLUMEN
+                <br><br>
+                <input type="range" class="slider" min="0" max="100" value="50" id="range" oninput="CambiarVolumen()">&nbsp;&nbsp;<span id="valorVolumen" style="font-family: 'Super Mario';">50</span>
+            </span>
+        </center>
+    </div>
+    <audio src="" type="audio/mp3" style="display:none" id="Reproductor" loop></audio>
 </body>
 
 </html>
