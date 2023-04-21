@@ -17,6 +17,9 @@ function Personaje() {
        
     
     }
+    if (localStorage.getItem('personajeActual')=='link_quieto.png'){
+        this.img.style.width = "80px";
+    }
     
 }
 
