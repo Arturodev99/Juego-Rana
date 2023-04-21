@@ -80,6 +80,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         temporizador= setTimeout(parada,500);
                         
                         if (PosicionOriginal >= 97){
+                            
                             j++ 
                             mundo++
                             nivelActual++
@@ -97,7 +98,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 desbloquearMapa(nivelActual)
                             }
                             for(z=0; z< niveles.enemigos.length; z++){
-                            clearInterval(identificadorCiclo.pop())}
+                                clearInterval(identificadorCiclo.pop())}
                             Nivel();
                             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
