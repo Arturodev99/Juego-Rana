@@ -1,5 +1,5 @@
 var VentanaAbierta= false
-var Spotify
+var Spotify 
 function ActivarPanelAudio(){
     if (VentanaAbierta == false){
         document.getElementById('VentanadeControlSonido').style.display='block';
@@ -16,18 +16,19 @@ function ActivarMusica(respuesta){
         case 'si':
             document.getElementById('MusicaSi').src="../Media/Images/marco_musica.png"
             document.getElementById('MusicaNo').src="../Media/Images/marco_personaje_hover.png"
+            Spotify = document.getElementById('Reproductor')
             ReproducirMusica()
             break;
         case 'no':
             document.getElementById('MusicaNo').src="../Media/Images/marco_musica.png"
             document.getElementById('MusicaSi').src="../Media/Images/marco_personaje_hover.png"
+            Spotify.pause()
             break;
     }
 }
 function ReproducirMusica(){
-    Spotify=document.getElementById('Reproductor')
     nivel = parseInt(localStorage.getItem('nivelActual'));
-    alert(nivel)
+    //alert(nivel)
     if(nivel <= 4){
         Spotify.src='../Media/musica/kazan_lr.n.32.mp3';
     }
