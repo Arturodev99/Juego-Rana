@@ -1,5 +1,10 @@
 //Terminado constructor personaje
-contador=1;
+f=0;
+var avance = true;
+var avance1 = true;
+var Posicion = niveles.enemigos[f].posicionInicial;
+var PosicionR = niveles.enemigos[f].posicionInicial;
+var PosicionAntigua;
 function Personaje() {
     //this.vida = 3;
     
@@ -25,13 +30,15 @@ function Personaje() {
 // Constructor niveles
 function Nivel() {
     var nivel = parseInt(localStorage.getItem('nivelActual'));
+    Posicion = niveles.enemigos[f].posicionInicial;
+    PosicionR = niveles.enemigos[f].posicionInicial
     Personaje()
     Enemigo()
-    
+    enemigosMovimiento();
 
     this.fondo = niveles.escenarios[nivel].imagen;
     document.getElementById("pantalla").style.backgroundImage = 'url('+niveles.escenarios[nivel].imagen+')'
-
+    enemigosMovimiento();
 }
 
 
@@ -41,9 +48,11 @@ function Enemigo() {
     
     for(i=0; i< niveles.enemigos.length; i++){
         if(niveles.enemigos[i].nivel == localStorage.getItem('nivelActual')){
+            this.Id=niveles.enemigos[i];
             this.img = niveles.enemigos[i].imagen;
             this.posicion = niveles.enemigos[i].posicionInicial;
             this.velocidad = niveles.enemigos[i].velocidad;
+            this.function=movimiento;
             document.getElementById(niveles.enemigos[i].posicionInicial).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
             document.getElementById(niveles.enemigos[i].posicionInicial).className='limite';
         
@@ -59,102 +68,83 @@ function Enemigo() {
    
 }
 
-
-var Posicion 
-var PosicionAntigua
 function movimiento(){
-    
-
-    for( m=0; m< niveles.enemigos.length; m++){
-        if(niveles.enemigos[m].nivel == localStorage.getItem('nivelActual')){
-            if(Posicion!=niveles.enemigos[m].posicionFinal){
-                Posicion=niveles.enemigos[m].posicionInicial
-                //alert('funcional')
-                if(niveles.enemigos[m].avance == '+1'){
-                   // alert('funcionav')
-                    
-                    var numero=parseInt(Posicion);
-                    var Posicion2= numero+1;
-                    var PosicionAntigua="'"+numero+"'"
-                    var texto= "'"+Posicion2+"'";
-                    //Posicion.push(texto);
-                    //bicho.pop();
-                    console.log(PosicionAntigua)
-                    
-                    //niveles.enemigos[l].posicionInicial=texto;
-                   // alert('posicion en el vector: '+bicho+' numero de enemigos: ' +niveles.enemigos[l].length)
-                    console.log(texto)
-                    //document.getElementById(bicho).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
-                    //document.getElementById(bicho).className='limite';
-                   // document.getElementById("'"+numero+"'").style.backgroundImage='';
-                    //document.getElementById("'"+numero+"'").className='casilla';
-                }
-                if(niveles.enemigos[m].avance == '-1'){
-                   // alert('funcionav')
-                    
-                   var numero=parseInt(Posicion);
-                   var Posicion2= numero-1;
-                   var PosicionAntigua="'"+numero+"'";
-                   var texto= "'"+Posicion2+"'";
-                   //bicho.push(texto);
-                   //bicho.pop();
-                   console.log(PosicionAntigua)
-                   
-                   //niveles.enemigos[l].posicionInicial=texto;
-                   //alert('posicion en el vector: '+bicho+' numero de enemigos: ' +niveles.enemigos[l].length)
-                   console.log(texto)
-                   //document.getElementById(bicho).style.backgroundImage= 'url('+niveles.enemigos[l].imagen+')';
-                   //document.getElementById(bicho).className='limite';
-                   //document.getElementById("'"+numero+"'").style.backgroundImage='';
-                   //document.getElementById("'"+numero+"'").className='casilla';
-                }   
-            
-            }
-       
-        } 
-    }
-
-    for(var j=0; j< niveles.enemigos.length; j++){
-        console.log('funciona el bucl')
-       if(niveles.enemigos[j].nivel == localStorage.getItem('nivelActual')){
-            console.log('funcional')
-            if(niveles.enemigos[j].posicionInicial==niveles.enemigos[j].posicionFinal){
-                console.log('funciona')
-                var memoria =niveles.enemigos[j].posicionInicial;
-                niveles.enemigos[j].posicionInicial=niveles.enemigos[j].posicionFinal
-                niveles.enemigos[j].posicionFinal=memoria;
+    for (let f = 0; f < niveles.enemigos.length; f++) {
+        if(niveles.enemigos[f].nivel == nivelActual){
+            if(Posicion == niveles.enemigos[f].posicionInicial && niveles.enemigos[f].avance == '+1' || PosicionR == niveles.enemigos[f].posicionInicial && niveles.enemigos[f].avance == '-1'){
+            document.getElementById(Posicion).style.backgroundImage="";
+            document.getElementById(Posicion).style.className="casilla";
            
-                if(niveles.enemigos[j].avance == '+1'){
-                console.log('funciona1')
-                niveles.enemigos[j].avance = '-1'
-                document.getElementById(niveles.enemigos[j].posicionInicial).style.backgroundImage= '';
-                document.getElementById(niveles.enemigos[j].posicionInicial).className='casilla';
-                var numero=parseInt(niveles.enemigos[j].posicionInicial)-1;
-                var texto= "'"+numero+"'"
-                niveles.enemigos[j].posicionInicial=texto;
-                document.getElementById(niveles.enemigos[j].posicionInicial).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
-                document.getElementById(niveles.enemigos[j].posicionInicial).className='limite';
             }
-                if(niveles.enemigos[j].avance == '-1'){
-                console.log('funciona2')
-                niveles.enemigos[j].avance = '+1'
-                document.getElementById(niveles.enemigos[j].posicionInicial).style.backgroundImage= '';
-                document.getElementById(niveles.enemigos[j].posicionInicial).className='casilla';
-                var numero=parseInt(niveles.enemigos[j].posicionInicial)-1;
-                var texto= "'"+numero+"'"
-                niveles.enemigos[j].posicionInicial=texto;
-                document.getElementById(niveles.enemigos[j].posicionInicial).style.backgroundImage= 'url('+niveles.enemigos[i].imagen+')';
-                document.getElementById(niveles.enemigos[j].posicionInicial).className='limite';
+            if(niveles.enemigos[f].avance == '+1' && avance == true){
+                PosicionNueva2= parseInt(Posicion);
+                PosicionNueva2++
+                console.log(PosicionNueva2)
+                document.getElementById(Posicion).style.backgroundImage="";
+                document.getElementById(Posicion).style.className="casilla";
+                document.getElementById(PosicionNueva2).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
+                document.getElementById(PosicionNueva2).style.className="limite";
+                document.getElementById(PosicionNueva2).style.transform='rotateY(0deg)'
+                if(Posicion == niveles.enemigos[f].posicionFinal){
+                    avance = false;
+                    
+                }else {Posicion=PosicionNueva2}
+                
             }
-        }     
-        
-        
+            
+            if(niveles.enemigos[f].avance == '-1' && avance1 == true){
+                PosicionNueva3= parseInt(PosicionR);
+                PosicionNueva3--
+                console.log(PosicionNueva3)
+                document.getElementById(PosicionR).style.backgroundImage="";
+                document.getElementById(PosicionR).style.className="casilla";
+                document.getElementById(PosicionNueva3).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
+                document.getElementById(PosicionNueva3).style.className="limite";
+                
+                if(PosicionR == niveles.enemigos[f].posicionFinal){
+                    avance1 = false;
+                    
+                }else{PosicionR=PosicionNueva3}
+            }
+           
+            if(niveles.enemigos[f].avance == '+1' && avance == false){
+                PosicionNueva2= parseInt(Posicion);
+                PosicionNueva2--
+                document.getElementById(Posicion).style.backgroundImage="";
+                document.getElementById(Posicion).style.className="casilla";
+                document.getElementById(PosicionNueva2).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
+                document.getElementById(PosicionNueva2).style.className="limite";
+                document.getElementById(PosicionNueva2).style.transform='rotateY(180deg)'
+               
+                if(Posicion == niveles.enemigos[f].posicionInicial){
+                    avance = true;
+                    
+                }else{ Posicion=PosicionNueva2}
+        }
+            if(niveles.enemigos[f].avance == '-1' && avance1 == false){
+            PosicionAntigua=Posicion
+            PosicionNueva3= parseInt(PosicionR);
+            PosicionNueva3++
+            document.getElementById(PosicionR).style.backgroundImage="";
+            document.getElementById(PosicionR).style.className="casilla";
+            document.getElementById(PosicionNueva3).style.backgroundImage="url("+niveles.enemigos[f].imagen+")";
+            document.getElementById(PosicionNueva3).style.className="limite";
+            document.getElementById(PosicionNueva3).style.transform='rotateY(0deg)'
+          
+            if(PosicionR == niveles.enemigos[f].posicionFinal){
+                avance1 = true;
+                
+            }else{PosicionR=PosicionNueva3}
+            }
+        }
     }
 }
-}function enemigosMovimiento(){
+
+    
+
+function enemigosMovimiento(){
     for(var k=0; k < niveles.enemigos.length; k++){ 
         if(localStorage.getItem('nivelActual') == niveles.enemigos[k].nivel){
-        console.log(niveles.enemigos[k].nombre)
             var speed=parseInt(niveles.enemigos[k].velocidad);
            identificadorCiclo.push(setInterval(movimiento,speed));
     }

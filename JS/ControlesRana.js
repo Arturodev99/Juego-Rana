@@ -96,7 +96,8 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 
                                 desbloquearMapa(nivelActual)
                             }
-
+                            for(z=0; z< niveles.enemigos.length; z++){
+                            clearInterval(identificadorCiclo.pop())}
                             Nivel();
                             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
@@ -160,7 +161,8 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 
                                 desbloquearMapa(nivelActual)
                             }
-
+                            for(z=0; z< niveles.enemigos.length; z++){
+                            clearInterval(identificadorCiclo.pop())}
                             let n= j+1
                             Nivel();
                             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')'
@@ -216,7 +218,8 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             localStorage.setItem('mundo','0')
                             mundo=0;
                         }
-
+                        for(z=0; z< niveles.enemigos.length; z++){
+                            clearInterval(identificadorCiclo.pop())}
                         Nivel();
 
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
@@ -271,7 +274,8 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             
                                 desbloquearMapa(nivelActual)
                         }
-                    
+                        for(z=0; z< niveles.enemigos.length; z++){
+                            clearInterval(identificadorCiclo.pop())}
                         Nivel();
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         
@@ -325,7 +329,8 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 desbloquearMapa(nivelActual)
                            
                         }
-                        
+                        for(z=0; z< niveles.enemigos.length; z++){
+                            clearInterval(identificadorCiclo.pop())}
 
                         Nivel();
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
