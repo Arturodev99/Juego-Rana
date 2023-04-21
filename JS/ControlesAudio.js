@@ -15,6 +15,7 @@ function ActivarMusica(respuesta){
         case 'si':
             document.getElementById('MusicaSi').src="../Media/Images/marco_musica.png"
             document.getElementById('MusicaNo').src="../Media/Images/marco_personaje_hover.png"
+            
             break;
         case 'no':
             document.getElementById('MusicaNo').src="../Media/Images/marco_musica.png"
