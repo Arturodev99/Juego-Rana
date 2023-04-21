@@ -28,7 +28,6 @@ mundo= parseInt(localStorage.getItem('mundo'))
 var nivelActual=parseInt(localStorage.getItem('nivelActual'));
 
         function Comienzo(){
-            
             //Nivel();
             document.getElementById('pantalla').innerHTML='';
             for(var i = 1; i<109;i++){
@@ -69,7 +68,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     PosicionNueva=PosicionOriginal-1
                     if(document.getElementById(PosicionNueva).className != 'limite'){
                         PosicionNueva=PosicionOriginal-1
-                        Nivel();
+                        //Nivel();
                         document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')].imagenMovimiento+')';
                         document.getElementById(PosicionNueva).style.transform="rotate(90deg)"
                         document.getElementById(PosicionNueva).style.backgroundSize='contain';
@@ -103,6 +102,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
                             document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[nivelActual].nivel;
+                            clearInterval(intervalo)
                             Comienzo();
                             PosicionOriginal=6;
 
@@ -113,7 +113,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         l--
                         PosicionNueva=6
                         PosicionOriginal=6;
-                       
+                       clearInterval(intervalo)
                         Comienzo();
                         console.log(vida)
                     }
@@ -132,7 +132,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     console.log(PosicionOriginal)
                     PosicionNueva=PosicionOriginal+1
                     if(document.getElementById(PosicionNueva).className != 'limite'){
-                        Nivel();
+                        //Nivel();
                         
                         document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')].imagenMovimiento+')';
                         document.getElementById(PosicionOriginal).style.backgroundImage='';
@@ -162,9 +162,9 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 
                                 desbloquearMapa(nivelActual)
                             }
-                            for(z=0; z< niveles.enemigos.length; z++){
-                            clearInterval(identificadorCiclo.pop())}
+                            
                             let n= j+1
+                            clearInterval(intervalo)
                             Nivel();
                             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')'
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
@@ -179,7 +179,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         l--
                         PosicionNueva=6
                         PosicionOriginal=6;
-                       
+                        clearInterval(intervalo)
                         Comienzo();
                         console.log(vida)
                     }
@@ -193,7 +193,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
             else if(tecla.keyCode == 32){
                 PosicionNueva=PosicionOriginal+12
                 if(document.getElementById(PosicionNueva).className != 'limite'){
-                    Nivel();
+                    //Nivel();
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')].imagenMovimiento+')';
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
                     document.getElementById(PosicionNueva).style.backgroundSize='contain';
@@ -219,8 +219,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             localStorage.setItem('mundo','0')
                             mundo=0;
                         }
-                        for(z=0; z< niveles.enemigos.length; z++){
-                            clearInterval(identificadorCiclo.pop())}
+                        clearInterval(intervalo)
                         Nivel();
 
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
@@ -236,7 +235,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     l--
                     PosicionNueva=6
                     PosicionOriginal=6;
-                   
+                    clearInterval(intervalo)
                     Comienzo();
                     console.log(vida)
                 }
@@ -249,7 +248,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
             else if(tecla.keyCode == 83){
                 PosicionNueva=PosicionOriginal+12
                 if(document.getElementById(PosicionNueva).className != 'limite'){
-                    Nivel();
+                    //Nivel();
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')].imagenMovimiento+')';
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
                     document.getElementById(PosicionNueva).style.backgroundSize='contain';
@@ -275,8 +274,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             
                                 desbloquearMapa(nivelActual)
                         }
-                        for(z=0; z< niveles.enemigos.length; z++){
-                            clearInterval(identificadorCiclo.pop())}
+                        //clearInterval(intervalo)
                         Nivel();
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         
@@ -291,7 +289,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     l--
                     PosicionNueva=6
                     PosicionOriginal=6;
-                   
+                    //clearInterval(intervalo)
                     Comienzo();
                     console.log(vida)
                 }
@@ -302,7 +300,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
             else if(tecla.keyCode == 87){
                 PosicionNueva=PosicionOriginal-12
                 if(document.getElementById(PosicionNueva).className != 'limite'){
-                    Nivel();
+                   // Nivel();
                     document.getElementById(PosicionNueva).style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')].imagenMovimiento+')';
                     document.getElementById(PosicionOriginal).style.backgroundImage='';
                     document.getElementById(PosicionNueva).style.backgroundSize='contain';
@@ -330,8 +328,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 desbloquearMapa(nivelActual)
                            
                         }
-                        for(z=0; z< niveles.enemigos.length; z++){
-                            clearInterval(identificadorCiclo.pop())}
+                        clearInterval(intervalo)
 
                         Nivel();
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
@@ -347,7 +344,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     l--
                     PosicionNueva=6
                     PosicionOriginal=6;
-                   
+                    clearInterval(intervalo)
                     Comienzo();
                     console.log(vida)
                 }
@@ -362,7 +359,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
         
 
         function parada(){
-            Nivel()
+            //Nivel()
             //document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
             clearTimeout(temporizador);
             
