@@ -28,7 +28,7 @@
     </div>
 
     <div class="ControlSonido" onclick="ActivarPanelAudio()">
-        <img src="../Media/Images/SinSonido.png" width="160" height="160">
+        <img src="../Media/Images/SinSonido.png" width="160" height="160" id="Altavoz">
     </div>
     <a href="index.html">
         <div class="Salida">
@@ -58,7 +58,7 @@
             <br><br><br><br>
             <span style="font-size: 35px;">VOLUMEN
                 <br><br>
-                <input type="range" class="slider" min="0" max="100" value="50" id="slider" onchange="CambiarVolumen">&nbsp;&nbsp;<span id="valorVolumen" style="font-family: 'Super Mario';">50</span>
+                <input type="range" class="slider" min="0" max="100" value="50" id="range" oninput="CambiarVolumen()">&nbsp;&nbsp;<span id="valorVolumen" style="font-family: 'Super Mario';">50</span>
             </span>
         </center>
     </div>

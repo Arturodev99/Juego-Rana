@@ -16,12 +16,14 @@ function ActivarMusica(respuesta){
         case 'si':
             document.getElementById('MusicaSi').src="../Media/Images/marco_musica.png"
             document.getElementById('MusicaNo').src="../Media/Images/marco_personaje_hover.png"
+            document.getElementById('Altavoz').src="../Media/Images/ConSonido.png"
             Spotify = document.getElementById('Reproductor')
             ReproducirMusica()
             break;
         case 'no':
             document.getElementById('MusicaNo').src="../Media/Images/marco_musica.png"
             document.getElementById('MusicaSi').src="../Media/Images/marco_personaje_hover.png"
+            document.getElementById('Altavoz').src="../Media/Images/SinSonido.png"
             Spotify.pause()
             break;
     }
@@ -39,11 +41,18 @@ function ReproducirMusica(){
         Spotify.src='../Media/musica/x2mate.com - Jungle Race_ Remaster ► Lego Stunt Rally (128 kbps).mp3';
     }
     else if(nivel <= 19){
-        alert('cielo')
+        Spotify.src='../Media/musica/Bianco Hills - Super Mario Sunshine.mp3';
     }
     else if(nivel <= 24){
         Spotify.src='../Media/musica/Sonic Mania OST - Studiopolis Act 1.mp3';
     }
     Spotify.play()
+
+}
+
+function CambiarVolumen(){
+    var Valor = document.getElementById('range').value;
+    document.getElementById('valorVolumen').innerHTML = Valor;
+    Spotify.volume = Valor / 10;
 
 }
