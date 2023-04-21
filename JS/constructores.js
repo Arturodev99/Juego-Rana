@@ -1,4 +1,5 @@
 //Terminado constructor personaje
+var array=[];
 contador = 1;
 function Personaje() {
     //this.vida = 3;
@@ -28,18 +29,16 @@ function Personaje() {
 
 // Constructor niveles
 function Nivel() {
-    clearInterval(intervalo)
+    //clearInterval(intervalo)
     var nivel = parseInt(localStorage.getItem('nivelActual'));
     Personaje()
     Enemigo()
-    this.fondo = niveles.escenarios[nivel].imagen;
+    // this.fondo = niveles.escenarios[nivel].imagen;
     document.getElementById("pantalla").style.backgroundImage = 'url(' + niveles.escenarios[nivel].imagen + ')'
-    //var intervalo = setInterval(movimiento, 1000)
-    //intervalo
-    
-    
-}
+   animar();
+        }
 
+       
 
 var pasos = 1
 var bandera = false
@@ -98,21 +97,14 @@ function movimiento() {
 }
 
 function Enemigo() {
-    
+    array = [];
     for (i = 0; i < niveles.enemigos.length; i++) {
         if (niveles.enemigos[i].nivel == nivelActual) {
-            this.img = niveles.enemigos[i].imagen;
-            this.posicion = niveles.enemigos[i].posicionInicial;
-            this.velocidad = niveles.enemigos[i].velocidad;
-            document.getElementById(niveles.enemigos[i].posicionInicial).style.backgroundImage = 'url(' + niveles.enemigos[i].imagen + ')';
-            document.getElementById(niveles.enemigos[i].posicionInicial).className = 'limite';
-
+            array.push(new Enemigo1(niveles.enemigos[i].nombre,niveles.enemigos[i].imagen,niveles.enemigos[i].posicionInicial,niveles.enemigos[i].avance,niveles.enemigos[i].posicionFinal))
+            console.log(array[array.length-1])
+            array[array.length-1].crearEnemigo()
         }
-
-
-        if (niveles.enemigos[i].avance == '-1') {
-            document.getElementById(niveles.enemigos[i].posicionInicial).style.transform = 'rotateY(180deg)'
-        }
+        
 
 
     }
@@ -121,5 +113,62 @@ function Enemigo() {
 
 
 
+class Enemigo1{
+    constructor(nombre,imagen,posicion,avance,posicionfinal){
+        this.nombre=nombre
+        this.imagen=imagen
+        this.posicion=parseInt(posicion)
+        this.avance=avance
+        this.posicionAntigua
+        this.posicionfinal=posicionfinal
+    }
+    crearEnemigo(){
+        console.log(this.imagen)
+        document.getElementById(this.posicion).style.backgroundImage='url(' +this.imagen + ")";
+        if(this.avance == '-1'){
+            document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
+        }
+    }
+    eliminarEnemigo(){
+        
+        document.getElementById(this.posicionAntigua).style.backgroundImage='url()';
+        
+        
+    
+    }
 
+    movimientoEnemigo(){
+        document.getElementById(this.posicion).style.backgroundImage='url()';
+        if(this.posicion == PosicionOriginal){
+            vida--
+            l--
+            PosicionNueva=6
+            PosicionOriginal=6;
+            clearTimeout();
+            Comienzo();
+        }
+        if(this.posicion == this.posicionfinal){
+            if(this.avance == '+1'){
+                this.avance == '-1'
+                document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
+            }
+            if(this.avance == '-1'){
+                this.avance == '+1'
+                document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'
+            }
+        }
+        this.posicionAntigua = this.posicion;
+       this.posicion += parseInt(this.avance)
+       this.crearEnemigo();
+    }
+}
+//array.push(new Enemigo1(escenarios.enemigos[i].nombre,escenarios.enemigos[i].imagen,escenarios.enemigos[i].posicionInicial))
+function animar(){
 
+    clearTimeout();
+    for(i=0; i<array.length; i++){
+        array[i].movimientoEnemigo();
+    }
+    setTimeout(animar, 800)
+
+}

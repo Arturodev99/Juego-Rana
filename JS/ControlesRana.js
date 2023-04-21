@@ -37,6 +37,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
             
             
             Nivel();
+           
             document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[nivelActual].nivel;
             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
             document.getElementById('texto').innerHTML=vida;
@@ -47,7 +48,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
             if(vida == 1){
                 document.getElementById("Vida2").src="../Media/Images/corazon2.png";
             }
-            //document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
+            document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
             document.getElementById('6').style.transform="rotate(360deg)"
             document.onkeyup=Teclado
             for(i = 97; i<109; i++){
@@ -91,6 +92,9 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         
                         if (PosicionOriginal >= 97){
                             
+                               array.eliminarEnemigo();
+                                
+                           
                             j++ 
                             mundo++
                             nivelActual++
@@ -107,13 +111,12 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 
                                 desbloquearMapa(nivelActual)
                             }
-                            for(z=0; z< niveles.enemigos.length; z++){
-                                clearInterval(identificadorCiclo.pop())}
+                          
                             Nivel();
                             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
                             document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[nivelActual].nivel;
-                            clearInterval(intervalo)
+                            //clearInterval(intervalo)
                             Comienzo();
                             PosicionOriginal=6;
 
@@ -124,7 +127,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         l--
                         PosicionNueva=6
                         PosicionOriginal=6;
-                       clearInterval(intervalo)
+                       //clearInterval(intervalo)
                         Comienzo();
                         console.log(vida)
                     }
@@ -175,7 +178,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             }
                             
                             let n= j+1
-                            clearInterval(intervalo)
+                            //clearInterval(intervalo)
                             Nivel();
                             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')'
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
@@ -190,7 +193,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                         l--
                         PosicionNueva=6
                         PosicionOriginal=6;
-                        clearInterval(intervalo)
+                        //clearInterval(intervalo)
                         Comienzo();
                         console.log(vida)
                     }
@@ -230,7 +233,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             localStorage.setItem('mundo','0')
                             mundo=0;
                         }
-                        clearInterval(intervalo)
+                        //clearInterval(intervalo)
                         Nivel();
 
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
@@ -246,7 +249,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     l--
                     PosicionNueva=6
                     PosicionOriginal=6;
-                    clearInterval(intervalo)
+                    //clearInterval(intervalo)
                     Comienzo();
                     console.log(vida)
                 }
@@ -285,7 +288,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             
                                 desbloquearMapa(nivelActual)
                         }
-                        //clearInterval(intervalo)
+                        ////clearInterval(intervalo)
                         Nivel();
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
                         
@@ -300,7 +303,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     l--
                     PosicionNueva=6
                     PosicionOriginal=6;
-                    //clearInterval(intervalo)
+                    ////clearInterval(intervalo)
                     Comienzo();
                     console.log(vida)
                 }
@@ -339,7 +342,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 desbloquearMapa(nivelActual)
                            
                         }
-                        clearInterval(intervalo)
+                        //clearInterval(intervalo)
 
                         Nivel();
                         //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
@@ -355,7 +358,6 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     l--
                     PosicionNueva=6
                     PosicionOriginal=6;
-
                    
                     Comienzo();
                     console.log(vida)
