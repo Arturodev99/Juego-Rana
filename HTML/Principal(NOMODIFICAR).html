@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-    
+
 
 <script src="../JS/JS.js"></script>
 <script src="../JS/estructuraDatos.js"></script>
 <script src="../JS/constructores.js"></script>
 <script src="../JS/personajeElegido.js"></script>
+<script src="../JS/activarPersonajes.js"></script>
 <link rel="stylesheet" type="text/css" href="../CSS/selecion.css">
 
 <head>
@@ -16,29 +17,37 @@
     <title>Document</title>
 </head>
 
-<body style="overflow: hidden;">
+<body style="overflow: hidden;" DOMContentLoaded="">
     <center>
         <h1>Personajes</h1>
         <div id="contenedor">
-                <div id="contenedorRana" class="contenedores" align="center"><img
-                        src="../Media/Images/Personajes/RanaPreview.png" id="personajeRana"
-                        onclick="personajeElegido('2')">
-                    </div>
-                    <div id="contenedorJuanma" class="contenedores" align="center"><img
-                        src="../Media/Images/Personajes/personaje_bloqueado.png" id="personajeJuanma"
-                        onclick="personajeElegido('1')"></div>
-           
-            
+            <div id="contenedorRana" class="contenedores" align="center"><img
+                    src="../Media/Images/Personajes/RanaPreview.png" id="personajeRana" 
+                    onclick="personajeElegido('2')">
+            </div>
+
+            <div id="contenedorJuanma" class="contenedores" align="center"><img
+                    src="../Media/Images/Personajes/personaje_bloqueado.png" id="personajeJuanma"
+                    onclick="personajeElegido('1')"></div>
+
+
             <div id="contenedorJesus" class="contenedores" align="center"><img
-                    src="../Media/Images/Personajes/personaje_bloqueado.png" id="personajeJesus" onclick="personajeElegido('0')"></div>
-            
-            <div id="contenedorLink"class="contenedores" align="center"><img
-                    src="../Media/Images/personajes/link/link_bloqueado.png" id="personajeLink" 
-                    onclick="personajeElegido('3')"></div>
+                    src="../Media/Images/Personajes/personaje_bloqueado.png" id="personajeJesus"
+                    onclick="personajeElegido('0')"></div>
+
+            <div id="contenedorLink" class="contenedores" align="center"  onclick=""><img
+                    src="../Media/Images/personajes/link/link_bloqueado.png" id="personajeLink"
+                    ></div>
+
+
             <div class="contenedores"></div>
             <div class="contenedores"></div>
+
         </div>
     </center>
 </body>
 
+<script>
+    addEventListener('DomContentLoaded',activarPersonaje(),false)
+</script>
 </html>
