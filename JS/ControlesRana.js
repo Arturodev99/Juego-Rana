@@ -48,7 +48,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
             if(vida == 1){
                 document.getElementById("Vida2").src="../Media/Images/corazon2.png";
             }
-            document.getElementById('6').style.backgroundImage='url('+niveles.personajes[2].imagenParada+')';
+            document.getElementById('6').style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')]+')';
             document.getElementById('6').style.transform="rotate(360deg)"
             document.onkeyup=Teclado
             for(i = 97; i<109; i++){
