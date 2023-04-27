@@ -158,8 +158,8 @@ class Enemigo1{
             }
         }
         this.posicionAntigua = this.posicion;
-       this.posicion += parseInt(this.avance)
-       this.crearEnemigo();
+        this.posicion += parseInt(this.avance)
+        this.crearEnemigo();
     }
 }
 //array.push(new Enemigo1(escenarios.enemigos[i].nombre,escenarios.enemigos[i].imagen,escenarios.enemigos[i].posicionInicial))
