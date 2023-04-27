@@ -42,59 +42,59 @@ function Nivel() {
 
 var pasos = 1
 var bandera = false
-function movimiento() {
-    if(PosicionOriginal >= 97){
-        clearInterval(intervalo)
-        console.log("intervalo limpiado")
-    }
-    for (i = 0; i < niveles.enemigos.length; i++) {
-        if (niveles.enemigos[i].nivel == nivelActual && pasos < 12 && bandera == false) {
-            this.img = niveles.enemigos[i].imagen;
-            this.posicion = parseInt(niveles.enemigos[i].posicionInicial) + pasos;
-            this.posicionAnterior = parseInt(niveles.enemigos[i].posicionInicial) + pasos - 1;
-            this.posicionSiguiente = parseInt(niveles.enemigos[i].posicionInicial) + pasos + 1
-            this.velocidad = niveles.enemigos[i].velocidad;
-            document.getElementById(this.posicion).style.backgroundImage = 'url(' + niveles.enemigos[i].imagen + ')';
-            document.getElementById(this.posicion).className = 'limite';
-            document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'
-            document.getElementById(this.posicionAnterior).style.backgroundImage = 'none';
-            document.getElementById(this.posicionAnterior).className = 'casilla';
-            //document.getElementById(this.posicionSiguiente).style.backgroundImage = 'none';
-            //document.getElementById(this.posicionSiguiente).className = 'casilla';
-
-            pasos++
-        }
-        if(pasos == 11) bandera = true
-        if (niveles.enemigos[i].nivel == nivelActual && pasos >= 0 && bandera == true) {
-            this.img = niveles.enemigos[i].imagen;
-            this.posicion = parseInt(niveles.enemigos[i].posicionInicial) + pasos;
-            this.posicionAnterior = parseInt(niveles.enemigos[i].posicionInicial) +pasos + 1;
-            this.velocidad = niveles.enemigos[i].velocidad;
-            
-                document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
-            
-            document.getElementById(this.posicion).style.backgroundImage = 'url(' + niveles.enemigos[i].imagen + ')';
-            document.getElementById(this.posicion).className = 'limite';
-
-            document.getElementById(this.posicionAnterior).style.backgroundImage = 'none';
-            document.getElementById(this.posicionAnterior).className = 'casilla';
-
-            pasos--
-        }
-       
-    }
-    if(pasos == 0)bandera = false
-    if(this.posicion == PosicionOriginal){
-        vida--
-        l--
-        PosicionNueva=6
-        PosicionOriginal=6;
-       
-        Comienzo();
-    }
-
-    
-}
+//function movimiento() {
+//    if(PosicionOriginal >= 97){
+//        clearInterval(intervalo)
+//        console.log("intervalo limpiado")
+//    }
+//    for (i = 0; i < niveles.enemigos.length; i++) {
+//        if (niveles.enemigos[i].nivel == nivelActual && pasos < 12 && bandera == false) {
+//            this.img = niveles.enemigos[i].imagen;
+//            this.posicion = parseInt(niveles.enemigos[i].posicionInicial) + pasos;
+//            this.posicionAnterior = parseInt(niveles.enemigos[i].posicionInicial) + pasos - 1;
+//            this.posicionSiguiente = parseInt(niveles.enemigos[i].posicionInicial) + pasos + 1
+//            this.velocidad = niveles.enemigos[i].velocidad;
+//            document.getElementById(this.posicion).style.backgroundImage = 'url(' + niveles.enemigos[i].imagen + ')';
+//            document.getElementById(this.posicion).className = 'limite';
+//            document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'
+//            document.getElementById(this.posicionAnterior).style.backgroundImage = 'none';
+//            document.getElementById(this.posicionAnterior).className = 'casilla';
+//            //document.getElementById(this.posicionSiguiente).style.backgroundImage = 'none';
+//            //document.getElementById(this.posicionSiguiente).className = 'casilla';
+//
+//            pasos++
+//        }
+//        if(pasos == 11) bandera = true
+//        if (niveles.enemigos[i].nivel == nivelActual && pasos >= 0 && bandera == true) {
+//            this.img = niveles.enemigos[i].imagen;
+//            this.posicion = parseInt(niveles.enemigos[i].posicionInicial) + pasos;
+//            this.posicionAnterior = parseInt(niveles.enemigos[i].posicionInicial) +pasos + 1;
+//            this.velocidad = niveles.enemigos[i].velocidad;
+//            
+//                document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
+//            
+//            document.getElementById(this.posicion).style.backgroundImage = 'url(' + niveles.enemigos[i].imagen + ')';
+//            document.getElementById(this.posicion).className = 'limite';
+//
+//            document.getElementById(this.posicionAnterior).style.backgroundImage = 'none';
+//            document.getElementById(this.posicionAnterior).className = 'casilla';
+//
+//            pasos--
+//        }
+//       
+//    }
+//    if(pasos == 0)bandera = false
+//    if(this.posicion == PosicionOriginal){
+//        vida--
+//        l--
+//        PosicionNueva=6
+//        PosicionOriginal=6;
+//       
+//        Comienzo();
+//    }
+//
+//    
+//}
 
 function Enemigo() {
     array = [];
@@ -150,17 +150,25 @@ class Enemigo1{
         if(this.posicion == this.posicionfinal){
             if(this.avance == '+1'){
                 this.avance == '-1'
+                this.posicionAntigua = this.posicion;
+                this.posicion += parseInt(this.avance)
                 document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
+                this.crearEnemigo();
+    
+                
             }
             if(this.avance == '-1'){
                 this.avance == '+1'
+                this.posicionAntigua = this.posicion;
+                this.posicion += parseInt(this.avance)
+                document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'
+                this.crearEnemigo();
+            }
                 document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'
             }
         }
-        this.posicionAntigua = this.posicion;
-        this.posicion += parseInt(this.avance)
-        this.crearEnemigo();
-    }
+        
+    
 }
 //array.push(new Enemigo1(escenarios.enemigos[i].nombre,escenarios.enemigos[i].imagen,escenarios.enemigos[i].posicionInicial))
 function animar(){
