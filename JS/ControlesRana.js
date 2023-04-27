@@ -34,7 +34,8 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                 document.getElementById('pantalla').innerHTML+='<div id="'+i+'"class="casilla" onclick="vectorizar('+i+')" style=" background-size: contain; background-repeat: no-repeat; background-position: center;"></div>'
 
             }
-            
+            document.getElementById('6').style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')].imagenParada+')';
+            document.getElementById('6').style.transform="rotate(360deg)"
             
             Nivel();
            
@@ -117,8 +118,8 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                             document.getElementById(PosicionOriginal).style.backgroundImage='';
                             document.getElementById('nivel').innerHTML= 'nivel '+ niveles.escenarios[nivelActual].nivel;
                             //clearInterval(intervalo)
-                            Comienzo();
                             PosicionOriginal=6;
+                            Comienzo();
 
                         }
                     }
