@@ -36,6 +36,7 @@ function Nivel() {
     Personaje()
     Enemigo()
     document.getElementById("pantalla").style.backgroundImage = 'url('+niveles.escenarios[nivel].imagen+')'
+    document.body.style.backgroundImage = 'url('+niveles.escenarios[nivel].imagen+')'
    animar();
         }
 

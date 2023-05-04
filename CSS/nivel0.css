@@ -1,6 +1,5 @@
 body{ z-index: -1;
     background-attachment: fixed;
-    background-image: url(../Media/Images/MundoLava/mapalava1.png);
     backdrop-filter: blur(10px);
     z-index: -1;
     /*cursor: url(../Media/Images/cursor1.png),auto;*/
