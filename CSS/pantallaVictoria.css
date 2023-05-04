@@ -1,7 +1,7 @@
 body{
     cursor: url(../Media/Images/cursorCorazonDorado2.png),auto;
     overflow: hidden;
-    background-image: url(../Media/Images/MundoLava/mapalava1.png);
+    background-image: url(../Media/Images/fondo/estanque.jpeg);
     backdrop-filter: blur(10px);
     margin: 0;
     

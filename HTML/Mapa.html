@@ -10,6 +10,15 @@
     <script src="../JS/constructores.js"></script>
     <script src="../JS/MapaDesbloqueador.js"></script>
     <style>
+        body{
+            backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            margin: 0;
+            width: 100%;
+            height:100vh;
+            background-image: url(../Media/Images/ImgSeleccionMundo/MapaRanita1.png);
+            cursor: url(../Media/Images/PunteroNube.png),auto;
+        }
         #contenedorMapa{
             width: 1200px;
             height: 800px;
@@ -29,6 +38,7 @@
             top: 640px;
             left: 37px;
             border-radius: 20px;
+            cursor: url(../Media/Images/estrella.png),pointer;
         }
         #isla2{
             width: 217px;
@@ -37,6 +47,7 @@
             top: 484px;
             left: 260px;
             border-radius: 20px;
+            cursor: url(../Media/Images/estrella.png),pointer;
         }
         #isla3{
             width: 231px;
@@ -45,6 +56,7 @@
             top: 585px;
             left: 552px;
             border-radius: 20px;
+            cursor: url(../Media/Images/estrella.png),pointer;
         }
         #isla4{
             width: 267px;
@@ -53,13 +65,14 @@
             top: 273px;
             left: 932px;
             border-radius: 20px;
+            cursor: url(../Media/Images/estrella.png),pointer;
         }#isla5{
             width: 468px;
             height: 153px;
             position: absolute;
             top: 1px;
             left: 420px;
-            
+            cursor: url(../Media/Images/estrella.png),pointer;
         }
         #isla6{
             width: 212px;
@@ -68,17 +81,18 @@
             top: 188px;
             left: 188px;
             border-radius: 20px;
+            cursor: url(../Media/Images/estrella.png),pointer;
         }
     </style>
 </head>
 <body onload="desbloquearMapa();">
     <div id="contenedorMapa">
         <a href="nivel0.html"><div id="isla1" onclick="repetir(0)"></div></a>
-        <!-- <a href="#"><div id="isla3"></div></a>
-        <a href="#"><div id="isla3"></div></a>
-        <a href="#"><div id="isla4"></div></a>
-        <a href="#"><div id="isla5"></div></a>
-        <a href="#"><div id="isla6"></div></a> -->
+        <!-- <a href="#" style="cursor: url(../Media/Images/estrella.png),pointer;"><div id="isla3"></div></a>
+        <a href="#" style="cursor: url(../Media/Images/estrella.png),pointer;"><div id="isla3"></div></a>
+        <a href="#" style="cursor: url(../Media/Images/estrella.png),pointer;"><div id="isla4"></div></a>
+        <a href="#" style="cursor: url(../Media/Images/estrella.png),pointer;"><div id="isla5"></div></a>
+        <a href="#" style="cursor: url(../Media/Images/estrella.png),pointer;"><div id="isla6"></div></a> -->
 
     </div>
 </body>
