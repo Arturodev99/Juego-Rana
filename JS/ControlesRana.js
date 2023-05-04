@@ -127,13 +127,15 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     if(document.getElementById(PosicionNueva).className == 'limite' && vida > 1 ){
                         vida--
                         l--
+                        document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')].muerte+')';
+                       muerte = setTimeout(Comienzo, 1700);
                         PosicionNueva=6
                         PosicionOriginal=6;
                        //clearInterval(intervalo)
-                       muerte = setTimeout(Comienzo, 900);
+                       
                         console.log(vida)
                     }
-                    if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 ){
+                    if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 || document.getElementById(PosicionOriginal).className == 'limite' && vida == 1){
                         location.href = '../HTML/pantallaFin.html'
                     }
                    
@@ -193,13 +195,14 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                     if(document.getElementById(PosicionNueva).className == 'limite' && vida > 1 ){
                         vida--
                         l--
+                        document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')].muerte+')';
                         PosicionNueva=6
                         PosicionOriginal=6;
                         //clearInterval(intervalo)
-                        muerte = setTimeout(Comienzo, 900);
+                        muerte = setTimeout(Comienzo, 1700);
                         console.log(vida)
                     }
-                    if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 ){
+                    if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1  || document.getElementById(PosicionOriginal).className == 'limite' && vida == 1){
                         location.href = '../HTML/pantallaFin.html'
                     }
                
@@ -249,13 +252,14 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                 if(document.getElementById(PosicionNueva).className == 'limite' && vida > 1 ){
                     vida--
                     l--
+                    document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')].muerte+')';
                     PosicionNueva=6
                     PosicionOriginal=6;
                     //clearInterval(intervalo)
-                    muerte = setTimeout(Comienzo, 900);
+                    muerte = setTimeout(Comienzo, 1700);
                     console.log(vida)
                 }
-                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 ){
+                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 || document.getElementById(PosicionOriginal).className == 'limite' && vida == 1 ){
                     location.href = '../HTML/pantallaFin.html'
                 }
                 
@@ -303,13 +307,14 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                 if(document.getElementById(PosicionNueva).className == 'limite' && vida > 1 ){
                     vida--
                     l--
+                    document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')].muerte+')';
                     PosicionNueva=6
                     PosicionOriginal=6;
                     ////clearInterval(intervalo)
-                    muerte = setTimeout(Comienzo, 900);
+                    muerte = setTimeout(Comienzo, 1700);
                     console.log(vida)
                 }
-                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 ){
+                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1  || document.getElementById(PosicionOriginal).className == 'limite' && vida == 1){
                     location.href = '../HTML/pantallaFin.html'
                 }
             }
@@ -358,13 +363,13 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                 if(document.getElementById(PosicionNueva).className == 'limite' && vida > 1 ){
                     vida--
                     l--
+                    document.getElementById(PosicionOriginal).style.backgroundImage='url('+niveles.personajes[localStorage.getItem('personajeActual')].muerte+')';
                     PosicionNueva=6
                     PosicionOriginal=6;
-                   muerte = setTimeout(Comienzo, 900);
-                    
+                   muerte = setTimeout(Comienzo, 1700);
                     console.log(vida)
                 }
-                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 ){
+                if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 || document.getElementById(PosicionOriginal).className == 'limite' && vida == 1){
                     location.href = '../HTML/pantallaFin.html'
                 }
                 
