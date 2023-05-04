@@ -10,21 +10,21 @@ function activarPersonaje() {
          document.getElementById('personajeLink').src = '../Media/Images/Personajes/link/link_quieto.png'
      }
  
-    //  if (mapas >= 10) {
-    //     document.getElementById('').addEventListener('click', function() {
-    //         personajeElegido("");
-    //       });
-          
-    //      document.getElementById('').src = '../Media/Images/Personajes/link/link_quieto.png'
-    //  }
+      if (mapas >= 10) {
+         document.getElementById('kirby').addEventListener('click', function() {
+             personajeElegido("4");
+           });
+    
+          document.getElementById('personajeKirby').src = '../Media/Images/Personajes/kirby.png'
+      }
  
-    //  if (mapas >= 15) {
-    //     document.getElementById('').addEventListener('click', function() {
-    //         personajeElegido("");
-    //       });
-          
-    //      document.getElementById('').src = '../Media/Images/Personajes/link/link_quieto.png'
-    //  }
+      if (mapas >= 15) {
+         document.getElementById('monstruo').addEventListener('click', function() {
+             personajeElegido("5");
+           });
+    
+          document.getElementById('personajeMonstruo').src = '../Media/Images/Personajes/monstruoaliado.png'
+      }
  
       if (mapas >= 20) {
          document.getElementById('contenedorJesus').addEventListener('click', function() {

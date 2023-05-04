@@ -2,7 +2,9 @@ var niveles = {
     'personajes': [{ nombre: 'Jesus', imagenParada: '../Media/Images/Personajes/jesus.png', imagenMovimiento: '../Media/Images/Personajes/JesusMovimiento.gif', posicionX: '', posicionY: '' },
     { nombre: 'Juanma', imagenParada: '../Media/Images/Personajes/juanma.png', imagenMovimiento: '../Media/Images/Personajes/JuanmaMovimiento.gif', posicionX: '', posicionY: '' },
     { nombre: 'Rana', imagenParada: '../Media/Images/Personajes/Rana.png', imagenMovimiento: '../Media/Images/Personajes/RanaMovimineto.gif', posicionX: '', posicionY: '' },
-    { nombre: 'Link', imagenParada: '../Media/Images/Personajes/link/link_quieto.png', imagenMovimiento: '../Media/Images/Personajes/link/link_movimiento_abajo.gif', posicionX: '', posicionY: '' }],
+    { nombre: 'Link', imagenParada: '../Media/Images/Personajes/link/link_quieto.png', imagenMovimiento: '../Media/Images/Personajes/link/link_movimiento_abajo.gif', posicionX: '', posicionY: '' },
+    { nombre: 'Kirby', imagenParada: '../Media/Images/Personajes/kirby.png', imagenMovimiento: '../Media/Images/Personajes/kirbymovimiento.gif', posicionX: '', posicionY: '' },
+    { nombre: 'Monstruo', imagenParada: '../Media/Images/Personajes/monstruoaliado.png', imagenMovimiento: '../Media/Images/Personajes/mostruoaliado_movimiento.gif', posicionX: '', posicionY: '' },],
 
     'escenarios': [
        //----------------------------------------------------------------MUNDO BOSQUE----------------------------------------------------------------------------
