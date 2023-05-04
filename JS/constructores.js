@@ -127,6 +127,8 @@ class Enemigo1{
     crearEnemigo(){
         console.log(this.imagen)
         document.getElementById(this.posicion).style.backgroundImage='url(' +this.imagen + ")";
+        document.getElementById(this.posicion).className="limite"
+        
         if(this.avance == '-1'){
             document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
         }
@@ -141,6 +143,7 @@ class Enemigo1{
 
     movimientoEnemigo(){
         document.getElementById(this.posicion).style.backgroundImage='url()';
+        document.getElementById(this.posicion).className="limite"
         if(this.posicion == PosicionOriginal){
             vida--
             l--
@@ -155,6 +158,8 @@ class Enemigo1{
                 this.posicionAntigua = this.posicion;
                 this.posicion += parseInt(this.avance)
                 document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
+                document.getElementById(this.posicion).style.transition="0s";
+                document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
 
             }
@@ -162,6 +167,8 @@ class Enemigo1{
                 this.posicionAntigua = this.posicion;
                 this.posicion += parseInt(this.avance)
                 document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'
+                document.getElementById(this.posicion).style.transition="0s";
+                document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
             }
         }
@@ -173,6 +180,8 @@ class Enemigo1{
                 document.getElementById(this.posicionAntigua).style.backgroundImage='url()';
                 this.posicion += parseInt(this.avance)
                 document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
+                document.getElementById(this.posicion).style.transition="0.7s";
+                document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
 
             }
@@ -182,6 +191,8 @@ class Enemigo1{
                 document.getElementById(this.posicionAntigua).style.backgroundImage='url()';
                 this.posicion += parseInt(this.avance)
                 document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'
+                document.getElementById(this.posicion).style.transition="0.7s";
+                document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
             }
         }
@@ -192,6 +203,8 @@ class Enemigo1{
                 document.getElementById(this.posicionAntigua).style.backgroundImage='url()';
                 this.posicion += parseInt(this.avance)
                 document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
+                document.getElementById(this.posicion).style.transition="0.7s";
+                document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
 
             }
@@ -200,7 +213,9 @@ class Enemigo1{
                 this.posicionAntigua = this.posicion;
                 document.getElementById(this.posicionAntigua).style.backgroundImage='url()';
                 this.posicion += parseInt(this.avance)
-                document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'
+                document.getElementById(this.posicion).style.transform = 'rotateY(0deg)';
+                document.getElementById(this.posicion).style.transition="0.7s";
+                document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
             }
         }
@@ -216,6 +231,6 @@ function animar(){
         array[i].movimientoEnemigo();
         
     }
-    prueba=setTimeout(animar, 800)
+    prueba=setTimeout(animar, 400)
 
 }
