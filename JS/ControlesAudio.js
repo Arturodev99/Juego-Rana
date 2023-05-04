@@ -18,6 +18,7 @@ function ActivarMusica(respuesta){
             document.getElementById('MusicaNo').src="../Media/Images/marco_personaje_hover.png"
             document.getElementById('Altavoz').src="../Media/Images/ConSonido.png"
             Spotify = document.getElementById('Reproductor')
+            document.getElementById("ControlesJuego").style.display="none";
             ReproducirMusica()
             break;
         case 'no':

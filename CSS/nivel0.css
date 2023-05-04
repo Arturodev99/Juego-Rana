@@ -168,3 +168,29 @@ body{ z-index: -1;
     cursor: pointer;
     user-select: auto;
 }
+.PestañaControles{
+    position: fixed;
+    top:20%;
+    left: 32.5%;
+    background-color: #3ca109 ;
+    width: 35%;
+    height: 55vh;
+    border:solid 10px #2a660c;
+    padding: 5px;
+    font-family: 'Super Mario';
+    user-select: none;
+    display: block;
+    z-index: 2;
+}
+.BotonControles{
+    font-size:15px;
+    width:150px;
+    height:50px;
+    font-family: 'Super Mario';
+    background-color: #47cb05;
+    border: solid 5px #2a660c;
+    box-shadow: 0px 0px 50px #15ff00;
+    cursor: pointer;
+
+
+}

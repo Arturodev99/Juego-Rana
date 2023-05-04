@@ -69,14 +69,10 @@
     <div class="PestañaControles" id="ControlesJuego">
         
         <center>
-            <span style="font-size: 40px">Control de audio</span>
-            <br><br><br><br>
-            <span style="font-size: 30px;">Musica &nbsp; <span onclick="ActivarMusica('si')"><img src="../Media/Images/marco_personaje_hover.png" width="40" height="40" style="cursor:pointer" id="MusicaSi"> Si </span> &nbsp;&nbsp; <span onclick="ActivarMusica('no')"><img src="../Media/Images/marco_musica.png" width="40" height="40" style="cursor:pointer" id="MusicaNo"> No </span>
-            <br><br><br><br>
-            <span style="font-size: 35px;">VOLUMEN
-                <br><br>
-                <input type="range" class="slider" min="0" max="100" value="50" id="range" oninput="CambiarVolumen()">&nbsp;&nbsp;<span id="valorVolumen" style="font-family: 'Super Mario';">50</span>
-            </span>
+            <br>
+            <span style="font-size: 40px; margin-top: 100px;">Controles</span>
+            <br><br>
+            <input type="button" value="Vamos alla!" onclick="ActivarMusica('si')" class="BotonControles">
         </center>
     </div>
     <audio src="" type="audio/mp3" style="display:none" id="Reproductor" loop></audio>
