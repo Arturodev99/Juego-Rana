@@ -28,7 +28,7 @@ function activarPersonaje() {
  
       if (mapas >= 20) {
          document.getElementById('contenedorJesus').addEventListener('click', function() {
-             personajeElegido("2");
+             personajeElegido("0");
           });
           
           document.getElementById('personajeJesus').src = '../Media/Images/Personajes/jesus.png'

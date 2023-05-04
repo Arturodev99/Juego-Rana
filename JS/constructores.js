@@ -147,10 +147,16 @@ class Enemigo1{
         if(this.posicion == PosicionOriginal){
             vida--
             l--
+            
+            
+            
+            if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 || document.getElementById(PosicionOriginal).className == 'limite' && vida == 1){
+                location.href = '../HTML/pantallaFin.html'
+            }
             PosicionNueva=6
             PosicionOriginal=6;
+            muerte=setTimeout(Comienzo,900);
             
-            Comienzo();
         }
 
         if(this.posicion != this.posicionfinal){
