@@ -53,7 +53,7 @@
  
         .wrapper {
             overflow: hidden;
-            height: 400px;
+            height: 1000px;
         }
         .credit {
             position: relative;
@@ -62,7 +62,7 @@
             text-align: center;
             text-transform: uppercase;
             color: #fff;
-            animation: 5s credits linear infinite;
+            animation: 12s credits linear infinite;
             display: inline;
         }
  
@@ -90,9 +90,19 @@
             }
         }
     </style>
+    <script>
+            function carga(){
+                setTimeout(inicio , 10850)
+
+            }
+            function inicio(){
+               
+               location.href='index.html'
+            }
+    </script>
 </head>
  
-<body>
+<body onload="carga()">
     <div class="wrapper">
         <div class='credit'>
             <div class='movie'>
