@@ -1,5 +1,5 @@
 var niveles = {
-    'personajes': [{ nombre: 'Jesus', imagenParada: '../Media/Images/Personajes/jesus.png', imagenMovimiento: '../Media/Images/Personajes/JesusMovimiento.gif', muerte: '../Media/Images/Personajes/muerte/.gif', posicionY: '' },
+    'personajes': [{ nombre: 'Jesus', imagenParada: '../Media/Images/Personajes/jesus.png', imagenMovimiento: '../Media/Images/Personajes/JesusMovimiento.gif', muerte: '../Media/Images/Personajes/muerte/jesus_muerte.gif', posicionY: '' },
     { nombre: 'Juanma', imagenParada: '../Media/Images/Personajes/juanma.png', imagenMovimiento: '../Media/Images/Personajes/JuanmaMovimiento.gif', muerte: '../Media/Images/Personajes/muerte/juanma_muerte.gif', posicionY: '' },
     { nombre: 'Rana', imagenParada: '../Media/Images/Personajes/Rana.png', imagenMovimiento: '../Media/Images/Personajes/RanaMovimineto.gif', posicionX: '', posicionY: '' },
     { nombre: 'Link', imagenParada: '../Media/Images/Personajes/link/link_quieto.png', imagenMovimiento: '../Media/Images/Personajes/link/link_movimiento_abajo.gif', posicionX: '', posicionY: '' },

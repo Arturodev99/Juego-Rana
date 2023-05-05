@@ -151,7 +151,7 @@ class Enemigo1{
             
             
             
-            if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 || document.getElementById(PosicionOriginal).className == 'limite' && vida == 1){
+            if(vida == 0 ){
                 location.href = '../HTML/pantallaFin.html'
             }
             PosicionNueva=6
