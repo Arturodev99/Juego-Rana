@@ -1,0 +1,205 @@
+ /* html, body {
+            height: 740px;
+        }
+ 
+        body {
+            background-image: url(../Media/Images/fondo/Cred1.gif);
+            background-repeat:no repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+ 
+        .wrapper {
+            overflow: hidden;
+            height: 740px;
+        }
+        .credit {
+            position: relative;
+            width: 400px;
+            height: 740px;
+            font: 300 30px/1 'Open Sans Condensed', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            animation: 12s credits linear infinite;
+            display: inline;
+        }
+ 
+        .movie {
+            margin-bottom: 50px;
+            font-size: 50px;
+        }
+ 
+        .job {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+ 
+        .name {
+            margin-bottom: 50px;
+            font-size: 35px;
+        }
+ 
+        @keyframes credits {
+            0% {
+                top: 100%;
+            }
+            100% {
+                top: -120%;
+            }
+        }
+  
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+.creditos h5:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.creditos h5:nth-of-type(2) {
+    animation-delay: 4s;
+}
+
+.creditos h5:nth-of-type(3) {
+    animation-delay: 8s;
+}
+
+.creditos h5:nth-of-type(4) {
+    animation-delay: 12s;
+}
+
+.creditos h5:nth-of-type(5) {
+    animation-delay: 16s;
+}
+
+.creditos h5:nth-of-type(6) {
+    animation-delay: 20s;
+}
+
+.creditos h5:nth-of-type(7) {
+    animation-delay: 24s;
+}
+
+.creditos h5:nth-of-type(8) {
+    animation-delay: 28s;
+}
+
+.creditos h5:nth-of-type(9) {
+    animation-delay: 32s;
+}
+
+.creditos h5:nth-of-type(10) {
+    animation-delay: 36s;
+}
+
+.creditos h5:nth-of-type(11) {
+    animation-delay: 40s;
+}
+
+.creditos h5:nth-of-type(12) {
+    animation-delay: 44s;
+}
+
+.creditos h5:nth-of-type(13) {
+    animation-delay: 48s;
+}
+
+.creditos h5:nth-of-type(14) {
+    animation-delay: 52s;
+}
+
+.creditos h5:nth-of-type(15) {
+    animation-delay: 56s;
+}
+
+.creditos h5:nth-of-type(16) {
+    animation-delay: 60s;
+}
+
+.creditos h5:nth-of-type(17) {
+    animation-delay: 64s;
+}
+
+.creditos h5:nth-of-type(18) {
+    animation-delay: 68s;
+}
+
+.creditos h5:nth-of-type(19) {
+    animation-delay: 72s;
+}
+
+.creditos h5:nth-of-type(20) {
+    animation-delay: 76s;
+} */
+@font-face {
+    font-family: 'PixelatedPusab';
+    src: url(../Media/fuente/PixelatedPusab.ttf) format('truetype');
+}
+html, body {
+    height: 740px;
+   
+}
+
+body {
+    background-image: url(../Media/Images/fondo/Cred1.gif);
+    background-repeat:no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    overflow: hidden;
+    height: 740px;
+}
+.credit {
+    position: relative;
+    font-family: 'PixelatedPusab';
+    width: 400px;
+    height: 740px;
+    font: 300 30px/1 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    animation: 12s credits linear infinite;
+    display: inline;
+}
+
+.movie {
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: 'PixelatedPusab';
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+.job {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: 'PixelatedPusab';
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.name {
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-family: 'PixelatedPusab';
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+@keyframes credits {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -120%;
+    }
+}
