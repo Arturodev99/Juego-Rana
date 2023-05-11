@@ -1,6 +1,16 @@
+body{
+    z-index: -1;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    background-image: url(../Media/Images/fondo/Muerte.jpg);
+    z-index: -1;
+    margin: 0px;
+    overflow: hidden;
+}
+
 #padre{
     width: 1000px ;
-    height: 720px;
+    height: 100vh;
     border: solid 5px black;
     background-image: url(../Media/Images/fondo/Muerte.jpg);
     background-repeat: no-repeat;
@@ -15,7 +25,7 @@
 }
 h1{
     font-family: 'PIXEL-LI';
-    background: linear-gradient(to right, #6c6060, #ffffff); 
+    background: linear-gradient(to right, #ff0000, #940000); 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -32,6 +42,7 @@ h1{
     width: 200px;
     height: 100px; 
     cursor: url(../Media/Images/CR4.png),auto;
+    font-size: 18px;
 }
 #boton:hover{
     font-family: 'SuperMario256';
@@ -40,13 +51,14 @@ h1{
     background-color: black;
     color:white; 
     cursor: url(../Media/Images/CR4.png),auto;
+    font-size: 18px;
 }
 #boton2{
     font-family: 'SuperMario256';
     width: 200px;
     height: 100px; 
     cursor: url(../Media/Images/CR4.png),auto;
-    
+    font-size: 18px;
 }
 #boton2:hover{
     font-family: 'SuperMario256';
@@ -55,5 +67,5 @@ h1{
     background-color: black;
     color:white; 
     cursor: url(../Media/Images/CR4.png),auto;
-    
+    font-size: 18px;
 }
