@@ -5,6 +5,8 @@ body{ z-index: -1;
     /*cursor: url(../Media/Images/cursor1.png),auto;*/
     margin: 0px;
     zoom:0.75;
+    height: 200vh;
+    user-select: none ;
 
     /*animation-name: FondoColores;
     animation-duration: 5s;
