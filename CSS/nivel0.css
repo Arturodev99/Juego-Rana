@@ -169,11 +169,11 @@ body{ z-index: -1;
 }
 .PestañaControles{
     position: fixed;
-    top:20%;
+    top:15%;
     left: 32.5%;
     background-color: #3ca109 ;
     width: 35%;
-    height: 55vh;
+    height: 78vh;
     border:solid 10px #2a660c;
     padding: 5px;
     font-family: 'Super Mario';
