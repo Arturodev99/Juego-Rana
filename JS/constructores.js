@@ -1,5 +1,8 @@
 //Terminado constructor personaje
 var array=[];
+function aleatorioEntre(n1, n2) {
+    return Math.round(Math.random() * (n2 - n1) + parseInt(n1));
+}
 contador = 1;
 function Personaje() {
     //this.vida = 3;
@@ -238,6 +241,6 @@ function animar(){
         array[i].movimientoEnemigo();
         
     }
-    prueba=setTimeout(animar, 400)
+    prueba=setTimeout(animar, aleatorioEntre(50,200))
 
 }
