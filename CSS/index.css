@@ -6,6 +6,7 @@ body{
     margin: 0px;
     width: 100%;
     height: 90vh;
+    backdrop-filter: grayscale(50%);
 }
 @font-face {
     font-family: 'PixelatedPusab';
