@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/EnemigoMoviendoseDificultad.js"></script>
     <link rel="stylesheet" type="text/css" href="../CSS/SeleccionDificultad.css">
     <title>SeleccionDificultad</title>
 </head>
-<body>
+<body onload="MoverEnemigo()">
     <center>
         <h1>Dificultad</h1>
         <div class="contenedor"><h1>Facil</h1></div>
@@ -16,6 +17,7 @@
         <br>
         <div class="contenedor"><h1>Dificil</h1></div>
     </center>
-    <img src="../Media/Images/Enemigos/enemigobosque.gif" width="300px" height="100px" class="demostracionEnemigo">
+    <br>
+    <img src="../Media/Images/Enemigos/enemigobosque.gif" width="300px" height="100px" class="demostracionEnemigo" id="EnemigoMovible">
 </body>
 </html>
