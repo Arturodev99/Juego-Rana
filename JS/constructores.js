@@ -241,6 +241,6 @@ function animar(){
         array[i].movimientoEnemigo();
         
     }
-    prueba=setTimeout(animar, aleatorioEntre(50,200))
+    prueba=setTimeout(animar, aleatorioEntre(localStorage.getItem('dificultadMin'),localStorage.getItem('dificultadMax')))
 
 }
