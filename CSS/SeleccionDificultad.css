@@ -31,9 +31,40 @@ h1,h2,h3,h4,h5{
 }
 .contenedor:hover{
     background-image: url(../Media/Images/MarcoDificultadHover.png);
+    
 }
 .demostracionEnemigo{
     position: absolute;
     left:100px;
     transform:rotateY(0deg);
+}
+.NombreDificultad1{
+    font-family: 'PixelatedPusab';
+    color: aliceblue;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-size: 80px;
+    margin-top: 20px;
+}
+.NombreDificultad1:hover{
+    color:green;
+}
+.NombreDificultad2{
+    font-family: 'PixelatedPusab';
+    color: aliceblue;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-size: 80px;
+    margin-top: 20px;
+}
+.NombreDificultad2:hover{
+    color:yellow;
+}
+.NombreDificultad3{
+    font-family: 'PixelatedPusab';
+    color: aliceblue;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-size: 80px;
+    margin-top: 20px;
+}
+.NombreDificultad3:hover{
+    color:red;
 }

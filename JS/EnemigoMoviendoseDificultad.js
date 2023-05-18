@@ -3,6 +3,7 @@ var Ubicacion=0;
 var Intervalo1;
 var Intervalo2;
 var Pantalla=(window.innerWidth)-150;
+var Velocidad=5;
 function MoverEnemigo(){
     Intervalo1=setInterval(Movimiento,35)
 }
@@ -12,7 +13,7 @@ function Movimiento(){
         Intervalo2=setInterval(MovimientoAtras,35)
     }
     document.getElementById("EnemigoMovible").style.transform="rotateY(0deg)";
-    Ubicacion=Ubicacion+5
+    Ubicacion=Ubicacion+Velocidad
     document.getElementById("EnemigoMovible").style.left=Ubicacion+"px";
     console.log(Ubicacion)
 }
@@ -23,7 +24,7 @@ function MovimientoAtras(){
         MoverEnemigo()
     }
     document.getElementById("EnemigoMovible").style.transform="rotateY(180deg)";
-    Ubicacion=Ubicacion-5
+    Ubicacion=Ubicacion-Velocidad
     document.getElementById("EnemigoMovible").style.left=Ubicacion+"px";
     console.log(Ubicacion)
 
