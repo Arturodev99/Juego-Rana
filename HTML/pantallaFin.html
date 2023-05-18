@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,22 +12,36 @@
     <link rel="stylesheet" type="text/css" href="../CSS/pantallaFin.css">
 
     <title>Pantalla Final</title>
-    
-    <center>
-    <div id="padre">
-    <h1>Game-Over </h1>
-    <br> 
-    <a href="../HTML/Mapa.html"><input type="button" value="SELECCION MUNDO" id="boton"></a>
-    <br><br>
-    <a href="../HTML/index.html"><input type="button" value="Inicio" id="boton2"></a>
-    </div>
-    
-</center>
-    
-    
+    <script>
+        function resetVaribleMundo() {
+            // Paso 1: Obtén el valor actual de la variable desde localStorage
+            var valorActual = localStorage.getItem('mundo');
+
+            // Paso 2: Modifica el valor de la variable temporal
+            valorActual = 0;
+
+            // Paso 3: Guarda la variable actualizada en localStorage
+            localStorage.setItem('mundo', valorActual);
+
+        }
+    </script>
+
+
+
 </head>
-<body>
 
+<body onload="resetVaribleMundo()">
 
+    <center>
+        <div id="padre">
+            <h1>Game-Over </h1>
+            <br>
+            <a href="../HTML/Mapa.html"><input type="button" value="SELECCION MUNDO" id="boton"></a>
+            <br><br>
+            <a href="../HTML/index.html"><input type="button" value="Inicio" id="boton2"></a>
+        </div>
+
+    </center>
 </body>
+
 </html>
