@@ -1,0 +1,33 @@
+body{
+    background-image: url(../Media/Images/fondo/fondoin2.gif);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    cursor: url(../Media/Images/cursor1.png),auto;
+    margin: 0px;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+@font-face {
+    font-family: 'PixelatedPusab';
+    src: url(../Media/fuente/PixelatedPusab.ttf) format('truetype');
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'PixelatedPusab';
+    color: aliceblue;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-size: 80px;
+    margin-top: 20px;
+}
+.contenedor{
+    width:700px;
+    height: 140px;
+    background-image: url(../Media/Images/MarcoDificultad.png);
+    background-size:cover;
+    box-sizing: border-box;
+    PADDING-TOP:1%
+}
+.contenedor:hover{
+    background-image: url(../Media/Images/MarcoDificultadHover.png);
+}
