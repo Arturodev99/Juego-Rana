@@ -139,7 +139,13 @@ var niveles = {
     { nombre:'casino4', nivel:'4', imagen:'../Media/Images/MundoCasino/mapacasino4.png',
     limite:['1','2','3','4','5','8','9','10','11','12',]},
     { nombre:'casino5', nivel:'5', imagen:'../Media/Images/MundoCasino/mapacasino5.png',
-    limite:['85','86','87','88','89','92','93','94','95','96',]}
+    limite:['85','86','87','88','89','92','93','94','95','96',]},
+    //-------------------------------------------------------------MUNDO ESCUELA--------------------------------------------------------------------------------------------------------------
+    {nombre:'escuela1',nivel:'1',nivelProgresion:'30',imagen:'../Media/Images/MundoEscuela/mapaescuela1.png',limite:[]},
+    {nombre:'escuela2',nivel:'2',imagen:'../Media/Images/MundoEscuela/mapaescuela2.png',limite:[]},
+    {nombre:'escuela3',nivel:'3',imagen:'../Media/Images/MundoEscuela/mapaescuela3.png',limite:[]},
+    {nombre:'escuela4',nivel:'4',imagen:'../Media/Images/MundoEscuela/mapaescuela4.png',limite:[]},
+    {nombre:'escuela5',nivel:'5',imagen:'../Media/Images/MundoEscuela/mapaescuela5.png',limite:[]},
   ],
     //{ nombre:'', nivel:'', imagen:'',limite:[]},
     'enemigos': [
