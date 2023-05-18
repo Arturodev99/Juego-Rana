@@ -29,7 +29,13 @@ function desbloquearMapa() {
         document.getElementById("contenedorMapa").style.backgroundImage = "url('../Media/Images/ImgSeleccionMundo/MapaRanitaCompleto.png')"
     }
     if (mapas >= 30) {
-        document.getElementById("contenedorMapa").innerHTML +="<input type='button' value='Mundo Final' onclick='location.href="+enlace+"'>"
+        document.body.innerHTML +="<input type='button' id='oculto' value='Mundo Final' onclick='repetir(30);location.href="+enlace+"';>"
+        document.getElementById("oculto").style.width="100px";
+        document.getElementById("oculto").style.height="100px";
+        document.getElementById("oculto").style.position="fixed";
+        document.getElementById("oculto").style.top="50%";
+        document.getElementById("oculto").style.left="47.5%";
+
     }
 }
 function repetir(mapa){
