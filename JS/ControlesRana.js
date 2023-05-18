@@ -374,6 +374,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                 }
                 if(document.getElementById(PosicionNueva).className == 'limite' && vida == 1 || document.getElementById(PosicionOriginal).className == 'limite' && vida == 1){
                     location.href = '../HTML/pantallaFin.html'
+                    
                 }
                 
             
