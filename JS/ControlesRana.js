@@ -13,7 +13,7 @@ if (localStorage.getItem('nivelActual') === null ||localStorage.getItem('nivelAc
     localStorage.setItem('nivel',j)
     localStorage.setItem('vida',vida)
 }
-if(localStorage.getItem('nivelActual') === "30"){
+if(localStorage.getItem('nivelActual') === "35"){
     localStorage.setItem('nivelActual','0')
     localStorage.setItem('mundo','0')
 }
@@ -113,6 +113,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
                                 
                                 desbloquearMapa(nivelActual)
                             }
+                            
                           
                             Nivel();
                             //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';

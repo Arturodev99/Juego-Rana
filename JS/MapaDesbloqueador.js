@@ -2,7 +2,7 @@
 
 function desbloquearMapa() {
    var mapas=localStorage.getItem('nivel');
-    
+   var enlace='"nivel0.html"';
 
     if (mapas >= 5) {
         document.getElementById("contenedorMapa").innerHTML += "<a href='nivel0.html'><div id='isla2' onclick=repetir(5)></div></a>"
@@ -27,6 +27,15 @@ function desbloquearMapa() {
     if (mapas >= 25) {
         document.getElementById("contenedorMapa").innerHTML += "<a href='nivel0.html'><div id='isla6'onclick=repetir(25)></div></a>"
         document.getElementById("contenedorMapa").style.backgroundImage = "url('../Media/Images/ImgSeleccionMundo/MapaRanitaCompleto.png')"
+    }
+    if (mapas >= 30) {
+        document.body.innerHTML +="<input type='button' id='oculto' value='Mundo Final' onclick='repetir(30);location.href="+enlace+"';>"
+        document.getElementById("oculto").style.width="100px";
+        document.getElementById("oculto").style.height="100px";
+        document.getElementById("oculto").style.position="fixed";
+        document.getElementById("oculto").style.top="50%";
+        document.getElementById("oculto").style.left="47.5%";
+
     }
 }
 function repetir(mapa){
