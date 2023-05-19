@@ -134,7 +134,9 @@ class Enemigo1{
         document.getElementById(this.posicion).className="limite"
         
         if(this.avance == '-1'){
-            document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
+            if(nivelActual >= 30){document.getElementById(this.posicion).style.transform = 'rotate(90deg)';}//
+                else
+            {document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'}
         }
     }
     eliminarEnemigo(){
@@ -167,7 +169,8 @@ class Enemigo1{
             if(this.avance == '-1'){
                 this.posicionAntigua = this.posicion;
                 this.posicion += parseInt(this.avance)
-                document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
+                if(nivelActual >= 30){document.getElementById(this.posicion).style.transform = 'rotate(90deg)';}//
+                else {document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'} //document.getElementById(this.posicion).style.transform = 'rotate(270deg)'
                 document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
 
@@ -175,7 +178,9 @@ class Enemigo1{
             if(this.avance == '+1'){
                 this.posicionAntigua = this.posicion;
                 this.posicion += parseInt(this.avance)
-                document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'
+                if(nivelActual >= 30){document.getElementById(this.posicion).style.transform = 'rotate(270deg)';}
+                else {document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'} //document.getElementById(this.posicion).style.transform = 'rotate(270deg)'
+                
                 document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
             }
@@ -187,7 +192,9 @@ class Enemigo1{
                 this.posicionAntigua = this.posicion;
                 document.getElementById(this.posicionAntigua).style.backgroundImage='url()';
                 this.posicion += parseInt(this.avance)
-                document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
+                if(nivelActual >= 30){document.getElementById(this.posicion).style.transform = 'rotate(270deg)';}
+                else {document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'} //document.getElementById(this.posicion).style.transform = 'rotate(270deg)'
+                
                 document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
 
@@ -197,7 +204,9 @@ class Enemigo1{
                 this.posicionAntigua = this.posicion;
                 document.getElementById(this.posicionAntigua).style.backgroundImage='url()';
                 this.posicion += parseInt(this.avance)
-                document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'
+                if(nivelActual >= 30){document.getElementById(this.posicion).style.transform = 'rotate(90deg)';}//
+                else {document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'} //document.getElementById(this.posicion).style.transform = 'rotate(270deg)'
+                
                 document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
             }
@@ -208,7 +217,9 @@ class Enemigo1{
                 this.posicionAntigua = this.posicion;
                 document.getElementById(this.posicionAntigua).style.backgroundImage='url()';
                 this.posicion += parseInt(this.avance)
-                document.getElementById(this.posicion).style.transform = 'rotateY(180deg)'
+                if(nivelActual >= 30)document.getElementById(this.posicion).style.transform = 'rotate(270deg)';
+                else document.getElementById(this.posicion).style.transform = 'rotateY(180deg)' //document.getElementById(this.posicion).style.transform = 'rotate(270deg)'
+                
                 document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
 
@@ -218,7 +229,9 @@ class Enemigo1{
                 this.posicionAntigua = this.posicion;
                 document.getElementById(this.posicionAntigua).style.backgroundImage='url()';
                 this.posicion += parseInt(this.avance)
-                document.getElementById(this.posicion).style.transform = 'rotateY(0deg)';
+                if(nivelActual >= 30){document.getElementById(this.posicion).style.transform = 'rotate(90deg)'}
+                else {document.getElementById(this.posicion).style.transform = 'rotateY(0deg)'} //document.getElementById(this.posicion).style.transform = 'rotate(270deg)'
+                
                 document.getElementById(this.posicionAntigua).className="casilla";
                 this.crearEnemigo();
             }

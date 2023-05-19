@@ -271,7 +271,21 @@ var niveles = {
     { nombre: 'enemigocasino21', imagen: '../Media/Images/Enemigos/enemigocasino.gif', posicionInicial: '60', posicionFinal:'48', avance: '-1', nivel:'29',velocidad:'1200',intervalo:'', },
     { nombre: 'enemigocasino22', imagen: '../Media/Images/Enemigos/enemigocasino.gif', posicionInicial: '61', posicionFinal:'73', avance: '+1', nivel:'29',velocidad:'1200',intervalo:'', },
     { nombre: 'enemigocasino23', imagen: '../Media/Images/Enemigos/enemigocasino.gif', posicionInicial: '73', posicionFinal:'85', avance: '+1', nivel:'29',velocidad:'1200',intervalo:'', },
-    ]
+    //---------------------------------------------------------MUNDO ESCUELA----------------------------------------------------------------------------------------------------------------------------
+    {nombre:'enemigoescuela',imagen:'../Media/Images/Personajes/JuanmaMovimiento.gif',posicionInicial:'13',posicionFinal:'24',avance:'+1',nivel:'30',},
+    {nombre:'enemigoescuela',imagen:'../Media/Images/Personajes/JesusMovimiento.gif',posicionInicial:'72',posicionFinal:'60',avance:'-1',nivel:'30',},
+    {nombre:'enemigoescuela',imagen:'../Media/Images/Personajes/JuanmaMovimiento.gif',posicionInicial:'',posicionFinal:'',avance:'-1',nivel:'',},
+    {nombre:'enemigoescuela',imagen:'',posicionInicial:'',posicionFinal:'',avance:'',nivel:'',},
+    {nombre:'enemigoescuela',imagen:'../Media/Images/Personajes/JuanmaMovimiento.gif',posicionInicial:'',posicionFinal:'',avance:'',nivel:'',},
+    {nombre:'enemigoescuela',imagen:'',posicionInicial:'',posicionFinal:'',avance:'',nivel:'',},
+    {nombre:'enemigoescuela',imagen:'',posicionInicial:'',posicionFinal:'',avance:'',nivel:'',},
+    {nombre:'enemigoescuela',imagen:'',posicionInicial:'',posicionFinal:'',avance:'',nivel:'',},
+    {nombre:'enemigoescuela',imagen:'',posicionInicial:'',posicionFinal:'',avance:'',nivel:'',},
+    {nombre:'enemigoescuela',imagen:'',posicionInicial:'',posicionFinal:'',avance:'',nivel:'',},
+    {nombre:'enemigoescuela',imagen:'',posicionInicial:'',posicionFinal:'',avance:'',nivel:'',},
+    {nombre:'enemigoescuela',imagen:'',posicionInicial:'',posicionFinal:'',avance:'',nivel:'',},
+    {nombre:'',imagen:'',posicionInicial:'',posicionFinal:'',avance:'',nivel:'',},
+  ]
 };
 var identificadorCiclo=[];
 

@@ -13,12 +13,16 @@ if (localStorage.getItem('nivelActual') === null ||localStorage.getItem('nivelAc
     localStorage.setItem('nivel',j)
     localStorage.setItem('vida',vida)
 }
+
 if(localStorage.getItem('nivelActual') === "35"){
     localStorage.setItem('nivelActual','0')
     localStorage.setItem('mundo','0')
 }
 if (localStorage.getItem('mundo') === null){
     localStorage.setItem('mundo',l)
+}
+if(localStorage.getItem('nivelActual') === '30'){
+    localStorage.setItem('personajeActual',6)
 }
 
 
