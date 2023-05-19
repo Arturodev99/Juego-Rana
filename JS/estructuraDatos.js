@@ -4,7 +4,8 @@ var niveles = {
     { nombre: 'Rana', imagenParada: '../Media/Images/Personajes/Rana.png', imagenMovimiento: '../Media/Images/Personajes/RanaMovimineto.gif', muerte: '../Media/Images/Personajes/muerte/rana_muerte.gif', posicionY: '' },
     { nombre: 'Link', imagenParada: '../Media/Images/Personajes/link/link_quieto.png', imagenMovimiento: '../Media/Images/Personajes/link/link_movimiento_abajo.gif', muerte: '../Media/Images/Personajes/muerte/link_muerte.gif', posicionY: '' },
     { nombre: 'Kirby', imagenParada: '../Media/Images/Personajes/kirby.png', imagenMovimiento: '../Media/Images/Personajes/kirbymovimiento.gif', muerte: '../Media/Images/Personajes/muerte/kirby_muerte.gif', posicionY: '' },
-    { nombre: 'Monstruo', imagenParada: '../Media/Images/Personajes/monstruoaliado.png', imagenMovimiento: '../Media/Images/Personajes/monstruoaliadomovimiento.gif', muerte: '../Media/Images/Personajes/muerte/monstruoaliado_muerte.gif', posicionY: '' },],
+    { nombre: 'Monstruo', imagenParada: '../Media/Images/Personajes/monstruoaliado.png', imagenMovimiento: '../Media/Images/Personajes/monstruoaliadomovimiento.gif', muerte: '../Media/Images/Personajes/muerte/monstruoaliado_muerte.gif', posicionY: '' },
+    { nombre: 'Glock', imagenParada: '../Media/Images/Personajes/glockquieto.png', imagenMovimiento: '../Media/Images/Personajes/glockmovimiento.gif', muerte: '../Media/Images/Personajes/muerte/glock_muerte.gif', posicionY: '' },],
 
     'escenarios': [
        //----------------------------------------------------------------MUNDO BOSQUE----------------------------------------------------------------------------
