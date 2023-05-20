@@ -94,7 +94,6 @@ function movimiento() {
         l--
         PosicionNueva=6
         PosicionOriginal=6;
-       
         Comienzo();
     }
 
@@ -151,6 +150,9 @@ class Enemigo1{
         if(this.posicion == PosicionOriginal){
             vida--
             l--
+            //Suelta una alerta del personaje muerto, solo si ese personaje muere comido
+            PersonajeMuerto=true
+            //Aqui muere el personaje
             
             
             
