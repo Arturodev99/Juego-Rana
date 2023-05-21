@@ -130,7 +130,7 @@ class Enemigo1{
     }
     crearEnemigo(){
         console.log(this.imagen)
-        document.getElementById(this.posicion).style.backgroundImage='url(' +this.imagen + ")";
+        document.getElementById(this.posicion).style.backgroundImage='url(' +this.imagen+ ")";
         document.getElementById(this.posicion).className="limite"
         
         if(this.avance == '-1'){
