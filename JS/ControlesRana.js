@@ -411,6 +411,4 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
             clearTimeout(temporizador);
             
         }
-        
-        
-       
+    }
