@@ -30,12 +30,13 @@ function desbloquearMapa() {
     }
     if (mapas >= 30) {
         document.body.innerHTML +="<div id='oculto' value='Mundo Final' onclick='repetir(30);location.href="+enlace+"';></div>"
-        document.getElementById("oculto").style.width="100px";
+        document.getElementById("oculto").style.width="200px";
         document.getElementById("oculto").style.height="100px";
         document.getElementById("oculto").style.position="fixed";
         document.getElementById("oculto").style.top="47%";
         document.getElementById("oculto").style.left="70.5%";
-        document.getElementById("oculto").style.backgroundImage="url(../Media/Images/MundoEscuela/boton eig1.png)";
+        document.getElementById("oculto").style.backgroundImage="url(../Media/Images/MundoEscuela/BotonEscuela.png)";
+        document.getElementById("oculto").style.backgroundSize="cover";
 
     }
 }
