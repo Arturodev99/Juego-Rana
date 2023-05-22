@@ -69,13 +69,14 @@ body{ z-index: -1;
     border: solid 1px black;
 }
 .nivel{
-    width: 7%;
+    width: 150px;
+    height: 75px;
     font-family: 'Super Mario';
-    font-size: xx-large;
-    background-color: #ffffb9;
-    border: solid 8px #ffff00;
-    padding: 1px;
-    border-radius: 10px;
+    font-size:x-large;
+    background-image: url(../Media/Images/PlacaOro\ \(2\).png);
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
 
 }
 
