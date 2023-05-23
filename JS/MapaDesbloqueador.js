@@ -30,7 +30,7 @@ function desbloquearMapa() {
     }
     if (mapas >= 30) {
         //onclick='repetir(30);location.href="+enlace+"'
-        document.body.innerHTML +="<div id='oculto' value='Mundo Final' onclick='repetir(30);location.href="+enlace+"';></div>"
+        document.body.innerHTML +="<div id='oculto' value='Mundo Final' onclick='mostrarDisclaimer()';></div>"
         document.getElementById("oculto").style.width="200px";
         document.getElementById("oculto").style.height="120px";
         document.getElementById("oculto").style.position="fixed";
@@ -43,4 +43,7 @@ function desbloquearMapa() {
 }
 function repetir(mapa){
 localStorage.setItem('nivelActual',mapa)
+}
+function mostrarDisclaimer(){
+    document.getElementById("Disclamer").style.display="block"
 }

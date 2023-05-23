@@ -10,6 +10,7 @@
     <script src="../JS/constructores.js"></script>
     <script src="../JS/MapaDesbloqueador.js"></script>
     <style>
+        
         body{
             backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
@@ -20,6 +21,10 @@
             cursor: url(../Media/Images/PunteroNube.png),auto;
             zoom:0.85;
             overflow:hidden;
+        }
+        @font-face {
+            font-family: 'Super Mario';
+            src: url(../Media/fuente/SuperMario256.ttf) format('truetype');
         }
         #contenedorMapa{
             width: 1200px;
@@ -85,6 +90,31 @@
             border-radius: 20px;
             cursor: url(../Media/Images/estrella.png),pointer;
         }
+        #Disclamer{
+            position: fixed;
+            top:10%;
+            left: 32.5%;
+            background-color: #3ca109 ;
+            width: 35%;
+            height: 38vh;
+            border:solid 10px #2a660c;
+            padding: 5px;
+            font-family: 'Super Mario';
+            user-select: none;
+            display: block;
+            z-index: 2;
+            display: none;
+        }
+        .BotonDisclaimer{
+            font-size:30px;
+            width:150px;
+            height:50px;
+            font-family: 'Super Mario';
+            background-color: #47cb05;
+            border: solid 5px #2a660c;
+            box-shadow: 0px 0px 50px #15ff00;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body onload="desbloquearMapa();">
@@ -96,6 +126,17 @@
         <a href="#" style="cursor: url(../Media/Images/estrella.png),pointer;"><div id="isla5"></div></a>
         <a href="#" style="cursor: url(../Media/Images/estrella.png),pointer;"><div id="isla6"></div></a> -->
           
+    </div>
+
+    <div id="Disclamer" >
+        <center>
+            <br>
+            <h1>Jugar con personaje especial?</h1>
+            <br><br><br><br>
+            <input type="button" value="Si!" onclick="" class="BotonDisclaimer">
+            &nbsp;
+            <input type="button" value="No" onclick="" class="BotonDisclaimer">
+        </center>
     </div>
 </body>
 </html>
