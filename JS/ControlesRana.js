@@ -23,9 +23,7 @@ if(localStorage.getItem('nivelActual') === "35"){
 if (localStorage.getItem('mundo') === null){
     localStorage.setItem('mundo',l)
 }
-if(localStorage.getItem('nivelActual') === '30'){
-    localStorage.setItem('personajeActual',6)
-}
+
 
 
 

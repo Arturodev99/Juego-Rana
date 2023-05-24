@@ -41,6 +41,15 @@ function desbloquearMapa() {
 
     }
 }
+function acepta(){
+    
+        localStorage.setItem('personajeActual',6)
+        location.href="../HTML/nivel0.html"
+}
+
+function cancela(){
+    location.href="../HTML/nivel0.html"
+}
 function repetir(mapa){
 localStorage.setItem('nivelActual',mapa)
 }
