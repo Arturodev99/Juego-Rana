@@ -15,7 +15,7 @@ function Movimiento(){
     document.getElementById("EnemigoMovible").style.transform="rotateY(0deg)";
     Ubicacion=Ubicacion+Velocidad
     document.getElementById("EnemigoMovible").style.left=Ubicacion+"px";
-    console.log(Ubicacion)
+    
 }
 function MovimientoAtras(){
     if(Ubicacion<=-150){
@@ -26,6 +26,6 @@ function MovimientoAtras(){
     document.getElementById("EnemigoMovible").style.transform="rotateY(180deg)";
     Ubicacion=Ubicacion-Velocidad
     document.getElementById("EnemigoMovible").style.left=Ubicacion+"px";
-    console.log(Ubicacion)
+
 
 }
