@@ -105,7 +105,6 @@ function Enemigo() {
     for (i = 0; i < niveles.enemigos.length; i++) {
         if (niveles.enemigos[i].nivel == nivelActual) {
             array.push(new Enemigo1(niveles.enemigos[i].nombre,niveles.enemigos[i].imagen,niveles.enemigos[i].posicionInicial,niveles.enemigos[i].avance,niveles.enemigos[i].posicionFinal,niveles.enemigos[i].posicionInicial))
-            console.log(array[array.length-1])
             array[array.length-1].crearEnemigo()
         }
         
@@ -128,7 +127,7 @@ class Enemigo1{
         this.posicionInicial=posicionInicial
     }
     crearEnemigo(){
-        console.log(this.imagen)
+        
         document.getElementById(this.posicion).style.backgroundImage='url(' +this.imagen+ ")";
         document.getElementById(this.posicion).className="limite"
         

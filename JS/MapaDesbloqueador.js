@@ -29,15 +29,30 @@ function desbloquearMapa() {
         document.getElementById("contenedorMapa").style.backgroundImage = "url('../Media/Images/ImgSeleccionMundo/MapaRanitaCompleto.png')"
     }
     if (mapas >= 30) {
-        document.body.innerHTML +="<input type='button' id='oculto' value='Mundo Final' onclick='repetir(30);location.href="+enlace+"';>"
-        document.getElementById("oculto").style.width="100px";
-        document.getElementById("oculto").style.height="100px";
+        //onclick='repetir(30);location.href="+enlace+"'
+        document.body.innerHTML +="<div id='oculto' value='Mundo Final' onclick='mostrarDisclaimer()';></div>"
+        document.getElementById("oculto").style.width="200px";
+        document.getElementById("oculto").style.height="120px";
         document.getElementById("oculto").style.position="fixed";
-        document.getElementById("oculto").style.top="50%";
-        document.getElementById("oculto").style.left="47.5%";
+        document.getElementById("oculto").style.top="47%";
+        document.getElementById("oculto").style.left="70.5%";
+        document.getElementById("oculto").style.backgroundImage="url(../Media/Images/MundoEscuela/BotonEscuela.png)";
+        document.getElementById("oculto").style.backgroundSize="cover";
 
     }
 }
+function acepta(){
+    
+        localStorage.setItem('personajeActual',6)
+        location.href="../HTML/nivel0.html"
+}
+
+function cancela(){
+    location.href="../HTML/nivel0.html"
+}
 function repetir(mapa){
 localStorage.setItem('nivelActual',mapa)
+}
+function mostrarDisclaimer(){
+    document.getElementById("Disclamer").style.display="block"
 }
