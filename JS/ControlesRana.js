@@ -33,7 +33,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
 function prueba(tecla){
     
     if(tecla.keyCode == 88){
-        localStorage.setItem('nivelActual',31);
+        localStorage.setItem('nivelActual',30);
         localStorage.setItem('nivel',35);
         location.href="../HTML/Mapa.html"
     }
@@ -126,7 +126,13 @@ function prueba(tecla){
                                     localStorage.setItem('nivel',nivelActual)
                                 }
                                 localStorage.setItem('mundo',mundo)
-                            
+                                if(localStorage.getItem('nivelActual') == 35){
+                                    location.href = '../HTML/pantallaVictoria.html'
+                                    localStorage.setItem('mundo','0')
+                                    mundo=0;
+                                    
+                                    desbloquearMapa(nivelActual)
+                                }
                                 if(localStorage.getItem('mundo') > 4){
                                     location.href = '../HTML/pantallaVictoria.html'
                                     localStorage.setItem('mundo','0')
@@ -134,7 +140,7 @@ function prueba(tecla){
                                     
                                     desbloquearMapa(nivelActual)
                                 }
-                              
+                               
                               
                             Nivel();
                                 //document.getElementById('pantalla').style.backgroundImage='url('+niveles.escenarios[j].imagen+')';
