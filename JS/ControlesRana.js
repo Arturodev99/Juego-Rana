@@ -33,7 +33,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
 function prueba(tecla){
     
     if(tecla.keyCode == 88){
-        localStorage.setItem('nivelActual',30);
+        localStorage.setItem('nivelActual',31);
         localStorage.setItem('nivel',35);
         location.href="../HTML/Mapa.html"
     }
