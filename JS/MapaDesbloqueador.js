@@ -55,4 +55,5 @@ localStorage.setItem('nivelActual',mapa)
 }
 function mostrarDisclaimer(){
     document.getElementById("Disclamer").style.display="block"
+    
 }
