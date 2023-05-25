@@ -34,8 +34,8 @@ function desbloquearMapa() {
         document.getElementById("oculto").style.width="200px";
         document.getElementById("oculto").style.height="120px";
         document.getElementById("oculto").style.position="fixed";
-        document.getElementById("oculto").style.top="47%";
-        document.getElementById("oculto").style.left="70.5%";
+        document.getElementById("oculto").style.top="35%";
+        document.getElementById("oculto").style.left="67.5%";
         document.getElementById("oculto").style.backgroundImage="url(../Media/Images/MundoEscuela/BotonEscuela.png)";
         document.getElementById("oculto").style.backgroundSize="cover";
 

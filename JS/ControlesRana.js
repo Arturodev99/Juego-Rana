@@ -26,10 +26,18 @@ if (localStorage.getItem('mundo') === null){
 
 
 
-
+document.onkeydown=prueba
 
 mundo= parseInt(localStorage.getItem('mundo'))
 var nivelActual=parseInt(localStorage.getItem('nivelActual'));
+function prueba(tecla){
+    
+    if(tecla.keyCode == 88){
+        localStorage.setItem('nivelActual',30);
+        localStorage.setItem('nivel',35);
+        location.href="../HTML/Mapa.html"
+    }
+}
         //se le llama al cargar nivel0
         function Comienzo(){
             clearTimeout(muerte);
@@ -86,6 +94,7 @@ var nivelActual=parseInt(localStorage.getItem('nivelActual'));
         function Teclado(tecla){
                 
             if(PersonajeMuerto == false){
+                
                 if(tecla.keyCode == 65){
                     if((PosicionOriginal-1)%12 == 0){
                         console.log('no')

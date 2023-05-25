@@ -236,7 +236,7 @@ var niveles = {
     { nombre: 'enemigocielo1', imagen: '../Media/Images/Enemigos/enemigocielo.gif', posicionInicial: '13', posicionFinal:'24', avance: '+1', nivel:'20',velocidad:'1200',intervalo:'', },
     { nombre: 'enemigocielo2', imagen: '../Media/Images/Enemigos/enemigocielo.gif', posicionInicial: '36', posicionFinal:'25', avance: '-1', nivel:'20',velocidad:'1200',intervalo:'', },
     { nombre: 'enemigocielo3', imagen: '../Media/Images/Enemigos/enemigocielo.gif', posicionInicial: '72', posicionFinal:'61', avance: '-1', nivel:'20',velocidad:'1200',intervalo:'', },
-    { nombre: 'enemigocielo4', imagen: '../Media/Images/Enemigos/enemigocielo.gif', posicionInicial: '25', posicionFinal:'14', avance: '-1', nivel:'21',velocidad:'1200',intervalo:'', },
+    { nombre: 'enemigocielo4', imagen: '../Media/Images/Enemigos/enemigocielo.gif', posicionInicial: '36', posicionFinal:'24', avance: '-1', nivel:'21',velocidad:'1200',intervalo:'', },
     { nombre: 'enemigocielo5', imagen: '../Media/Images/Enemigos/enemigocielo.gif', posicionInicial: '60', posicionFinal:'49', avance: '-1', nivel:'21',velocidad:'1200',intervalo:'', },
     { nombre: 'enemigocielo6', imagen: '../Media/Images/Enemigos/enemigocielo.gif', posicionInicial: '61', posicionFinal:'72', avance: '+1', nivel:'21',velocidad:'1200',intervalo:'', },
     { nombre: 'enemigocielo7', imagen: '../Media/Images/Enemigos/enemigocielo.gif', posicionInicial: '37', posicionFinal:'48', avance: '+1', nivel:'22',velocidad:'1200',intervalo:'', },
