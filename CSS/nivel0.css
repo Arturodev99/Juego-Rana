@@ -4,7 +4,7 @@ body{ z-index: -1;
     margin: 0px;
 }
  #pantalla{
-    background-image: url(../Media/Images/NivelesTerminados/NivelVolcanico.jpg);
+    background-image: url(../Media/Images/MundoLava/mapalava1.png);
     background-size: 100% 100%;
  }
 .pantalla{
@@ -44,4 +44,11 @@ body{ z-index: -1;
 @font-face {
     font-family: 'Super Mario';
     src: url(../Media/fuente/SuperMario256.ttf) format('truetype');
+}
+.limite{
+    background-size: cover;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    
 }
